@@ -42,7 +42,7 @@ const mapToolRecordToClient = (tool: {
 });
 
 interface ToolsPageProps {
-  searchParams: Record<string, string | string[] | undefined>;
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
 }
 
 export default async function ToolsPage({ searchParams }: ToolsPageProps) {
@@ -109,10 +109,10 @@ export default async function ToolsPage({ searchParams }: ToolsPageProps) {
     page: pageParam,
     limit: limitParam ?? String(DEFAULT_LIST_LIMIT),
     category: categoryParam,
-    audience: normaliseQueryValue(searchParams.audience),
-    tier: normaliseQueryValue(searchParams.tier),
-    sort: normaliseQueryValue(searchParams.sort),
-    popular: normaliseQueryValue(searchParams.popular),
+    audience: normaliseQueryValue(params.audience),
+    tier: normaliseQueryValue(params.tier),
+    sort: normaliseQueryValue(params.sort),
+    popular: normaliseQueryValue(params.popular),
   });
 
   if (!listParams.success) {

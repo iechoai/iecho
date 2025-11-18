@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import { ToolCard } from "./ToolCard";
 import { useSavedTools } from "./SavedToolsContext";
 import { tools, type Tool } from "../data/tools";
+import type { ToolListItem } from "../lib/types";
 import { EmptyState } from "./EmptyState";
 import { ExportDialog } from "./ExportDialog";
 import { ShareDialog } from "./ShareDialog";
@@ -18,21 +19,34 @@ export function SavedToolsPage() {
   const [showShareDialog, setShowShareDialog] = useState(false);
 
   // Create ordered list of saved tools data based on savedTools array order
-  const savedToolsData = savedTools
+  const savedToolsData: ToolListItem[] = savedTools
     .map((id) => tools.find((tool) => tool.id === id))
-    .filter((tool): tool is Tool => tool !== undefined);
+    .filter((tool): tool is Tool => tool !== undefined)
+    .map((tool) => ({
+      ...tool,
+      icon: tool.icon ?? null,
+      isPopular: tool.isPopular ?? false,
+      createdAt: new Date().toISOString(),
+    }));
 
-  const [orderedTools, setOrderedTools] = useState<Tool[]>(savedToolsData);
+  const [orderedTools, setOrderedTools] =
+    useState<ToolListItem[]>(savedToolsData);
 
   // Update orderedTools when savedTools changes (when tools are added/removed)
   useEffect(() => {
-    const newOrderedTools = savedTools
+    const newOrderedTools: ToolListItem[] = savedTools
       .map((id) => tools.find((tool) => tool.id === id))
-      .filter((tool): tool is Tool => tool !== undefined);
+      .filter((tool): tool is Tool => tool !== undefined)
+      .map((tool) => ({
+        ...tool,
+        icon: tool.icon ?? null,
+        isPopular: tool.isPopular ?? false,
+        createdAt: new Date().toISOString(),
+      }));
     setOrderedTools(newOrderedTools);
   }, [savedTools]);
 
-  const handleReorder = (newOrder: Tool[]) => {
+  const handleReorder = (newOrder: ToolListItem[]) => {
     setOrderedTools(newOrder);
     reorderSavedTools(newOrder.map((tool) => tool.id));
     toast.success("Tools reordered!", {
