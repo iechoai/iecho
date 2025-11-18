@@ -39,15 +39,13 @@ import type {
   ToolRecord,
   ToolSearchQueryInput,
 } from "./validation";
+type FilterableInput = Pick<
+  ToolListQueryInput | ToolSearchQueryInput,
+  "category" | "audience" | "tier" | "popular"
+>;
 
-
-// The buildFilters function is used to construct SQL WHERE clauses based on provided filters.
-const buildFilters = (
-  filters: Pick<
-    ToolListQueryInput,
-    "category" | "audience" | "tier" | "popular"
-  >
-): SQL | undefined => {
+// Build SQL WHERE clauses matching the ad-hoc filters used for list/search endpoints.
+const buildFilters = (filters: FilterableInput): SQL | undefined => {
   const clauses: SQL[] = [];
 
   const toPattern = (value: string) => `%${value.replace(/[%_]/g, "")}%`;
@@ -147,14 +145,17 @@ export const listTools = async (
 export const searchTools = async (
   input: ToolSearchQueryInput
 ): Promise<PaginatedToolResponse> => {
-  const { q, page, limit } = input;
+  const { q, page, limit, sort = "popular", ...filters } = input;
   const searchTerm = `%${q}%`;
 
-  const where = or(
+  const textMatch = or(
     ilike(tools.name, searchTerm),
     ilike(tools.description, searchTerm),
     sql<boolean>`EXISTS (SELECT 1 FROM unnest(${tools.tags}) AS tag WHERE tag ILIKE ${searchTerm})`
   );
+
+  const whereFilters = buildFilters(filters);
+  const where = whereFilters ? and(textMatch, whereFilters) : textMatch;
 
   const totalSelection = count(tools.id).as("total");
   const totalResult = await db
@@ -171,7 +172,7 @@ export const searchTools = async (
     .select()
     .from(tools)
     .where(where)
-    .orderBy(desc(tools.upvotes))
+    .orderBy(translateSort(sort))
     .limit(limit)
     .offset(offset);
 

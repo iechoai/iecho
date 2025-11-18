@@ -48,11 +48,48 @@ const ToolsFileSchema = z.object({
 });
 
 const jsonPath = path.resolve("data/tools.json");
-const rawData = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
+
+let fileContent: string;
+try {
+  fileContent = fs.readFileSync(jsonPath, "utf-8");
+} catch (error) {
+  console.error("❌ Error reading tools.json:", error);
+  process.exit(1);
+}
+
+const sanitizedContent = fileContent.replace(/^\uFEFF/, "");
+
+if (!sanitizedContent.trim()) {
+  console.error("❌ Error: tools.json is empty");
+  process.exit(1);
+}
+
+let rawData: unknown;
+try {
+  rawData = JSON.parse(sanitizedContent);
+} catch (error) {
+  if (error instanceof SyntaxError) {
+    // Helps pinpoint JSON issues like stray commas or encoding artifacts
+    console.error("❌ Error: tools.json contains invalid JSON");
+    console.error("Details:", error.message);
+    const preview = sanitizedContent.slice(0, 200).replace(/\s+/g, " ");
+    console.error("Preview:", preview);
+  } else {
+    console.error("❌ Unexpected error parsing tools.json:", error);
+  }
+  process.exit(1);
+}
+
+if (!rawData || typeof rawData !== "object") {
+  console.error("❌ Error: tools.json must export an object at the root level");
+  process.exit(1);
+}
+
+const toolsRoot = (rawData as { tools?: unknown }).tools;
 
 const normalizedInput = {
-  tools: Array.isArray(rawData.tools)
-    ? rawData.tools.map((tool: Record<string, unknown>) => {
+  tools: Array.isArray(toolsRoot)
+    ? toolsRoot.map((tool: Record<string, unknown>) => {
         const source =
           tool["categories"] ?? tool["category"];
 
@@ -100,7 +137,7 @@ const toolsWithUpvotes = normalizedTools.map((tool) => ({
   upvotes: 0,
 }));
 
-const fileContent = `export interface Tool {
+const toolsFileContent = `export interface Tool {
   id: string;
   name: string;
   description: string;
@@ -116,5 +153,5 @@ const fileContent = `export interface Tool {
 
 export const tools: Tool[] = ${JSON.stringify(toolsWithUpvotes, null, 2)};`;
 
-fs.writeFileSync(toolsTsPath, fileContent);
+fs.writeFileSync(toolsTsPath, toolsFileContent);
 console.log("✅ tools.ts updated successfully!");

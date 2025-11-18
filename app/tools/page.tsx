@@ -2,8 +2,14 @@ import { notFound } from "next/navigation";
 
 import { listTools, searchTools } from "../../lib/queries";
 import type { ToolListItem } from "../../lib/types";
-import { mapCategoryParamToUi, mapCategoryUiToParam } from "../../lib/tool-filters";
-import { toolListQuerySchema, toolSearchQuerySchema } from "../../lib/validation";
+import {
+  mapCategoryParamToUi,
+  mapCategoryUiToParam,
+} from "../../lib/tool-filters";
+import {
+  toolListQuerySchema,
+  toolSearchQuerySchema,
+} from "../../lib/validation";
 import { ToolsPageClient } from "../../components/tools/ToolsPageClient";
 
 const DEFAULT_LIST_LIMIT = 30;
@@ -40,22 +46,30 @@ interface ToolsPageProps {
 }
 
 export default async function ToolsPage({ searchParams }: ToolsPageProps) {
-  const q = normaliseQueryValue(searchParams.q);
-  const pageParam = normaliseQueryValue(searchParams.page);
-  const limitParam = normaliseQueryValue(searchParams.limit);
-  const rawCategory = normaliseQueryValue(searchParams.category);
+  const params = await searchParams;
+
+  const q = normaliseQueryValue(params?.q);
+  const pageParam = normaliseQueryValue(params?.page);
+  const limitParam = normaliseQueryValue(params?.limit);
+  const rawCategory = normaliseQueryValue(params?.category);
 
   const mappedCategory = rawCategory
     ? mapCategoryUiToParam(rawCategory)
     : undefined;
   const categoryParam =
-    mappedCategory ?? (rawCategory && rawCategory !== "all" ? rawCategory : undefined);
+    mappedCategory ??
+    (rawCategory && rawCategory !== "all" ? rawCategory : undefined);
 
   if (q) {
     const parsedSearch = toolSearchQuerySchema.safeParse({
       q,
       page: pageParam,
       limit: limitParam ?? String(DEFAULT_LIST_LIMIT),
+      category: categoryParam,
+      audience: normaliseQueryValue(params.audience),
+      tier: normaliseQueryValue(params.tier),
+      sort: normaliseQueryValue(params.sort),
+      popular: normaliseQueryValue(params.popular),
     });
 
     if (!parsedSearch.success) {
@@ -63,6 +77,11 @@ export default async function ToolsPage({ searchParams }: ToolsPageProps) {
     }
 
     const result = await searchTools(parsedSearch.data);
+    const { popular, category, audience, sort, tier } = parsedSearch.data;
+    const normalisedSort: "popular" | "name" | "new" = sort ?? "popular";
+    const normalisedAudience = audience ?? "all";
+    const normalisedPopular =
+      typeof popular === "boolean" ? String(popular) : undefined;
 
     return (
       <ToolsPageClient
@@ -74,11 +93,11 @@ export default async function ToolsPage({ searchParams }: ToolsPageProps) {
           limit: result.limit,
         }}
         filters={{
-          category: mapCategoryParamToUi(categoryParam),
-          audience: normaliseQueryValue(searchParams.audience) ?? "all",
-          sort: normaliseQueryValue(searchParams.sort) ?? "popular",
-          tier: normaliseQueryValue(searchParams.tier),
-          popular: normaliseQueryValue(searchParams.popular),
+          category: mapCategoryParamToUi(category),
+          audience: normalisedAudience,
+          sort: normalisedSort,
+          tier,
+          popular: normalisedPopular,
           search: q,
         }}
         mode="search"

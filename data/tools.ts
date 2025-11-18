@@ -16,7 +16,7 @@ export const tools: Tool[] = [
   {
     "id": "chatgpt",
     "name": "ChatGPT",
-    "description": "Advanced AI chatbot for conversations, writing, and problem-solving",
+    "description": "A large language model-based chatbot developed by OpenAI that allows users to have human-like conversations and so much more.",
     "tags": [
       "AI",
       "Free",
@@ -38,7 +38,7 @@ export const tools: Tool[] = [
   {
     "id": "google-gemini",
     "name": "Google Gemini",
-    "description": "Google's AI assistant for creative and analytical tasks",
+    "description": "Google Gemini is a personal AI assistant that helps with various tasks. It's a conversational AI developed by Google, accessible through a web interface.",
     "tags": [
       "AI",
       "Free",
@@ -60,7 +60,7 @@ export const tools: Tool[] = [
   {
     "id": "claude",
     "name": "Claude",
-    "description": "Anthropic's AI assistant for analysis and creative tasks",
+    "description": "Claude is a next-generation AI assistant by Anthropic, designed for problem-solvers. It helps with writing, coding, data analysis, and team collaboration, offering free and paid plans for individuals and enterprises.",
     "tags": [
       "AI",
       "Free",
@@ -165,7 +165,7 @@ export const tools: Tool[] = [
   {
     "id": "notion-ai",
     "name": "NotionAI",
-    "description": "All-in-one workspace with AI-powered writing and organization",
+    "description": "Notion is an AI-powered workspace that helps teams capture knowledge, manage projects, and automate tasks. It offers tools for docs, wikis, project management, and AI agents to streamline workflows.",
     "tags": [
       "AI",
       "Productivity",
@@ -271,7 +271,7 @@ export const tools: Tool[] = [
   {
     "id": "notebooklm",
     "name": "NotebookLM",
-    "description": "AI-powered research assistant that helps you understand complex topics",
+    "description": "NotebookLM is an AI-powered research and writing assistant that helps users synthesize information, ask questions, and generate content from their uploaded documents.",
     "tags": [
       "AI",
       "Education",
@@ -292,7 +292,7 @@ export const tools: Tool[] = [
   {
     "id": "anki",
     "name": "Anki",
-    "description": "Intelligent flashcards for effective memorization",
+    "description": "Anki is a powerful, intelligent flashcard program that uses spaced repetition to help users remember information more effectively. It offers synchronization, media support, customization, and add-ons.",
     "tags": [
       "Flashcards",
       "Free",
@@ -375,7 +375,7 @@ export const tools: Tool[] = [
   {
     "id": "google-tasks",
     "name": "Google Tasks",
-    "description": "Simple task management integrated with Google Workspace",
+    "description": "Google Tasks allows you to organize and track your to-dos. You can create, assign, and track tasks within Google Workspace apps. It includes features like reminders, subtasks, and recurring task options. Tasks with due dates automatically appear in your Google Calendar, and your tasks sync across all your devices.",
     "tags": [
       "Tasks",
       "Free",
@@ -397,7 +397,7 @@ export const tools: Tool[] = [
   {
     "id": "microsoft-todo",
     "name": "Microsoft To Do",
-    "description": "Smart task management app with collaboration features",
+    "description": "Microsoft To Do is a simple and intelligent to-do list that helps users manage tasks in one place. It offers features like 'My Day' for personalized suggestions, due dates, reminders, and the ability to break down larger tasks into steps. It integrates seamlessly with Outlook tasks and syncs across various devices.",
     "tags": [
       "Tasks",
       "Free",
@@ -419,7 +419,7 @@ export const tools: Tool[] = [
   {
     "id": "google-calendar",
     "name": "Google Calendar",
-    "description": "Organize your schedule and share events with others. Simple and effective.",
+    "description": "Google Calendar is a time-management and scheduling calendar service developed by Google, that allows you to create and edit events.",
     "tags": [
       "Productivity",
       "Free"
@@ -481,7 +481,7 @@ export const tools: Tool[] = [
   {
     "id": "zoho-bookings",
     "name": "Zoho Bookings",
-    "description": "Appointment scheduling software for small businesses.",
+    "description": "Zoho Bookings is an intuitive, AI-powered online appointment scheduling software that helps businesses and individuals manage meetings, reduce administrative tasks, and allow clients to self-schedule appointments.",
     "tags": [
       "Productivity",
       "Freemium"
@@ -499,7 +499,7 @@ export const tools: Tool[] = [
   {
     "id": "github",
     "name": "GitHub",
-    "description": "Code hosting platform with version control and collaboration",
+    "description": "GitHub is a developer platform that provides tools for version control, collaborative software development, and project management, integrating AI assistance, automation, and security features.",
     "tags": [
       "Git",
       "Free",
@@ -520,7 +520,7 @@ export const tools: Tool[] = [
   {
     "id": "vscode",
     "name": "VS Code",
-    "description": "Lightweight but powerful code editor with extensive extensions",
+    "description": "Visual Studio Code is a free, open-source code editor that supports numerous programming languages, offers AI-powered assistance, integrated debugging, version control, and extensive customization through extensions.",
     "tags": [
       "Editor",
       "Free",
@@ -541,7 +541,7 @@ export const tools: Tool[] = [
   {
     "id": "figma",
     "name": "Figma",
-    "description": "Collaborative design tool for UI/UX design and prototyping",
+    "description": "Figma is a collaborative platform that enables teams to brainstorm, design, prototype, and build digital products, offering integrated tools for UI/UX design, whiteboarding, and AI-powered code generation.",
     "tags": [
       "Design",
       "Free",
@@ -937,7 +937,7 @@ export const tools: Tool[] = [
   {
     "id": "postman",
     "name": "Postman",
-    "description": "An API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.",
+    "description": "An API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIsâ€”faster.",
     "tags": [
       "Developers",
       "Freemium"
@@ -978,7 +978,7 @@ export const tools: Tool[] = [
   {
     "id": "mdn",
     "name": "MDN Web Docs",
-    "description": "Comprehensive resource for web developers",
+    "description": "MDN Web Docs provides comprehensive documentation and learning resources for web technologies, including HTML, CSS, JavaScript, and Web APIs, aimed at developers.",
     "tags": [
       "Web",
       "Free",
@@ -999,7 +999,7 @@ export const tools: Tool[] = [
   {
     "id": "stackoverflow",
     "name": "Stack Overflow",
-    "description": "Q&A platform for programmers and developers",
+    "description": "Stack Overflow is a community-driven question-and-answer platform for developers to ask technical questions, share knowledge, and collaborate on programming challenges.",
     "tags": [
       "Q&A",
       "Free",
@@ -1062,7 +1062,7 @@ export const tools: Tool[] = [
   {
     "id": "freecodecamp",
     "name": "freeCodeCamp",
-    "description": "Learn to code with free online courses and projects",
+    "description": "freeCodeCamp is a non-profit organization offering a free, self-paced online curriculum and certifications in web development, programming, and data science through interactive lessons and projects.",
     "tags": [
       "Coding",
       "Free",
@@ -1084,7 +1084,7 @@ export const tools: Tool[] = [
   {
     "id": "coursera",
     "name": "Coursera",
-    "description": "Online courses from top universities and companies",
+    "description": "Coursera is an online learning platform that provides access to a wide range of courses, specializations, and degree programs from leading universities and companies, enabling individuals to acquire new skills and advance their careers.",
     "tags": [
       "Courses",
       "Paid",
@@ -1148,7 +1148,7 @@ export const tools: Tool[] = [
   {
     "id": "zapier",
     "name": "Zapier",
-    "description": "Automate workflows between different apps without coding",
+    "description": "Zapier is an online automation tool that connects various web applications to automate repetitive tasks and workflows, including AI-powered functionalities, without requiring coding.",
     "tags": [
       "Automation",
       "Integration"
@@ -1169,7 +1169,7 @@ export const tools: Tool[] = [
   {
     "id": "airtable",
     "name": "Airtable",
-    "description": "Spreadsheet-database hybrid with powerful organization features",
+    "description": "Airtable is an AI-powered, no-code platform that enables enterprises to build custom business applications, manage relational databases, automate workflows, and create custom interfaces for data visualization and collaboration.",
     "tags": [
       "Database",
       "Organization"
@@ -1501,7 +1501,7 @@ export const tools: Tool[] = [
   {
     "id": "unreal-engine",
     "name": "Unreal Engine",
-    "description": "The world’s most open and advanced real-time 3D creation tool for photorealistic visuals and immersive experiences.",
+    "description": "The worldâ€™s most open and advanced real-time 3D creation tool for photorealistic visuals and immersive experiences.",
     "tags": [
       "Game Dev",
       "3D",
@@ -1545,7 +1545,7 @@ export const tools: Tool[] = [
   {
     "id": "gamemaker-studio",
     "name": "GameMaker Studio",
-    "description": "The ultimate 2D game engine.",
+    "description": "GameMaker Studio is a comprehensive 2D game development engine that enables users of all skill levels to create games for multiple platforms, including PC, mobile, and consoles, using its integrated tools and scripting language.",
     "tags": [
       "Game Dev",
       "2D",
@@ -1566,7 +1566,7 @@ export const tools: Tool[] = [
   {
     "id": "blender",
     "name": "Blender",
-    "description": "A free and open source 3D creation suite. It supports the entirety of the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation.",
+    "description": "A free and open source 3D creation suite. It supports the entirety of the 3D pipelineâ€”modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation.",
     "tags": [
       "3D",
       "Animation",
@@ -1669,7 +1669,7 @@ export const tools: Tool[] = [
   {
     "id": "steam",
     "name": "Steam",
-    "description": "The ultimate destination for playing, discussing, and creating games.",
+    "description": "Steam is a digital distribution platform offering a vast library of video games across various genres, including new releases, top sellers, and free-to-play titles, alongside community features and hardware.",
     "tags": [
       "Gaming",
       "Community"
@@ -1687,7 +1687,7 @@ export const tools: Tool[] = [
   {
     "id": "gog",
     "name": "GOG",
-    "description": "A digital distribution platform for video games and films.",
+    "description": "GOG.com is a digital distribution platform offering a curated selection of DRM-free PC games, an optional gaming client, and a community for players.",
     "tags": [
       "Gaming",
       "DRM-Free"
@@ -1739,7 +1739,7 @@ export const tools: Tool[] = [
   {
     "id": "hydrogen",
     "name": "Hydrogen",
-    "description": "Shopify’s headless commerce framework for building custom storefronts.",
+    "description": "Shopifyâ€™s headless commerce framework for building custom storefronts.",
     "tags": [
       "Web Dev",
       "Free",
@@ -1760,7 +1760,7 @@ export const tools: Tool[] = [
   {
     "id": "react",
     "name": "React",
-    "description": "A JavaScript library for building user interfaces.",
+    "description": "React is a JavaScript library for building user interfaces from reusable components. It enables creation of interactive web and native applications, focusing on declarative UI development and efficient updates.",
     "tags": [
       "Web Dev",
       "Free",
@@ -1781,7 +1781,7 @@ export const tools: Tool[] = [
   {
     "id": "react-three-fiber",
     "name": "React Three Fiber",
-    "description": "A React renderer for Three.js.",
+    "description": "React Three Fiber is a React renderer for three.js, enabling declarative 3D scene creation with reusable components. It integrates three.js into React's ecosystem without performance overhead, supporting all three.js features.",
     "tags": [
       "Web Dev",
       "3D",
@@ -1803,7 +1803,7 @@ export const tools: Tool[] = [
   {
     "id": "gsap",
     "name": "GSAP",
-    "description": "A JavaScript animation library from GreenSock.",
+    "description": "GSAP is a professional-grade JavaScript animation library for the modern web, offering robust tools for fast, responsive animations, and various plugins for advanced features like scrolling, SVG, and UI.",
     "tags": [
       "Web Dev",
       "Animation",
@@ -1824,7 +1824,7 @@ export const tools: Tool[] = [
   {
     "id": "tailwind-css",
     "name": "Tailwind CSS",
-    "description": "A utility-first CSS framework for rapid UI development.",
+    "description": "Tailwind CSS is a utility-first CSS framework that generates styles by scanning HTML and JavaScript for class names, enabling rapid UI development.",
     "tags": [
       "Web Dev",
       "CSS",
@@ -1868,7 +1868,7 @@ export const tools: Tool[] = [
   {
     "id": "json",
     "name": "JSON",
-    "description": "A lightweight data-interchange format.",
+    "description": "JSON (JavaScript Object Notation) is a lightweight, language-independent data-interchange format. It's easy for humans to read and write, and for machines to parse and generate, based on JavaScript's object notation.",
     "tags": [
       "Web Dev",
       "Data",
@@ -1889,7 +1889,7 @@ export const tools: Tool[] = [
   {
     "id": "nextauth.js",
     "name": "NextAuth.js",
-    "description": "Authentication for Next.js.",
+    "description": "NextAuth.js provides authentication for Next.js applications, offering easy integration with popular services like Google and Facebook, supporting various databases, and ensuring secure web pages and API routes.",
     "tags": [
       "Web Dev",
       "Auth",
@@ -1911,7 +1911,7 @@ export const tools: Tool[] = [
   {
     "id": "tailwind-css-cheatsheet",
     "name": "Tailwind CSS Cheatsheet",
-    "description": "A quick reference for Tailwind CSS classes.",
+    "description": "This tool offers a comprehensive, interactive cheat sheet for Tailwind CSS, allowing users to quickly find utility classes and their corresponding CSS properties and values.",
     "tags": [
       "Web Dev",
       "CSS",
@@ -1932,7 +1932,7 @@ export const tools: Tool[] = [
   {
     "id": "gemini-api",
     "name": "Gemini API",
-    "description": "Google's API for their Gemini models.",
+    "description": "This page provides documentation for the Google Gemini API, offering tools and resources for developers to integrate AI capabilities like text, image, and video generation into their applications.",
     "tags": [
       "AI",
       "API",
@@ -1974,7 +1974,7 @@ export const tools: Tool[] = [
   {
     "id": "github-copilot-cheat-sheet",
     "name": "GitHub Copilot Cheat Sheet",
-    "description": "A quick reference for GitHub Copilot commands.",
+    "description": "A quick reference guide for using GitHub Copilot, with keyboard shortcuts and examples for Visual Studio Code, Neovim, and JetBrains IDEs.",
     "tags": [
       "AI",
       "Developers",
@@ -1995,7 +1995,7 @@ export const tools: Tool[] = [
   {
     "id": "prompts-ai",
     "name": "Prompts.ai",
-    "description": "A marketplace for AI prompts and prompt engineering tools.",
+    "description": "Prompts.ai is an enterprise-ready platform that unifies access to over 35 generative AI models, enabling users to orchestrate workflows, automate tasks, and manage AI usage with integrated security and cost optimization features.",
     "tags": [
       "AI",
       "Prompts",
@@ -2017,7 +2017,7 @@ export const tools: Tool[] = [
   {
     "id": "flowgpt",
     "name": "FlowGPT",
-    "description": "A platform for creating, sharing, and discovering AI prompts.",
+    "description": "FlowGPT is a platform offering a store of AI prompts and character roleplay scenarios, enabling users to explore and utilize various AI models for tasks ranging from creative writing to programming assistance.",
     "tags": [
       "AI",
       "Prompts",
@@ -2039,7 +2039,7 @@ export const tools: Tool[] = [
   {
     "id": "promptbase",
     "name": "PromptBase",
-    "description": "Buy and sell high-quality AI prompts for various use cases.",
+    "description": "PromptBase is an online marketplace where users can buy, sell, and discover high-quality AI prompts for various generative AI models, and hire prompt engineers for custom solutions.",
     "tags": [
       "AI",
       "Prompts",
@@ -2061,7 +2061,7 @@ export const tools: Tool[] = [
   {
     "id": "learnprompting",
     "name": "Learn Prompting",
-    "description": "An educational resource for learning prompt engineering techniques.",
+    "description": "Learn Prompting is an online platform that provides free and open-source courses and resources on AI and prompt engineering, teaching users how to effectively communicate with AI systems and master AI concepts.",
     "tags": [
       "AI",
       "Education",
@@ -2083,7 +2083,7 @@ export const tools: Tool[] = [
   {
     "id": "appwrite",
     "name": "Appwrite",
-    "description": "An open-source backend-as-a-service platform.",
+    "description": "Appwrite is an open-source backend platform that provides developers with a suite of APIs for authentication, databases, storage, functions, and real-time features to build and scale applications.",
     "tags": [
       "Web Dev",
       "Backend",
@@ -2105,7 +2105,7 @@ export const tools: Tool[] = [
   {
     "id": "prompt-engineering-guide",
     "name": "Prompt Engineering Guide",
-    "description": "A guide to prompt engineering.",
+    "description": "This tool provides a comprehensive guide to prompt engineering, covering fundamental concepts, advanced techniques, AI agent development, and practical applications for optimizing interactions with large language models.",
     "tags": [
       "AI",
       "Education",
@@ -2126,7 +2126,7 @@ export const tools: Tool[] = [
   {
     "id": "zod",
     "name": "Zod",
-    "description": "A TypeScript-first schema declaration and validation library.",
+    "description": "Zod is a TypeScript-first validation library for defining schemas to validate data, from simple strings to complex objects. It offers static type inference, zero dependencies, and a concise API.",
     "tags": [
       "Web Dev",
       "Library",
@@ -2148,7 +2148,7 @@ export const tools: Tool[] = [
   {
     "id": "@google/genai",
     "name": "@google/genai",
-    "description": "Google's generative AI SDK for Node.js.",
+    "description": "The `@google/genai` SDK enables TypeScript and JavaScript developers to build applications powered by Google's Gemini models, integrating with both the Gemini Developer API and Vertex AI for generative AI functionalities.",
     "tags": [
       "AI",
       "API",
@@ -2170,7 +2170,7 @@ export const tools: Tool[] = [
   {
     "id": "relay",
     "name": "Relay",
-    "description": "A JavaScript framework for building data-driven React applications.",
+    "description": "Relay is a GraphQL client designed for scalable, high-performance applications. It simplifies data-fetching, optimizes queries, ensures data consistency, and provides type safety for React components.",
     "tags": [
       "Web Dev",
       "Framework",
@@ -2192,7 +2192,7 @@ export const tools: Tool[] = [
   {
     "id": "css-shape",
     "name": "CSS Shape",
-    "description": "A tool for creating complex CSS shapes.",
+    "description": "This page offers a comprehensive collection of pure CSS shapes, crafted with single-element, modern CSS, and optimized code. It provides various shapes like hearts, stars, polygons, and more for web development.",
     "tags": [
       "Web Dev",
       "CSS",
@@ -2213,7 +2213,7 @@ export const tools: Tool[] = [
   {
     "id": "font-awesome",
     "name": "Font Awesome",
-    "description": "A huge library of icons.",
+    "description": "Font Awesome is a popular icon library and toolkit offering a vast collection of icons, styling tools, and web components for designers, developers, and content creators.",
     "tags": [
       "Web Dev",
       "Icons",
@@ -2234,7 +2234,7 @@ export const tools: Tool[] = [
   {
     "id": "get-waves",
     "name": "Get Waves",
-    "description": "Create SVG waves for your next design.",
+    "description": "Get Waves is a web app that creates unique SVG wave designs for your next project. It's now part of Haikei.app and offers a Figma plugin.",
     "tags": [
       "Web Dev",
       "SVG",
@@ -2255,7 +2255,7 @@ export const tools: Tool[] = [
   {
     "id": "coolors",
     "name": "Coolors",
-    "description": "Create a palette.",
+    "description": "Coolors is a super-fast color palette generator for designers. It helps create, explore, and extract color palettes from images, check contrast, and visualize colors on designs.",
     "tags": [
       "Web Dev",
       "Color",
@@ -2276,7 +2276,7 @@ export const tools: Tool[] = [
   {
     "id": "clippy",
     "name": "Clippy",
-    "description": "CSS clip-path maker.",
+    "description": "This page is a CSS `clip-path` maker tool by Bennett Feely, allowing users to create complex shapes for web elements using polygons, circles, ellipses, and insets, with options for rounded edges and animations.",
     "tags": [
       "Web Dev",
       "CSS",
@@ -2297,7 +2297,7 @@ export const tools: Tool[] = [
   {
     "id": "css-grid-generator",
     "name": "CSS Grid Generator",
-    "description": "A tool for generating CSS grids.",
+    "description": "This tool helps users visually create CSS Grid layouts by defining columns, rows, and gaps, then generates the corresponding CSS code.",
     "tags": [
       "Web Dev",
       "CSS",
@@ -2318,7 +2318,7 @@ export const tools: Tool[] = [
   {
     "id": "overapi.com",
     "name": "OverAPI.com",
-    "description": "A collection of cheat sheets for various technologies.",
+    "description": "OverAPI.com is a comprehensive online platform that aggregates and provides cheat sheets and quick reference guides for a wide array of programming languages, development frameworks, and technical tools.",
     "tags": [
       "Web Dev",
       "Free"
@@ -2338,7 +2338,7 @@ export const tools: Tool[] = [
   {
     "id": "leetcode",
     "name": "LeetCode",
-    "description": "A platform for practicing coding problems.",
+    "description": "LeetCode is an online platform providing over 4000 programming practice questions, a community, contests, and development tools to help users enhance coding skills and prepare for technical interviews.",
     "tags": [
       "Education",
       "Freemium"
@@ -2359,13 +2359,13 @@ export const tools: Tool[] = [
   {
     "id": "react-bits",
     "name": "React Bits",
-    "description": "Animated UI Components For React.",
+    "description": "A collection of animated, interactive UI components for React apps, focusing on motion, animation, and unique visual effects to enhance user experience.",
     "tags": [
       "Web Dev",
       "React",
       "Free"
     ],
-    "url": "https://react-bits.github.io/react-animated-components/",
+    "url": "https://reactbits.dev/",
     "icon": "RB",
     "audience": [
       "developers"
@@ -2380,7 +2380,7 @@ export const tools: Tool[] = [
   {
     "id": "fancy-border-radius-generator",
     "name": "Fancy Border Radius Generator",
-    "description": "A tool for creating fancy border radiuses.",
+    "description": "This tool generates complex CSS `border-radius` shapes, allowing users to create unique, organic-looking borders with full control over individual corner percentages.",
     "tags": [
       "Web Dev",
       "CSS",
@@ -2401,7 +2401,7 @@ export const tools: Tool[] = [
   {
     "id": "neumorphism/soft-ui-css-shadow-generator",
     "name": "Neumorphism/Soft UI CSS shadow generator",
-    "description": "A tool for generating Neumorphism/Soft UI CSS shadows.",
+    "description": "This page is a Neumorphism CSS shadow generator that helps create soft UI designs with an extruded plastic look using subtle contrasting shadows. It provides examples and code for various neumorphic elements.",
     "tags": [
       "Web Dev",
       "CSS",
@@ -2422,12 +2422,12 @@ export const tools: Tool[] = [
   {
     "id": "math-encrypt",
     "name": "Math Encrypt",
-    "description": "Convert Any Number to a Hard Math Equation.",
+    "description": "Transforms numbers into complicated math expressions for fun. Ideal for adding mystery to answers like age or Wi-Fi passwords, not for secure encryption.",
     "tags": [
       "Math",
       "Free"
     ],
-    "url": "https://www.mathencrypt.com/",
+    "url": "https://scientific.place/math-encrypt",
     "icon": "ME",
     "audience": [
       "students"
@@ -2442,7 +2442,7 @@ export const tools: Tool[] = [
   {
     "id": "free-online-certificate-maker",
     "name": "Free Online Certificate Maker",
-    "description": "A tool for creating certificates.",
+    "description": "Certificate Magic is a free online tool that allows users to create and print personalized certificates instantly using various templates.",
     "tags": [
       "Design",
       "Free"
@@ -2462,7 +2462,7 @@ export const tools: Tool[] = [
   {
     "id": "advanced-search-for-youtube",
     "name": "Advanced Search for YouTube",
-    "description": "An advanced search tool for YouTube.",
+    "description": "Filmot allows users to search within YouTube captions and subtitles across billions of videos and channels, supporting both automatic and manual subtitle searches.",
     "tags": [
       "Search",
       "Free"
@@ -2482,7 +2482,7 @@ export const tools: Tool[] = [
   {
     "id": "css-gradient-generator",
     "name": "CSS Gradient Generator",
-    "description": "A tool for generating CSS gradients.",
+    "description": "CSS Gradient is a free online tool that generates CSS code for linear and radial gradients, offering a user-friendly interface to create custom backgrounds. It also provides color shades, gradient swatches, examples, and a blog with tutorials.",
     "tags": [
       "Web Dev",
       "CSS",
@@ -2503,7 +2503,7 @@ export const tools: Tool[] = [
   {
     "id": "animista",
     "name": "Animista",
-    "description": "On-Demand CSS Animations Library.",
+    "description": "Animista is an on-demand CSS animation library that allows users to play with, tweak, and generate custom CSS animations for their projects. It offers a wide range of pre-made animations and customization options.",
     "tags": [
       "Web Dev",
       "CSS",
@@ -2524,7 +2524,7 @@ export const tools: Tool[] = [
   {
     "id": "mockoops",
     "name": "Mockoops",
-    "description": "A tool for creating mockups.",
+    "description": "A web-based tool for creating and designing mockups, with a focus on user interface and user experience design.",
     "tags": [
       "Design",
       "Freemium"
@@ -2544,7 +2544,7 @@ export const tools: Tool[] = [
   {
     "id": "linkvertise",
     "name": "Linkvertise",
-    "description": "Earn Money with Links | Monetization done right.",
+    "description": "Linkvertise is a platform that allows creators to monetize their digital content by sharing it through links, while users can access this content, often after engaging with advertisements or completing specific actions.",
     "tags": [
       "Monetization",
       "Freemium"
@@ -2562,7 +2562,7 @@ export const tools: Tool[] = [
   {
     "id": "front-end-mentors",
     "name": "Front-end mentors",
-    "description": "A platform for front-end developers to practice their skills.",
+    "description": "Frontend Mentor offers coding challenges with professional designs, automated feedback, and community support to help developers build portfolios and enhance their front-end and full-stack development skills.",
     "tags": [
       "Education",
       "Freemium"
@@ -2582,7 +2582,7 @@ export const tools: Tool[] = [
   {
     "id": "3dicons",
     "name": "3dicons",
-    "description": "Open source 3D icon library.",
+    "description": "3dicons offers a free and open-source library of over 1500 beautifully crafted 3D icons for personal and commercial projects, with no attribution required.",
     "tags": [
       "Design",
       "3D",
@@ -2604,7 +2604,7 @@ export const tools: Tool[] = [
   {
     "id": "programmable-search-engine",
     "name": "Programmable Search Engine",
-    "description": "A tool for creating a programmable search engine.",
+    "description": "The Google Programmable Search Engine allows you to add a customizable search box to your website, providing fast, relevant results powered by Google Search technology. You can choose what content it searches and how it looks, with options for free or ad-free experiences.",
     "tags": [
       "Search",
       "Free"
@@ -2622,9 +2622,9 @@ export const tools: Tool[] = [
     "upvotes": 0
   },
   {
-    "id": "datepicker-–-react-aria",
-    "name": "DatePicker – React Aria",
-    "description": "A date picker component for React.",
+    "id": "datepicker-â€“-react-aria",
+    "name": "DatePicker â€“ React Aria",
+    "description": "The React Aria DatePicker combines a date field and calendar popover for date and time selection. It offers extensive internationalization, accessibility, time zone awareness, and customizable validation, supporting various calendar systems and granularities.",
     "tags": [
       "Web Dev",
       "React",
@@ -2646,7 +2646,7 @@ export const tools: Tool[] = [
   {
     "id": "free-html-website-templates-on-htmlrev",
     "name": "Free HTML Website Templates on HTMLrev",
-    "description": "A collection of free HTML website templates.",
+    "description": "HTMLrev offers over 1900 free HTML, CSS, and framework-based templates for websites, landing pages, blogs, portfolios, e-commerce, and admin dashboards, supporting various technologies like Bootstrap, Tailwind, React, and Vue.",
     "tags": [
       "Web Dev",
       "HTML",
@@ -2667,7 +2667,7 @@ export const tools: Tool[] = [
   {
     "id": "mega",
     "name": "MEGA",
-    "description": "A cloud storage service.",
+    "description": "MEGA offers secure cloud storage, VPN, and password management with zero-knowledge encryption. It provides private file sharing, chat, and meetings for individuals and businesses.",
     "tags": [
       "Storage",
       "Freemium"
@@ -2685,13 +2685,13 @@ export const tools: Tool[] = [
   {
     "id": "tailwind-skeleton-generator",
     "name": "Tailwind Skeleton Generator",
-    "description": "A tool for generating Tailwind CSS skeletons.",
+    "description": "This online tool allows you to input HTML, and it will transform it into Tailwind CSS skeleton loaders. It's designed for quick and customizable generation of skeleton screens, including utilities like `animate-pulse` and `bg-gray-300`.",
     "tags": [
       "Web Dev",
       "CSS",
       "Free"
     ],
-    "url": "https://tailwindskeleton.com/",
+    "url": "https://www.skeletongenerator.tech/",
     "icon": "TSG",
     "audience": [
       "developers"
@@ -2706,13 +2706,13 @@ export const tools: Tool[] = [
   {
     "id": "flexbox-labs",
     "name": "Flexbox Labs",
-    "description": "A tool for learning and experimenting with CSS Flexbox.",
+    "description": "A visual tool for creating and experimenting with CSS Flexbox layouts. Features real-time previews, customizable flex properties, and code export.",
     "tags": [
       "Web Dev",
       "CSS",
       "Free"
     ],
-    "url": "https://flexboxlabs.com/",
+    "url": "https://flexboxlabs.netlify.app/",
     "icon": "FL",
     "audience": [
       "developers"
@@ -2727,13 +2727,13 @@ export const tools: Tool[] = [
   {
     "id": "supahero",
     "name": "Supahero",
-    "description": "Website hero section library.",
+    "description": "A curated library of stunning website hero sections for web designers and developers, providing inspiration and ready-to-use designs.",
     "tags": [
       "Web Dev",
       "Design",
       "Free"
     ],
-    "url": "https://supahero.dev/",
+    "url": "https://supahero.io",
     "icon": "S",
     "audience": [
       "developers"
@@ -2748,7 +2748,7 @@ export const tools: Tool[] = [
   {
     "id": "shadcn-editor",
     "name": "Shadcn Editor",
-    "description": "A WYSIWYG editor for shadcn/ui.",
+    "description": "shadcn/editor is an open-source, accessible, and customizable rich text editor built with Lexical and Shadcn/UI, designed for crafting rich text editing experiences.",
     "tags": [
       "Web Dev",
       "React",
@@ -2770,7 +2770,7 @@ export const tools: Tool[] = [
   {
     "id": "is-it-down?",
     "name": "Is it down?",
-    "description": "Check if a website is down.",
+    "description": "IsItDownRightNow.com checks if a website is down for everyone or just you, providing real-time status updates for various popular sites.",
     "tags": [
       "Web Dev",
       "Free"
@@ -2788,7 +2788,7 @@ export const tools: Tool[] = [
   {
     "id": "regex-learn",
     "name": "Regex Learn",
-    "description": "A tool for learning and testing regular expressions.",
+    "description": "RegexLearn is an online platform providing step-by-step tutorials, a cheatsheet, and a playground for learning, practicing, and testing regular expressions.",
     "tags": [
       "Web Dev",
       "Regex",
@@ -2809,7 +2809,7 @@ export const tools: Tool[] = [
   {
     "id": "spinners-rippleui",
     "name": "Spinners RippleUI",
-    "description": "A collection of spinners for Tailwind CSS.",
+    "description": "A collection of loading spinner components for Tailwind CSS, designed to be easily integrated into web projects for indicating loading states.",
     "tags": [
       "Web Dev",
       "CSS",
@@ -2830,7 +2830,7 @@ export const tools: Tool[] = [
   {
     "id": "markmap",
     "name": "markmap",
-    "description": "A tool for creating markmaps.",
+    "description": "Markmap is a tool that transforms Markdown text into interactive and visually organized mindmaps.",
     "tags": [
       "Web Dev",
       "Markdown",
@@ -2851,7 +2851,7 @@ export const tools: Tool[] = [
   {
     "id": "heroui",
     "name": "HeroUI",
-    "description": "A React UI library.",
+    "description": "HeroUI is a comprehensive platform offering web development solutions, tutorials, and consulting services, alongside an ecosystem of AI and robotics tools.",
     "tags": [
       "Web Dev",
       "React",
@@ -2873,7 +2873,7 @@ export const tools: Tool[] = [
   {
     "id": "animations-css-generator-|-web-code-tools",
     "name": "Animations CSS Generator | Web Code Tools",
-    "description": "A tool for generating CSS animations.",
+    "description": "This tool generates customizable CSS keyframe animations, allowing users to define properties such as name, duration, timing function, delay, iteration count, direction, and fill mode, and provides the corresponding CSS code.",
     "tags": [
       "Web Dev",
       "CSS",
@@ -2894,7 +2894,7 @@ export const tools: Tool[] = [
   {
     "id": "ngrok",
     "name": "ngrok",
-    "description": "The documentation for ngrok.",
+    "description": "ngrok is a globally distributed reverse proxy that creates secure, public URLs for local development servers and production services, offering features like API gateway, load balancing, and remote access.",
     "tags": [
       "Web Dev",
       "API",
@@ -2915,7 +2915,7 @@ export const tools: Tool[] = [
   {
     "id": "svgl",
     "name": "Svgl",
-    "description": "A library of SVG logos.",
+    "description": "Svgl is a comprehensive library offering a wide array of categorized SVG logos, each linked to its product, with options for submission and API access.",
     "tags": [
       "Web Dev",
       "SVG",
@@ -2957,7 +2957,7 @@ export const tools: Tool[] = [
   {
     "id": "send.now",
     "name": "send.now",
-    "description": "A tool for sending files.",
+    "description": "A secure and private file-sharing service that allows users to send files directly to others without storing them on a server.",
     "tags": [
       "File Sharing",
       "Free"
@@ -2975,7 +2975,7 @@ export const tools: Tool[] = [
   {
     "id": "algorithm-visualizer",
     "name": "Algorithm Visualizer",
-    "description": "A tool for visualizing algorithms.",
+    "description": "Algorithm Visualizer is an interactive online platform that visualizes algorithms from code in multiple programming languages and offers learning resources to enhance understanding.",
     "tags": [
       "Education",
       "Free"
@@ -2996,7 +2996,7 @@ export const tools: Tool[] = [
   {
     "id": "neon-console",
     "name": "Neon Console",
-    "description": "The console for Neon.",
+    "description": "A cloud-native Postgres platform that offers a serverless database with branching, autoscaling, and bottomless storage, designed for developers.",
     "tags": [
       "Database",
       "Free"
@@ -3016,7 +3016,7 @@ export const tools: Tool[] = [
   {
     "id": "excalidraw-whiteboard",
     "name": "Excalidraw Whiteboard",
-    "description": "A virtual whiteboard for sketching hand-drawn like diagrams.",
+    "description": "Excalidraw is a virtual whiteboard tool for creating diagrams and sketches with real-time collaboration and local data storage.",
     "tags": [
       "Design",
       "Free",
@@ -3102,7 +3102,7 @@ export const tools: Tool[] = [
   {
     "id": "google-ai-essentials",
     "name": "Google AI Essentials",
-    "description": "A beginner-friendly course on AI fundamentals.",
+    "description": "Google AI Essentials is a free online course that provides foundational knowledge of artificial intelligence, covering its principles, applications, and ethical considerations for everyday understanding and practical use.",
     "tags": [
       "AI",
       "Education",
@@ -3123,7 +3123,7 @@ export const tools: Tool[] = [
   {
     "id": "google-career-certificates-with-ai-training",
     "name": "Google Career Certificates with AI Training",
-    "description": "In-depth and job-focused certificates with AI training.",
+    "description": "This tool provides Google Career Certificates focused on developing job-ready skills in artificial intelligence, including AI Essentials and Prompting Essentials.",
     "tags": [
       "AI",
       "Career",
@@ -3145,7 +3145,7 @@ export const tools: Tool[] = [
   {
     "id": "google-cloud-skills-boost",
     "name": "Google Cloud Skills Boost",
-    "description": "A platform with a wide range of AI courses.",
+    "description": "Google Cloud Skills Boost is an online learning platform offering courses, skill badges, and certifications in Google Cloud technologies, with a focus on AI, Machine Learning, and Generative AI.",
     "tags": [
       "AI",
       "Cloud",
@@ -3166,7 +3166,7 @@ export const tools: Tool[] = [
   {
     "id": "career-dreamer",
     "name": "Career Dreamer",
-    "description": "An AI-powered tool for career exploration.",
+    "description": "Career Dreamer is an AI-powered tool that helps users identify their transferable skills, explore potential career paths based on labor market data, and generate career-related documents like identity statements and cover letters.",
     "tags": [
       "AI",
       "Career",
@@ -3187,7 +3187,7 @@ export const tools: Tool[] = [
   {
     "id": "ai-literacy-hub",
     "name": "AI Literacy Hub",
-    "description": "Resources for parents, students, and educators.",
+    "description": "AI Literacy Hub offers educational content and practical tools to foster understanding, application, and critical engagement with artificial intelligence concepts and technologies.",
     "tags": [
       "AI",
       "Education",
@@ -3313,7 +3313,7 @@ export const tools: Tool[] = [
   {
     "id": "ai-102:-designing-and-implementing-a-microsoft-azure-ai-solution",
     "name": "AI-102: Designing and Implementing a Microsoft Azure AI Solution",
-    "description": "A deep dive into Azure AI capabilities.",
+    "description": "This course provides training for software developers and AI engineers on designing and implementing AI solutions in Azure, including generative AI, AI agents, computer vision, and information extraction.",
     "tags": [
       "AI",
       "Cloud",
@@ -3334,7 +3334,7 @@ export const tools: Tool[] = [
   {
     "id": "meta-ai-residency-program",
     "name": "Meta AI Residency Program",
-    "description": "A one-year research training position at Meta.",
+    "description": "A one-year research training program at Meta designed for individuals with a strong technical background to transition into AI research roles.",
     "tags": [
       "AI",
       "Career",
@@ -3355,7 +3355,7 @@ export const tools: Tool[] = [
   {
     "id": "meta-blueprint---ai-learning-alliance-(aila)",
     "name": "Meta Blueprint - AI Learning Alliance (AILA)",
-    "description": "eLearning AI courses and more from Meta.",
+    "description": "Meta Blueprint's AI Learning Alliance (AILA) provides a comprehensive suite of eLearning courses and resources to help individuals and businesses understand and leverage AI technologies.",
     "tags": [
       "AI",
       "Education",
@@ -3398,7 +3398,7 @@ export const tools: Tool[] = [
   {
     "id": "ai-ready",
     "name": "AI Ready",
-    "description": "A program from Amazon to provide free AI skills training.",
+    "description": "A program from Amazon that provides free artificial intelligence skills training to individuals, aiming to equip them with the knowledge and tools necessary for AI-related careers.",
     "tags": [
       "AI",
       "Education",

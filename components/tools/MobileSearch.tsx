@@ -19,12 +19,12 @@ interface MobileSearchProps {
 }
 
 const getDomain = (url: string) => {
-  try{
+  try {
     return new URL(url).hostname;
   } catch {
     return "";
   }
-  
+};
 export function MobileSearch({
   isOpen,
   onOpenChange,
@@ -42,8 +42,6 @@ export function MobileSearch({
         category.toLowerCase().includes(normalizedQuery)
       )
   );
-
-  
 
   return (
     <Sheet open={isOpen} onOpenChange={onOpenChange}>
@@ -70,36 +68,49 @@ export function MobileSearch({
               {filteredTools.length} results found
             </p>
             <div className="space-y-2">
-              {filteredTools.slice(0, 5).map((tool) => (
-                <button
-                  key={tool.id}
-                  onClick={() => {
-                    onToolSelect(tool);
-                    onOpenChange(false);
-                  }}
-                  className="w-full text-left p-3 rounded-lg border border-gray-200 dark:border-border hover:bg-gray-50 dark:hover:bg-muted/50 transition-colors"
-                >
-                  <div className="flex items-start gap-3">
-                    {tool.icon ? (
-                      <div className="w-10 h-10 bg-gradient-to-br from-[#0F5F6A] to-[#0F5F6A]/90 dark:from-primary dark:to-primary/90 rounded-lg flex items-center justify-center text-white dark:text-primary-foreground text-xs font-medium shadow-md shadow-[#0F5F6A]/20 dark:shadow-primary/20 flex-shrink-0">
-                        {tool.icon}
+              {filteredTools.slice(0, 5).map((tool) => {
+                const domain = getDomain(tool.url);
+                return (
+                  <button
+                    key={tool.id}
+                    onClick={() => {
+                      onToolSelect(tool);
+                      onOpenChange(false);
+                    }}
+                    className="w-full text-left p-3 rounded-lg border border-gray-200 dark:border-border hover:bg-gray-50 dark:hover:bg-muted/50 transition-colors"
+                  >
+                    <div className="flex items-start gap-3">
+                      {tool.url ? (
+                        <div className="w-10 h-10  dark:from-primary dark:to-primary/90 rounded-lg flex items-center justify-center text-white dark:text-primary-foreground text-xs font-medium shadow-md shadow-[#0F5F6A]/20 dark:shadow-primary/20 flex-shrink-0">
+                          <img
+                            src={`https://www.google.com/s2/favicons?sz=64&domain_url=${domain}`}
+                            alt={`${tool.name} logo`}
+                            className="w-10 h-10 rounded-lg object-contain"
+                            onError={(e) => {
+                              // Show fallback icon when favicon fails to load
+                              console.log(
+                                "Favicon load error, using fallback icon."
+                              );
+                            }}
+                          />
+                        </div>
+                      ) : (
+                        <div className="w-10 h-10 bg-gradient-to-br from-gray-400 to-gray-500 dark:from-muted dark:to-muted/80 rounded-lg flex items-center justify-center text-white dark:text-muted-foreground text-xs font-medium shadow-md flex-shrink-0">
+                          {tool.name.charAt(0)}
+                        </div>
+                      )}
+                      <div className="flex-1 min-w-0">
+                        <h4 className="font-medium text-sm text-gray-900 dark:text-foreground truncate">
+                          {tool.name}
+                        </h4>
+                        <p className="text-xs text-gray-600 dark:text-muted-foreground line-clamp-2">
+                          {tool.description}
+                        </p>
                       </div>
-                    ) : (
-                      <div className="w-10 h-10 bg-gradient-to-br from-gray-400 to-gray-500 dark:from-muted dark:to-muted/80 rounded-lg flex items-center justify-center text-white dark:text-muted-foreground text-xs font-medium shadow-md flex-shrink-0">
-                        {tool.name.charAt(0)}
-                      </div>
-                    )}
-                    <div className="flex-1 min-w-0">
-                      <h4 className="font-medium text-sm text-gray-900 dark:text-foreground truncate">
-                        {tool.name}
-                      </h4>
-                      <p className="text-xs text-gray-600 dark:text-muted-foreground line-clamp-2">
-                        {tool.description}
-                      </p>
                     </div>
-                  </div>
-                </button>
-              ))}
+                  </button>
+                );
+              })}
             </div>
           </div>
         )}

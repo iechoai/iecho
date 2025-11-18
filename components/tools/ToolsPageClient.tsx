@@ -87,6 +87,7 @@ export function ToolsPageClient({
   const [isLoadingMore, setIsLoadingMore] = useState(false);
   const [isLoadError, setIsLoadError] = useState<string | null>(null);
   const [isPendingNavigation, startTransition] = useTransition();
+  const [isRefreshing, setIsRefreshing] = useState(false);
 
   const hasInitialisedSearch = useRef(false);
 
@@ -97,6 +98,9 @@ export function ToolsPageClient({
     setFilterState(filters);
     setSearchDraft(filters.search);
     setSelectedTool(null);
+    setIsRefreshing(false);
+    setIsLoadingMore(false);
+    setIsLoadError(null);
   }, [initialTools, pagination, filters]);
 
   // Show first-time keyboard hint
@@ -143,7 +147,11 @@ export function ToolsPageClient({
   }, [filterState.search, mode]);
 
   const totalLoaded = tools.length;
-  const hasMore = paginationState.page < paginationState.totalPages;
+  const hasMore =
+    !isRefreshing && paginationState.page < paginationState.totalPages;
+  const isGridLoading =
+    isRefreshing ||
+    (tools.length === 0 && (isPendingNavigation || isLoadingMore));
 
   const updateUrl = (nextFilters: FilterState, nextPage: number) => {
     const params = new URLSearchParams(searchParams?.toString() ?? "");
@@ -191,15 +199,51 @@ export function ToolsPageClient({
     });
   };
 
+  // Prepare shared filter query parameters for load-more and search API calls.
+  const appendFilterParams = (params: URLSearchParams) => {
+    const categoryFilter = mapCategoryUiToParam(filterState.category);
+    if (categoryFilter) {
+      params.set("category", categoryFilter);
+    } else if (filterState.category && filterState.category !== "all") {
+      params.set("category", filterState.category);
+    }
+
+    if (filterState.audience && filterState.audience !== "all") {
+      params.set("audience", filterState.audience);
+    }
+
+    if (filterState.tier) {
+      params.set("tier", filterState.tier);
+    }
+
+    if (filterState.sort && filterState.sort !== "popular") {
+      params.set("sort", filterState.sort);
+    }
+
+    if (filterState.popular) {
+      params.set("popular", filterState.popular);
+    }
+  };
+
   const applyFilters = (
     nextFilters: FilterState,
     options: { resetPage?: boolean } = {}
   ) => {
+    const shouldReset = Boolean(options.resetPage);
     setFilterState(nextFilters);
-    const nextPage = options.resetPage ? 1 : paginationState.page;
-    if (options.resetPage) {
-      setPaginationState((prev) => ({ ...prev, page: 1 }));
+
+    if (shouldReset) {
+      setIsRefreshing(true);
+      setIsLoadError(null);
+      setTools([]);
+      setPaginationState((prev) => ({
+        page: 1,
+        limit: prev.limit,
+        total: 0,
+        totalPages: 1,
+      }));
     }
+    const nextPage = shouldReset ? 1 : paginationState.page;
     updateUrl(nextFilters, nextPage);
   };
 
@@ -227,7 +271,7 @@ export function ToolsPageClient({
   };
 
   const loadMoreTools = async () => {
-    if (isLoadingMore || !hasMore) {
+    if (isLoadingMore || !hasMore || isRefreshing) {
       return;
     }
 
@@ -242,24 +286,9 @@ export function ToolsPageClient({
     const endpoint =
       derivedMode === "search" ? "/api/tools/search" : "/api/tools";
 
-    if (derivedMode === "browse") {
-      const categoryFilter = mapCategoryUiToParam(filterState.category);
-      if (categoryFilter) {
-        params.set("category", categoryFilter);
-      }
-      if (filterState.audience && filterState.audience !== "all") {
-        params.set("audience", filterState.audience);
-      }
-      if (filterState.tier) {
-        params.set("tier", filterState.tier);
-      }
-      if (filterState.sort && filterState.sort !== "popular") {
-        params.set("sort", filterState.sort);
-      }
-      if (filterState.popular) {
-        params.set("popular", filterState.popular);
-      }
-    } else {
+    appendFilterParams(params);
+
+    if (derivedMode === "search") {
       params.set("q", filterState.search.trim());
     }
 
@@ -389,7 +418,12 @@ export function ToolsPageClient({
               totalTools={paginationState.total}
             />
 
-            <ToolsGrid tools={tools} onToolPreview={handleToolPreview} />
+            <ToolsGrid
+              tools={tools}
+              onToolPreview={handleToolPreview}
+              isLoading={isGridLoading}
+              skeletonCount={Math.max(paginationState.limit, 6)}
+            />
 
             {isLoadError && (
               <p className="mt-4 text-sm text-red-600 dark:text-red-400">

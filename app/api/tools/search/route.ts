@@ -7,7 +7,7 @@
  * Query parameters:
  * - q: string, required, min 1 character
  * - page: integer, default 1
- * - limit: integer, default 10, max 50
+ * - limit: integer, default 30, max 50
  *
  * Response:
  * - 200: { data: Tool[], meta: { page, limit, total, totalPages } }
@@ -38,9 +38,7 @@ export async function GET(request: NextRequest) {
     return withError(errorMessage);
   }
 
-  const { q: queryString, page, limit } = parsed.data;
-  // Await the Drizzle-backed search helper so we always return database-driven results.
-  const result = await searchTools({ q: queryString, page, limit });
+  const result = await searchTools(parsed.data);
 
   return NextResponse.json({
     data: result.items,

@@ -39,9 +39,7 @@ const mapBooleanLike = (value: string | boolean | undefined) => {
  * Supports filtering by category, audience, tier, and popularity.
  * Supports sorting by popular (upvotes), name, or new.
  */
-export const toolListQuerySchema = z.object({
-  page: z.coerce.number().int().min(1).default(1),
-  limit: z.coerce.number().int().min(1).max(100).default(20),
+const sharedFilterFields = {
   category: z.string().trim().min(1).optional(),
   audience: z.string().trim().min(1).optional(),
   tier: z.enum(["free", "freemium", "paid"]).optional(),
@@ -50,6 +48,12 @@ export const toolListQuerySchema = z.object({
     .union([z.string(), z.boolean()])
     .optional()
     .transform(mapBooleanLike),
+} as const;
+
+export const toolListQuerySchema = z.object({
+  page: z.coerce.number().int().min(1).default(1),
+  limit: z.coerce.number().int().min(1).max(100).default(20),
+  ...sharedFilterFields,
 });
 
 /**
@@ -60,7 +64,8 @@ export const toolSearchQuerySchema = z
   .object({
     q: z.string().trim().min(1, "Query must be at least one character"),
     page: z.coerce.number().int().min(1).default(1),
-    limit: z.coerce.number().int().min(1).max(50).default(10),
+    limit: z.coerce.number().int().min(1).max(50).default(30),
+    ...sharedFilterFields,
   })
   .strict();
 
