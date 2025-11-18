@@ -1,0 +1,62 @@
+import Redis from "ioredis";
+
+import { env } from "~/env";
+
+let redisClient: Redis | null = null;
+let redisInitialised = false;
+let redisAvailable = true;
+let loggedError = false;
+
+const logRedisError = (error: unknown) => {
+  if (loggedError) {
+    return;
+  }
+
+  loggedError = true;
+  console.warn(
+    "Redis is unavailable; falling back to in-memory rate limiting.",
+    error
+  );
+};
+
+const initialiseRedisClient = () => {
+  if (redisInitialised) {
+    return;
+  }
+
+  if (!env.REDIS_URL) {
+    redisAvailable = false;
+    redisInitialised = true;
+    return;
+  }
+
+  redisClient = new Redis(env.REDIS_URL, {
+    maxRetriesPerRequest: 2,
+    enableReadyCheck: true,
+  });
+
+  redisClient.on("error", (error) => {
+    redisAvailable = false;
+    logRedisError(error);
+  });
+
+  redisClient.on("close", () => {
+    redisAvailable = false;
+  });
+
+  redisClient.on("ready", () => {
+    redisAvailable = true;
+  });
+
+  redisInitialised = true;
+};
+
+export const getRedisClient = (): Redis | null => {
+  initialiseRedisClient();
+
+  if (!redisAvailable || !redisClient) {
+    return null;
+  }
+
+  return redisClient;
+};

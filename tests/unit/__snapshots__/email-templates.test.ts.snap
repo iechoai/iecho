@@ -1,0 +1,233 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`email templates > renders the contact notification email with multi-line message 1`] = `
+"<html lang="en"><head><meta charSet="utf-8"/><title>New contact request</title><style>
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    background: #0b0e12;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #e2e8f0;
+  }
+
+  table {
+    border-collapse: separate;
+  }
+
+  .wrapper {
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .card {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 620px;
+    background: #151a24;
+    border-radius: 16px;
+    border: 1px solid rgba(182, 255, 61, 0.25);
+    box-shadow: 0 24px 80px rgba(3, 7, 18, 0.55);
+    overflow: hidden;
+  }
+
+  .intro {
+    padding: 36px 42px 20px;
+    text-align: left;
+  }
+
+  .eyebrow {
+    margin: 0 0 10px;
+    color: #b6ff3d;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+  }
+
+  .title {
+    margin: 0 0 18px;
+    font-size: 28px;
+    line-height: 1.25;
+    color: #f8fafc;
+  }
+
+  .intro-copy {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #cbd5f5;
+  }
+
+  .details {
+    padding: 0 42px 32px;
+  }
+
+  .details-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  .details-cell {
+    padding: 18px 20px;
+    text-align: left;
+    background: transparent;
+  }
+
+  .details-cell--highlight {
+    background: rgba(148, 163, 184, 0.08);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+  }
+
+  .details-cell--footer {
+    border-top: 1px solid rgba(148, 163, 184, 0.25);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding-bottom: 22px;
+  }
+
+  .details-label {
+    display: block;
+    font-weight: 600;
+    color: #f1f5f9;
+    font-size: 14px;
+  }
+
+  .details-value {
+    margin: 8px 0 0;
+    color: #cbd5f5;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .mail-link {
+    color: #b6ff3d;
+    text-decoration: none;
+  }
+
+  .message-body {
+    margin: 10px 0 0;
+    color: #e2e8f0;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre-line;
+  }
+
+  .footer-note {
+    margin: 20px 0 0;
+    font-size: 12px;
+    color: #64748b;
+  }
+</style></head><body><div class="wrapper"><table role="presentation" cellPadding="0" cellSpacing="0" class="card"><tbody><tr><td class="intro"><p class="eyebrow">New contact request</p><h1 class="title">Jordan just reached out via Iecho</h1><p class="intro-copy">Take a moment to review their note and follow up directly from your inbox. Replying to this email will CC the sender automatically.</p></td></tr><tr><td class="details"><table role="presentation" cellPadding="0" cellSpacing="0" class="details-table"><tbody><tr><td class="details-cell details-cell--highlight"><span class="details-label">Sender</span><p class="details-value">Jordan<br/><a class="mail-link" href="mailto:jordan@example.com">jordan@example.com</a></p></td></tr><tr><td class="details-cell"><span class="details-label">Submitted</span><p class="details-value">Wed, 01 Jan 2025 12:34:56 GMT</p></td></tr><tr><td class="details-cell details-cell--footer"><span class="details-label">Message</span><p class="message-body">Hello team!
+Looking forward to collaborating.</p></td></tr></tbody></table></td></tr></tbody></table><p class="footer-note">You received this email because contact notifications are enabled in Iecho.</p></div></body></html>"
+`;
+
+exports[`email templates > renders the welcome email with a provided name 1`] = `
+"<html lang="en"><head><meta charSet="utf-8"/><title>Welcome to Iecho</title><style>
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    background: #0f1115;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #e2e8f0;
+  }
+
+  table {
+    border-collapse: separate;
+  }
+
+  .wrapper {
+    width: 100%;
+    padding: 48px 0;
+    text-align: center;
+  }
+
+  .card {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    background: #121722;
+    border-radius: 18px;
+    border: 1px solid rgba(182, 255, 61, 0.18);
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+  }
+
+  .section {
+    padding: 48px 48px 24px;
+    text-align: left;
+  }
+
+  .eyebrow {
+    margin: 0 0 12px;
+    color: #b6ff3d;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .title {
+    margin: 0 0 16px;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #f8fafc;
+  }
+
+  .copy {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cbd5f5;
+  }
+
+  .cta-row {
+    padding: 0 48px 40px;
+    text-align: center;
+  }
+
+  .cta-link {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #b6ff3d;
+    border-radius: 999px;
+    color: #101828;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .signoff {
+    padding: 0 48px 48px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #94a3b8;
+    text-align: left;
+  }
+
+  .signoff p {
+    margin: 0;
+  }
+
+  .signoff p + p {
+    margin-top: 16px;
+  }
+
+  .signature {
+    color: #b6ff3d;
+  }
+
+  .footer {
+    margin: 24px 0 0;
+    font-size: 12px;
+    color: #64748b;
+  }
+</style></head><body><div class="wrapper"><table role="presentation" cellPadding="0" cellSpacing="0" class="card"><tbody><tr><td class="section"><p class="eyebrow">Welcome to Iecho</p><h1 class="title">Hi Alex, we are glad you are here!</h1><p class="copy">You now have access to a curated hub of AI tools, workflows, and resources designed to help you study smarter and build faster. Save your favourites, track updates, and discover new ideas every week.</p></td></tr><tr><td class="cta-row"><a class="cta-link" href="https://iecho.app/tools">Explore the library</a></td></tr><tr><td class="signoff"><p>Need help getting started? Reply to this email and the Iecho team will point you to the right playbooks.</p><p>Stay curious,<br/><span class="signature">The Iecho Crew</span></p></td></tr></tbody></table><p class="footer">You are receiving this email because you joined Iecho. If this was not you, you can safely ignore it.</p></div></body></html>"
+`;

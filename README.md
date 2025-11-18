@@ -27,6 +27,7 @@
 - **Node.js** 18.x or higher
 - **pnpm** 10.x (recommended) or npm
 - **PostgreSQL** 14+ (Neon, Railway, or local instance)
+- **Redis** (optional; enables distributed rate limiting in production)
 
 ### Installation
 
@@ -83,14 +84,15 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 ## 📦 Scripts
 
-| Command | Description |
-|---------|-------------|
-| `pnpm dev` | Start development server |
-| `pnpm build` | Build for production |
-| `pnpm test:smoke` | Run API smoke tests |
-| `pnpm db:migrate` | Apply migrations |
-| `pnpm db:seed` | Sync tools from JSON |
-| `pnpm db:studio` | Open database GUI |
+| Command           | Description              |
+| ----------------- | ------------------------ |
+| `pnpm dev`        | Start development server |
+| `pnpm build`      | Build for production     |
+| `pnpm test:smoke` | Run API smoke tests      |
+| `pnpm test:unit`  | Run Vitest snapshot tests for email templates |
+| `pnpm db:migrate` | Apply migrations         |
+| `pnpm db:seed`    | Sync tools from JSON     |
+| `pnpm db:studio`  | Open database GUI        |
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 

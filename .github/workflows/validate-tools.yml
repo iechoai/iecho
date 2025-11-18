@@ -1,0 +1,20 @@
+name: Validate Tools
+
+on:
+  pull_request:
+    paths:
+      - "data/tools.json"
+  push:
+    paths:
+      - "data/tools.json"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - run: pnpm install
+      - run: pnpm validate-tools
