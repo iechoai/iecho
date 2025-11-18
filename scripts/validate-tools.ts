@@ -29,11 +29,7 @@ const ToolSchema = RawToolSchema.superRefine((tool, ctx) => {
   }
 }).transform(({ categories, isPopular, ...rest }) => {
   const normalizedCategories = Array.from(
-    new Set(
-      categories
-        .map((value) => value.trim())
-        .filter(Boolean)
-    )
+    new Set(categories.map((value) => value.trim()).filter(Boolean))
   );
 
   return {
@@ -90,8 +86,7 @@ const toolsRoot = (rawData as { tools?: unknown }).tools;
 const normalizedInput = {
   tools: Array.isArray(toolsRoot)
     ? toolsRoot.map((tool: Record<string, unknown>) => {
-        const source =
-          tool["categories"] ?? tool["category"];
+        const source = tool["categories"] ?? tool["category"];
 
         const categoriesArray = Array.isArray(source)
           ? source
@@ -124,10 +119,7 @@ console.log("✅ JSON validated successfully!");
 
 const normalizedTools = result.data.tools;
 
-fs.writeFileSync(
-  jsonPath,
-  JSON.stringify({ tools: normalizedTools }, null, 2)
-);
+fs.writeFileSync(jsonPath, JSON.stringify({ tools: normalizedTools }, null, 2));
 console.log("✅ tools.json normalized successfully!");
 
 const toolsTsPath = path.resolve("data/tools.ts");
