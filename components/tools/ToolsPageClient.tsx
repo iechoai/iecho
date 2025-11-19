@@ -143,15 +143,16 @@ export function ToolsPageClient({
   }, [searchDraft]);
 
   const derivedMode: PageMode = useMemo(() => {
-    return filterState.search.trim() ? "search" : mode;
-  }, [filterState.search, mode]);
+    return filterState.search.trim() ? "search" : "browse";
+  }, [filterState.search]);
 
   const totalLoaded = tools.length;
   const hasMore =
     !isRefreshing && paginationState.page < paginationState.totalPages;
   const isGridLoading =
     isRefreshing ||
-    (tools.length === 0 && (isPendingNavigation || isLoadingMore));
+    isPendingNavigation ||
+    (tools.length === 0 && isLoadingMore);
 
   const updateUrl = (nextFilters: FilterState, nextPage: number) => {
     const params = new URLSearchParams(searchParams?.toString() ?? "");
@@ -289,7 +290,13 @@ export function ToolsPageClient({
     appendFilterParams(params);
 
     if (derivedMode === "search") {
-      params.set("q", filterState.search.trim());
+      const query = filterState.search.trim();
+      if (!query) {
+        // Should not happen due to derivedMode logic, but safety check
+        setIsLoadingMore(false);
+        return;
+      }
+      params.set("q", query);
     }
 
     try {

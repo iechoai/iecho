@@ -29,6 +29,9 @@ const CATEGORY_PARAM_TO_UI = Object.entries(CATEGORY_UI_TO_PARAM).reduce(
 // The mapCategoryUiToParam function converts a category name from the UI
 // to the corresponding parameter name used in backend queries.
 export const mapCategoryUiToParam = (uiCategory: string): string | undefined => {
+  if (uiCategory === "all") {
+    return undefined;
+  }
   return CATEGORY_UI_TO_PARAM[uiCategory] ?? uiCategory;
 };
 
