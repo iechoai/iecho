@@ -17,6 +17,7 @@ import { env } from "~/env";
 import { db } from "../lib/db";
 import { tools } from "../drizzle/schema";
 import { ToolSchema } from "./sync-tools";
+import { fileURLToPath } from "url";
 
 const DATABASE_URL = env.DATABASE_URL;
 
@@ -96,4 +97,6 @@ async function importTools() {
   }
 }
 
-importTools();
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  importTools(); 
+}
