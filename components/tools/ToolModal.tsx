@@ -111,6 +111,8 @@ export function ToolModal({
                           src={`https://www.google.com/s2/favicons?sz=64&domain_url=${domain}`}
                           alt={`${tool.name} logo`}
                           className="w-12 h-12 rounded-xl object-contain"
+                          loading="lazy"
+                          decoding="async"
                           onError={(e) => {
                             // Show fallback icon when favicon fails to load
                             const fallbackIcon =
@@ -140,6 +142,7 @@ export function ToolModal({
                           <button
                             onClick={onClose}
                             className="p-2 rounded-full text-gray-400 dark:text-muted-foreground hover:text-gray-600 dark:hover:text-muted-foreground hover:bg-gray-100 dark:hover:bg-muted/50 transition-colors flex-shrink-0"
+                            aria-label="Close tool details"
                           >
                             <X className="w-5 h-5" />
                           </button>

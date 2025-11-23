@@ -1,0 +1,49 @@
+name: Lighthouse Budgets
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+      - app
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.18.3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build application
+        run: pnpm run build
+
+      - name: Run Lighthouse CI with budgets
+        uses: treosh/lighthouse-ci-action@v11
+        with:
+          urls: |
+            http://localhost:3000/
+            http://localhost:3000/tools
+          budgetPath: ./lighthouse-budgets.json
+          startServerCommand: pnpm start -- --hostname 0.0.0.0 --port 3000
+          waitForServer: 120
+          temporaryPublicStorage: true
+        env:
+          LHCI_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

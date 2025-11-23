@@ -86,6 +86,8 @@ export function MobileSearch({
                             src={`https://www.google.com/s2/favicons?sz=64&domain_url=${domain}`}
                             alt={`${tool.name} logo`}
                             className="w-10 h-10 rounded-lg object-contain"
+                            loading="lazy"
+                            decoding="async"
                             onError={(e) => {
                               // Show fallback icon when favicon fails to load
                               console.log(

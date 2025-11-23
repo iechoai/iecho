@@ -2,7 +2,7 @@
  * GET /api/tools/search
  *
  * Search tools by free-text query across name, description, and tags.
- * Case-insensitive substring matching; results sorted by .
+ * Case-insensitive substring matching; results sorted by upvotes.
  *
  * Query parameters:
  * - q: string, required, min 1 character

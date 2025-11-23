@@ -4,7 +4,7 @@ const CATEGORY_UI_TO_PARAM: Record<string, string | undefined> = {
   "note-taking": "note",
   studying: "study",
   tools: "tool",
-  scheduling: "schedule",
+  scheduling: "scheduling",
   tutorials: "tutorial",
   documentation: "doc",
   prompting: "prompt",
