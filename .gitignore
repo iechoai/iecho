@@ -48,3 +48,6 @@ yarn-error.log*
 /docs
 
 .vercel
+
+.gemini/
+gha-creds-*.json

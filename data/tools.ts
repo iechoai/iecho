@@ -3458,5 +3458,70 @@ export const tools: Tool[] = [
     ],
     "isPopular": false,
     "upvotes": 0
+  },
+  {
+    "id": "replit",
+    "name": "Replit",
+    "description": "Replit is an AI-powered platform for building, deploying, and collaborating on applications directly in your browser. It enables rapid prototyping, internal tool creation, and full-stack development with integrated AI agents, databases, and testing.",
+    "tags": ["AI development", "cloud IDE", "coding platform", "collaboration", "prototyping"],
+    "url": "https://replit.com/",
+    "icon": "R",
+    "audience": ["developers", "students"],
+    "tier": "freemium",
+    "categories": ["productivity-tools"],
+    "isPopular": false,
+    "upvotes": 0
+  },
+  {
+    "id": "vert-sh",
+    "name": "VERT.sh",
+    "description": "VERT.sh is an open-source, ad-free file converter. It processes images, audio, and documents locally, while videos are converted on fast servers. It supports numerous formats with no file size limits.",
+    "tags": ["file converter", "open source", "image", "audio", "video"],
+    "url": "https://vert.sh/",
+    "icon": "V",
+    "audience": ["developers", "students"],
+    "tier": "free",
+    "categories": ["tools"],
+    "isPopular": false,
+    "upvotes": 0
+  },
+  {
+    "id": "stackblitz",
+    "name": "StackBlitz",
+    "description": "StackBlitz offers instant, browser-based development environments powered by WebContainers. It enables developers to create and launch web applications quickly and securely, providing a faster and more efficient alternative to traditional local setups for coding and collaboration.",
+    "tags": ["online IDE", "web development", "browser-based", "coding", "development environments"],
+    "url": "https://stackblitz.com/",
+    "icon": "⚡",
+    "audience": ["developers", "students"],
+    "tier": "freemium",
+    "categories": ["productivity-tools"],
+    "isPopular": false,
+    "upvotes": 0
+  },
+  {
+    "id": "cursor-ai-editor",
+    "name": "Cursor",
+    "description": "Cursor is an AI-powered code editor designed to enhance developer productivity. It offers features like AI agents, autocomplete, and codebase understanding to streamline coding workflows.",
+    "tags": ["AI", "code editor", "productivity", "developer", "coding assistant"],
+    "url": "https://cursor.com/",
+    "icon": "C",
+    "audience": ["developers", "students"],
+    "tier": "freemium",
+    "categories": ["tools"],
+    "isPopular": false,
+    "upvotes": 0
+  },
+  {
+    "id": "codeium",
+    "name": "Codeium",
+    "description": "Codeium is an AI-powered code acceleration toolkit. It provides features like autocomplete, in-editor AI chat, and supports over 70 programming languages to help developers code faster.",
+    "tags": ["AI", "code completion", "developer tools", "autocomplete", "IDE extension"],
+    "url": "https://codeium.com/",
+    "icon": "C",
+    "audience": ["developers"],
+    "tier": "free",
+    "categories": ["tools"],
+    "isPopular": false,
+    "upvotes": 0
   }
 ];
