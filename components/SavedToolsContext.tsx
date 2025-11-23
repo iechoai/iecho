@@ -44,8 +44,14 @@ const writeSavedToolsToStorage = (toolIds: string[]) => {
  * Falls back to localStorage if API fails.
  */
 const fetchSavedToolsFromAPI = async (): Promise<string[] | null> => {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 5000);
+
   try {
-    const response = await fetch("/api/collections");
+    const response = await fetch("/api/collections", {
+      signal: controller.signal,
+    });
+    clearTimeout(timeoutId);
     if (!response.ok) {
       return null;
     }

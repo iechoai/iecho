@@ -18,6 +18,7 @@ import { tools } from "../drizzle/schema";
 import { z } from "zod";
 import { env } from "~/env";
 import { db } from "../lib/db";
+import { fileURLToPath } from "url";
 
 // Load database connection URL from environment variables
 const DATABASE_URL = env.DATABASE_URL;
@@ -166,4 +167,6 @@ async function syncTools() {
   }
 }
 
-syncTools();
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  syncTools();
+}

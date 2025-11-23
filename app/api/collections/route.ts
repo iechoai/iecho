@@ -21,6 +21,8 @@ import {
 } from "../../../lib/queries";
 import { collectionUpdateSchema } from "../../../lib/validation";
 
+export const dynamic = "force-dynamic";
+
 const BAD_REQUEST_STATUS = 400;
 const RATE_LIMIT_STATUS = 429;
 const COLLECTION_RATE_LIMIT = 20;

@@ -1,20 +1,20 @@
-import { 
-  Grid3X3, 
-  MessageCircle, 
-  FileText, 
-  BookOpen, 
-  Wrench, 
-  Calendar, 
-  Play, 
-  FileSearch, 
-  Lightbulb, 
-  Code, 
-  Puzzle, 
+import {
+  Grid3X3,
+  MessageCircle,
+  FileText,
+  BookOpen,
+  Wrench,
+  Calendar,
+  Play,
+  FileSearch,
+  Lightbulb,
+  Code,
+  Puzzle,
   Book,
   Gamepad2,
   Zap,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
@@ -45,11 +45,15 @@ const categories = [
   { id: "no-code", label: "No-code tools", icon: Code },
   { id: "extensions", label: "Extensions", icon: Puzzle },
   { id: "resources", label: "Book Resources", icon: Book },
-  { id: "games", label: "Game Development", icon: Gamepad2 }
+  { id: "games", label: "Game Development", icon: Gamepad2 },
 ];
 
-export function Sidebar({ selectedCategory, onCategorySelect, onMobileSelect }: SidebarProps) {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+export function Sidebar({
+  selectedCategory,
+  onCategorySelect,
+  onMobileSelect,
+}: SidebarProps) {
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
   const handleCategoryClick = (categoryId: string) => {
     onCategorySelect(categoryId);
@@ -60,16 +64,16 @@ export function Sidebar({ selectedCategory, onCategorySelect, onMobileSelect }: 
 
   return (
     <TooltipProvider delayDuration={300}>
-      <motion.aside 
+      <motion.aside
         className="relative bg-white dark:bg-sidebar/50 backdrop-blur-sm border-r border-gray-200 dark:border-sidebar-border min-h-screen"
         initial={false}
-        animate={{ 
-          width: isCollapsed ? '80px' : '256px'
+        animate={{
+          width: isCollapsed ? "80px" : "256px",
         }}
         transition={{
           type: "spring",
           stiffness: 300,
-          damping: 30
+          damping: 30,
         }}
       >
         {/* Toggle Button - Hide on mobile in drawer */}
@@ -90,7 +94,7 @@ export function Sidebar({ selectedCategory, onCategorySelect, onMobileSelect }: 
           {/* Header */}
           <AnimatePresence mode="wait">
             {!isCollapsed && (
-              <motion.h2 
+              <motion.h2
                 className="text-lg font-medium text-gray-900 dark:text-sidebar-foreground mb-4"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -107,7 +111,7 @@ export function Sidebar({ selectedCategory, onCategorySelect, onMobileSelect }: 
             {categories.map((category) => {
               const Icon = category.icon;
               const isSelected = selectedCategory === category.id;
-              
+
               const buttonContent = (
                 <motion.button
                   key={category.id}
@@ -116,17 +120,17 @@ export function Sidebar({ selectedCategory, onCategorySelect, onMobileSelect }: 
                     isSelected
                       ? "bg-[#0F5F6A] dark:bg-primary text-white dark:text-primary-foreground shadow-md dark:shadow-primary/20"
                       : "text-gray-700 dark:text-sidebar-foreground hover:bg-gray-100 dark:hover:bg-sidebar-accent hover:text-gray-900 dark:hover:text-sidebar-accent-foreground"
-                  } ${isCollapsed ? 'justify-center' : ''}`}
+                  } ${isCollapsed ? "justify-center" : ""}`}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
                   <Icon className="w-4 h-4 flex-shrink-0" />
                   <AnimatePresence mode="wait">
                     {!isCollapsed && (
-                      <motion.span 
+                      <motion.span
                         className="text-sm whitespace-nowrap overflow-hidden"
                         initial={{ opacity: 0, width: 0 }}
-                        animate={{ opacity: 1, width: 'auto' }}
+                        animate={{ opacity: 1, width: "auto" }}
                         exit={{ opacity: 0, width: 0 }}
                         transition={{ duration: 0.2 }}
                       >
@@ -141,10 +145,11 @@ export function Sidebar({ selectedCategory, onCategorySelect, onMobileSelect }: 
               if (isCollapsed) {
                 return (
                   <Tooltip key={category.id}>
-                    <TooltipTrigger asChild>
-                      {buttonContent}
-                    </TooltipTrigger>
-                    <TooltipContent side="right" className="bg-gray-900 dark:bg-card text-white dark:text-foreground border-gray-700 dark:border-border">
+                    <TooltipTrigger asChild>{buttonContent}</TooltipTrigger>
+                    <TooltipContent
+                      side="right"
+                      className="bg-gray-900 dark:bg-card text-white dark:text-foreground border-gray-700 dark:border-border"
+                    >
                       <p>{category.label}</p>
                     </TooltipContent>
                   </Tooltip>
