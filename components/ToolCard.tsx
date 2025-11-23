@@ -1,4 +1,6 @@
 import { ExternalLink, Heart, Info, ChevronUp, Eye } from "lucide-react";
+import { useState } from "react";
+import { toast } from "sonner";
 import { openExternalUrl } from "../lib/dom";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
@@ -30,9 +32,21 @@ export function ToolCard({
   const { toggleUpvote, isToolUpvoted } = useUpvotes();
   const saved = isToolSaved(tool.id);
   const upvoted = isToolUpvoted(tool.id);
+  const [optimisticUpvote, setOptimisticUpvote] = useState(false);
 
-  // Calculate display upvotes (base + user vote)
-  const displayUpvotes = tool.upvotes + (upvoted ? 1 : 0);
+  const handleUpvote = async () => {
+    if (upvoted) {
+      toast.info("You have already upvoted this tool.");
+      return;
+    }
+    setOptimisticUpvote(true);
+    await toggleUpvote(tool.id);
+  };
+
+  // Calculate display upvotes:
+  // If we just upvoted optimistically, add 1 to the server count.
+  // Otherwise, trust the server count (which should include our vote if we voted previously).
+  const displayUpvotes = tool.upvotes + (optimisticUpvote ? 1 : 0);
 
   const domain = getDomain(tool.url);
 
@@ -101,7 +115,7 @@ export function ToolCard({
           </div>
           <div className="flex items-center gap-2 ml-2">
             <button
-              onClick={() => toggleUpvote(tool.id)}
+              onClick={handleUpvote}
               className={`flex items-center gap-1 px-2 py-1 rounded-lg transition-all duration-200 ${
                 upvoted
                   ? "bg-[#B6FF3D]/20 dark:bg-primary/20 text-[#0F5F6A] dark:text-primary border border-[#B6FF3D]/30 dark:border-primary/30"
@@ -241,7 +255,7 @@ export function ToolCard({
       <div className="flex items-center justify-between mt-auto pt-2">
         <div className="flex items-center gap-3">
           <button
-            onClick={() => toggleUpvote(tool.id)}
+            onClick={handleUpvote}
             className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all duration-200 ${
               upvoted
                 ? "bg-[#B6FF3D]/20 dark:bg-primary/20 text-[#0F5F6A] dark:text-primary border border-[#B6FF3D]/30 dark:border-primary/30 shadow-md"

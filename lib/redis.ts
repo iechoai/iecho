@@ -68,5 +68,11 @@ export const getRedisClient = (): Redis | null => {
     return null;
   }
 
+  // Fail fast if Redis is not ready (e.g. connecting or disconnected)
+  // This prevents "Stream isn't writeable" errors when enableOfflineQueue is false
+  if (redisClient.status !== "ready") {
+    return null;
+  }
+
   return redisClient;
 };
