@@ -3,13 +3,12 @@ import { motion, AnimatePresence } from "motion/react";
 import { X, Download, FileJson, FileText, Table } from "lucide-react";
 import { Button } from "./ui/button";
 import { toast } from "sonner";
-import type { Tool } from "../data/tools";
 import type { ToolListItem } from "../lib/types";
 
 interface ExportDialogProps {
   isOpen: boolean;
   onClose: () => void;
-  tools: Tool[] | ToolListItem[];
+  tools: ToolListItem[];
   title?: string;
 }
 

@@ -3,48 +3,99 @@ import { ArrowLeft, GripVertical, Heart, Download, Share2 } from "lucide-react";
 import { Button } from "./ui/button";
 import { ToolCard } from "./ToolCard";
 import { useSavedTools } from "./SavedToolsContext";
-import { tools, type Tool } from "../data/tools";
 import type { ToolListItem } from "../lib/types";
 import { EmptyState } from "./EmptyState";
 import { ExportDialog } from "./ExportDialog";
 import { ShareDialog } from "./ShareDialog";
 import { motion, Reorder } from "motion/react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import { toast } from "sonner";
 import Link from "next/link";
+
+const normaliseToolIds = (ids: string[]) => {
+  const seen = new Set<string>();
+  const ordered: string[] = [];
+
+  ids.forEach((rawId) => {
+    const trimmed = rawId.trim();
+    if (!trimmed || seen.has(trimmed)) {
+      return;
+    }
+    seen.add(trimmed);
+    ordered.push(trimmed);
+  });
+
+  return ordered;
+};
+
+const computeShareHash = (ids: string[]) => {
+  const normalised = normaliseToolIds(ids);
+  if (normalised.length === 0) {
+    return "";
+  }
+
+  return [...normalised].sort((a, b) => a.localeCompare(b)).join("|");
+};
 
 export function SavedToolsPage() {
   const { savedTools, reorderSavedTools } = useSavedTools();
   const [showExportDialog, setShowExportDialog] = useState(false);
   const [showShareDialog, setShowShareDialog] = useState(false);
+  const [orderedTools, setOrderedTools] = useState<ToolListItem[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [shareUrl, setShareUrl] = useState<string | null>(null);
+  const [isSharing, setIsSharing] = useState(false);
+  const savedToolsHash = useMemo(
+    () => computeShareHash(savedTools),
+    [savedTools]
+  );
+  const lastSharedHashRef = useRef<string | null>(null);
 
-  // Create ordered list of saved tools data based on savedTools array order
-  const savedToolsData: ToolListItem[] = savedTools
-    .map((id) => tools.find((tool) => tool.id === id))
-    .filter((tool): tool is Tool => tool !== undefined)
-    .map((tool) => ({
-      ...tool,
-      icon: tool.icon ?? null,
-      isPopular: tool.isPopular ?? false,
-      createdAt: new Date().toISOString(),
-    }));
-
-  const [orderedTools, setOrderedTools] =
-    useState<ToolListItem[]>(savedToolsData);
-
-  // Update orderedTools when savedTools changes (when tools are added/removed)
   useEffect(() => {
-    const newOrderedTools: ToolListItem[] = savedTools
-      .map((id) => tools.find((tool) => tool.id === id))
-      .filter((tool): tool is Tool => tool !== undefined)
-      .map((tool) => ({
-        ...tool,
-        icon: tool.icon ?? null,
-        isPopular: tool.isPopular ?? false,
-        createdAt: new Date().toISOString(),
-      }));
-    setOrderedTools(newOrderedTools);
+    const fetchTools = async () => {
+      if (savedTools.length === 0) {
+        setOrderedTools([]);
+        setIsLoading(false);
+        return;
+      }
+
+      try {
+        setIsLoading(true);
+        const params = new URLSearchParams();
+        params.set("ids", savedTools.join(","));
+        params.set("limit", "100");
+
+        const response = await fetch(`/api/tools?${params.toString()}`);
+        if (response.ok) {
+          const data = await response.json();
+          const fetchedTools: ToolListItem[] = data.data;
+
+          // Sort based on savedTools order
+          const sorted = savedTools
+            .map((id) => fetchedTools.find((t) => t.id === id))
+            .filter((t): t is ToolListItem => t !== undefined);
+
+          setOrderedTools(sorted);
+        }
+      } catch (error) {
+        console.error("Failed to fetch saved tools", error);
+        toast.error("Failed to load saved tools");
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchTools();
   }, [savedTools]);
+
+  // Reset share URL only when tool set (ignoring order) changes
+  useEffect(() => {
+    if (lastSharedHashRef.current === savedToolsHash) {
+      return;
+    }
+    lastSharedHashRef.current = null;
+    setShareUrl(null);
+  }, [savedToolsHash]);
 
   const handleReorder = (newOrder: ToolListItem[]) => {
     setOrderedTools(newOrder);
@@ -54,8 +105,32 @@ export function SavedToolsPage() {
     });
   };
 
-  // Generate shareable collection URL
-  const collectionUrl = `https://iecho.app/collection/${savedTools.join(",")}`;
+  const handleShare = async () => {
+    if (shareUrl && lastSharedHashRef.current === savedToolsHash) {
+      setShowShareDialog(true);
+      return;
+    }
+
+    setIsSharing(true);
+    try {
+      const response = await fetch("/api/collections/share", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ toolIds: savedTools }),
+      });
+
+      if (!response.ok) throw new Error("Failed to create share link");
+
+      const data = await response.json();
+      setShareUrl(data.url);
+      lastSharedHashRef.current = savedToolsHash;
+      setShowShareDialog(true);
+    } catch (error) {
+      toast.error("Failed to create share link");
+    } finally {
+      setIsSharing(false);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-background transition-colors duration-300">
@@ -90,11 +165,12 @@ export function SavedToolsPage() {
                 <Button
                   variant="outline"
                   size="sm"
-                  onClick={() => setShowShareDialog(true)}
+                  onClick={handleShare}
+                  disabled={isSharing}
                   className="hover:bg-gray-100 dark:hover:bg-muted/50"
                 >
                   <Share2 className="w-4 h-4 mr-2" />
-                  Share
+                  {isSharing ? "loading..." : "Share"}
                 </Button>
                 <Button
                   variant="outline"
@@ -216,7 +292,7 @@ export function SavedToolsPage() {
         isOpen={showShareDialog}
         onClose={() => setShowShareDialog(false)}
         title="My Tool Collection"
-        url={collectionUrl}
+        url={shareUrl || ""}
         description={`Check out my collection of ${orderedTools.length} amazing tools on IechoAI!`}
         type="collection"
       />

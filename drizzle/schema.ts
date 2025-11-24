@@ -97,6 +97,23 @@ export const contacts = createTable(
   })
 );
 
+export const sharedCollections = createTable(
+  "shared_collections",
+  {
+    id: text("id").primaryKey(),
+    toolIds: text("tool_ids").array().notNull(),
+    toolHash: text("tool_hash").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .defaultNow()
+      .notNull(),
+  },
+  (table) => ({
+    toolHashIdx: uniqueIndex("iecho_shared_collections_tool_hash_idx").on(
+      table.toolHash
+    ),
+  })
+);
+
 export type ToolRow = typeof tools.$inferSelect;
 export type NewTool = typeof tools.$inferInsert;
 export type UpvoteRow = typeof upvotes.$inferSelect;
@@ -105,3 +122,5 @@ export type CollectionRow = typeof collections.$inferSelect;
 export type NewCollection = typeof collections.$inferInsert;
 export type ContactRow = typeof contacts.$inferSelect;
 export type NewContact = typeof contacts.$inferInsert;
+export type SharedCollectionRow = typeof sharedCollections.$inferSelect;
+export type NewSharedCollection = typeof sharedCollections.$inferInsert;
