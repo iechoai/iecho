@@ -10,6 +10,8 @@
  * - registerUpvote: persist per-fingerprint upvotes and update aggregate counts
  */
 
+import { createHash, randomUUID } from "crypto";
+
 import {
   SQL,
   and,
@@ -24,12 +26,21 @@ import {
 } from "drizzle-orm";
 
 import { db } from "./db";
-import { collections, contacts, tools, upvotes } from "./schema";
+
+import {
+  collections,
+  contacts,
+  sharedCollections,
+  tools,
+  upvotes,
+} from "./schema";
 import type {
   CollectionRow,
   NewCollection,
   NewContact,
+  NewSharedCollection,
   NewUpvote,
+  SharedCollectionRow,
   ToolRow,
 } from "./schema";
 import type {
@@ -42,13 +53,17 @@ import type {
 type FilterableInput = Pick<
   ToolListQueryInput | ToolSearchQueryInput,
   "category" | "audience" | "tier" | "popular"
->;
+> & { ids?: string[] };
 
 // Build SQL WHERE clauses matching the ad-hoc filters used for list/search endpoints.
 const buildFilters = (filters: FilterableInput): SQL | undefined => {
   const clauses: SQL[] = [];
 
   const toPattern = (value: string) => `%${value.replace(/[%_]/g, "")}%`;
+
+  if (filters.ids && filters.ids.length > 0) {
+    clauses.push(inArray(tools.id, filters.ids));
+  }
 
   if (filters.category) {
     clauses.push(
@@ -104,7 +119,19 @@ export const listTools = async (
   filters: ToolListQueryInput
 ): Promise<PaginatedToolResponse> => {
   const { page, limit, sort, ...rest } = filters;
-  const where = buildFilters(rest); // Build SQL WHERE clause based on filters 
+  const { ids, ...otherFilters } = rest;
+  const idList = ids
+    ?.split(",")
+    .map((id) => id.trim())
+    .filter(Boolean)
+    .filter((value, index, array) => array.indexOf(value) === index);
+  const filterInput: FilterableInput = {
+    ...otherFilters,
+    ids: idList && idList.length > 0 ? idList : undefined,
+  };
+  const where = buildFilters(filterInput); // Build SQL WHERE clause based on filters 
+  const hasExplicitIds = Boolean(filterInput.ids?.length);
+  const pageSize = hasExplicitIds ? filterInput.ids!.length : limit;
 
   const totalSelection = count(tools.id).as("total");
   const totalResult = await (where
@@ -114,9 +141,11 @@ export const listTools = async (
 
   // Calculate pagination details
   const totalNumber = Number(totalResult[0]?.total ?? 0);
-  const totalPages = Math.max(1, Math.ceil(totalNumber / limit));
-  const safePage = Math.min(page, totalPages); // Ensure the requested page does not exceed total pages
-  const offset = (safePage - 1) * limit; // This offset is used for pagination
+  const totalPages = hasExplicitIds
+    ? 1
+    : Math.max(1, Math.ceil(totalNumber / pageSize));
+  const safePage = hasExplicitIds ? 1 : Math.min(page, totalPages); // Ensure the requested page does not exceed total pages
+  const offset = hasExplicitIds ? 0 : (safePage - 1) * pageSize; // This offset is used for pagination
 
   const rows = await (where
     ? db
@@ -124,20 +153,20 @@ export const listTools = async (
         .from(tools)
         .where(where)
         .orderBy(translateSort(sort))
-        .limit(limit)
+        .limit(pageSize)
         .offset(offset)
     : db
         .select()
         .from(tools)
         .orderBy(translateSort(sort))
-        .limit(limit)
+        .limit(pageSize)
         .offset(offset));
 
   return {
     items: rows.map(toToolRecord),
     total: totalNumber,
     page: safePage,
-    limit,
+    limit: pageSize,
     totalPages,
   };
 };
@@ -245,6 +274,45 @@ export const registerUpvote = async (toolId: string, fingerprint: string) => {
   return { added: true, tool: updatedTool ?? tool } as const;
 };
 
+const normaliseToolIds = (toolIds: string[]) => {
+  const seen = new Set<string>();
+  const ordered: string[] = [];
+
+  for (const rawId of toolIds) {
+    const trimmed = rawId.trim();
+    if (!trimmed || seen.has(trimmed)) {
+      continue;
+    }
+    seen.add(trimmed);
+    ordered.push(trimmed);
+  }
+
+  return ordered;
+};
+
+const computeToolHash = (toolIds: string[]) => {
+  return createHash("sha256")
+    .update([...toolIds].sort((a, b) => a.localeCompare(b)).join("|"))
+    .digest("hex");
+};
+
+const arraysEqual = (a: string[], b: string[]) => {
+  if (a.length !== b.length) {
+    return false;
+  }
+  return a.every((value, index) => value === b[index]);
+};
+
+const findSharedCollectionByHash = async (toolHash: string) => {
+  const rows = await db
+    .select()
+    .from(sharedCollections)
+    .where(eq(sharedCollections.toolHash, toolHash))
+    .limit(1);
+
+  return rows[0];
+};
+
 // Ensure referenced tool ids actually exist before persisting a collection.
 export const ensureAllToolIdsExist = async (toolIds: string[]) => {
   if (toolIds.length === 0) {
@@ -327,4 +395,57 @@ export const createContact = async (
   }
 
   return record;
+};
+
+export const getOrCreateSharedCollection = async (
+  toolIds: string[]
+): Promise<{ collection: SharedCollectionRow; cached: boolean }> => {
+  const normalised = normaliseToolIds(toolIds);
+  if (normalised.length === 0) {
+    throw new Error("Cannot create a shared collection without tools");
+  }
+
+  const toolHash = computeToolHash(normalised);
+  const existing = await findSharedCollectionByHash(toolHash);
+
+  if (existing) {
+    if (!arraysEqual(existing.toolIds, normalised)) {
+      const [updated] = await db
+        .update(sharedCollections)
+        .set({ toolIds: normalised })
+        .where(eq(sharedCollections.id, existing.id))
+        .returning();
+
+      return { collection: updated ?? existing, cached: true } as const;
+    }
+
+    return { collection: existing, cached: true } as const;
+  }
+
+  const [created] = await db
+    .insert(sharedCollections)
+    .values({
+      id: randomUUID(),
+      toolIds: normalised,
+      toolHash,
+    } satisfies NewSharedCollection)
+    .returning();
+
+  if (!created) {
+    throw new Error("Failed to create shared collection");
+  }
+
+  return { collection: created, cached: false } as const;
+};
+
+export const getSharedCollection = async (
+  id: string
+): Promise<SharedCollectionRow | undefined> => {
+  const rows = await db
+    .select()
+    .from(sharedCollections)
+    .where(eq(sharedCollections.id, id))
+    .limit(1);
+
+  return rows[0];
 };

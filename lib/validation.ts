@@ -53,6 +53,7 @@ const sharedFilterFields = {
 export const toolListQuerySchema = z.object({
   page: z.coerce.number().int().min(1).default(1),
   limit: z.coerce.number().int().min(1).max(100).default(20),
+  ids: z.string().optional(),
   ...sharedFilterFields,
 });
 
@@ -100,6 +101,7 @@ export const collectionUpdateSchema = z
   .object({
     toolIds: z
       .array(z.string().trim().min(1, "Tool ID cannot be empty"))
+      .min(1, "You need at least one tool to share")
       // Keep collection payloads reasonably sized to prevent abuse.
       .max(50, "Cannot save more than 50 tools"),
   })
