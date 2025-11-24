@@ -13,6 +13,7 @@ import {
   Book,
   Gamepad2,
   Lightbulb,
+  Palette,
 } from "lucide-react";
 
 type AudienceFilter = "all" | "students" | "developers";
@@ -34,6 +35,7 @@ const categories = [
   { id: "documentation", label: "Documentation", icon: FileSearch },
   { id: "prompting", label: "Prompting", icon: Lightbulb },
   { id: "productivity", label: "Productivity", icon: Zap },
+  { id: "design", label: "Design", icon: Palette },
   { id: "no-code", label: "No-code tools", icon: Code },
   { id: "extensions", label: "Extensions", icon: Puzzle },
   { id: "resources", label: "Book Resources", icon: Book },

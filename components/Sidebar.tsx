@@ -15,6 +15,7 @@ import {
   Target,
   ChevronLeft,
   ChevronRight,
+  Palette,
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
@@ -42,6 +43,7 @@ const categories = [
   { id: "documentation", label: "Documentation", icon: FileTerminal },
   { id: "prompting", label: "Prompting", icon: Sparkles },
   { id: "productivity", label: "Productivity", icon: Target },
+  { id: "design", label: "Design", icon: Palette },
   { id: "no-code", label: "No-code tools", icon: Braces },
   { id: "extensions", label: "Extensions", icon: ToyBrick },
   { id: "resources", label: "Book Resources", icon: Library },

@@ -9,6 +9,7 @@ const CATEGORY_UI_TO_PARAM: Record<string, string | undefined> = {
   documentation: "doc",
   prompting: "prompt",
   productivity: "productivity",
+  design: "design",
   "no-code": "no-code",
   extensions: "extension",
   resources: "book",

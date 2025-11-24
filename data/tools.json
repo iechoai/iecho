@@ -309,7 +309,7 @@
       "icon": "FIG",
       "audience": ["developers"],
       "tier": "free",
-      "categories": ["tools"],
+      "categories": ["tools", "design"],
       "isPopular": true
     },
     {
@@ -465,7 +465,7 @@
       "icon": "P",
       "audience": ["students", "developers"],
       "tier": "free",
-      "categories": ["tools"],
+      "categories": ["tools", "design"],
       "isPopular": false
     },
     {
@@ -477,7 +477,7 @@
       "icon": "C",
       "audience": ["students"],
       "tier": "freemium",
-      "categories": ["tools"],
+      "categories": ["tools", "design"],
       "isPopular": false
     },
     {
@@ -513,7 +513,7 @@
       "icon": "G",
       "audience": ["students", "developers"],
       "tier": "free",
-      "categories": ["tools"],
+      "categories": ["tools", "design"],
       "isPopular": false
     },
     {
@@ -681,7 +681,7 @@
       "icon": "W",
       "audience": ["developers", "students"],
       "tier": "freemium",
-      "categories": ["no-code-tools"],
+      "categories": ["no-code-tools", "design"],
       "isPopular": false
     },
     {
@@ -1401,7 +1401,7 @@
       "icon": "CM",
       "audience": ["students"],
       "tier": "free",
-      "categories": ["tools"],
+      "categories": ["tools", "design"],
       "isPopular": false
     },
     {
@@ -1449,7 +1449,7 @@
       "icon": "M",
       "audience": ["developers"],
       "tier": "freemium",
-      "categories": ["tools"],
+      "categories": ["tools", "design"],
       "isPopular": false
     },
     {
@@ -1485,7 +1485,7 @@
       "icon": "3D",
       "audience": ["developers"],
       "tier": "free",
-      "categories": ["tools"],
+      "categories": ["tools", "design"],
       "isPopular": false
     },
     {
@@ -1569,7 +1569,7 @@
       "icon": "S",
       "audience": ["developers"],
       "tier": "free",
-      "categories": ["tools"],
+      "categories": ["tools", "design"],
       "isPopular": false
     },
     {
@@ -2050,6 +2050,84 @@
       "audience": ["developers"],
       "tier": "free",
       "categories": ["tools"],
+      "isPopular": false
+    },
+    {
+      "id": "create-t3-app",
+      "name": "Create T3 App",
+      "description": "A CLI tool for scaffolding full-stack, type-safe Next.js applications with a focus on developer experience and best practices.",
+      "categories": ["tools", "documentation"],
+      "tags": ["nextjs", "typescript", "fullstack"],
+      "url": "https://create.t3.gg/en/installation",
+      "icon": "T",
+      "audience": ["developers"],
+      "tier": "free",
+      "isPopular": false
+    },
+    {
+      "id": "sketchidraw",
+      "name": "Sketchidraw",
+      "description": "A collaborative online whiteboard with a unique hand-drawn look and feel, where all data is saved locally in your browser.",
+      "categories": ["tools", "design"],
+      "tags": [
+        "whiteboard",
+        "collaboration",
+        "drawing",
+        "sketching",
+        "visual-thinking"
+      ],
+      "url": "https://sketchidraw.com/",
+      "icon": "✍️",
+      "audience": ["developers", "students"],
+      "tier": "free",
+      "isPopular": false
+    },
+    {
+      "id": "nanobot-ai",
+      "name": "Nanobot",
+      "description": "An open-source framework for building intelligent MCP agents with reasoning, system prompts, tool orchestration, and rich UI support.",
+      "categories": ["chatbots"],
+      "tags": ["ai-agents", "mcp", "open-source", "framework", "chatbot"],
+      "url": "https://www.nanobot.ai/",
+      "icon": "🤖",
+      "audience": ["developers"],
+      "tier": "free",
+      "isPopular": false
+    },
+    {
+      "id": "futurepedia",
+      "name": "Futurepedia",
+      "description": "A comprehensive directory and categorization of various AI tools, helping users discover and explore different AI software solutions.",
+      "categories": ["tools"],
+      "tags": ["ai-directory", "tool-discovery", "ai-resources"],
+      "url": "https://www.futurepedia.io/ai-tools",
+      "icon": "F",
+      "audience": ["developers", "students"],
+      "tier": "free",
+      "isPopular": false
+    },
+    {
+      "id": "prompt-eng-tutorial",
+      "name": "Anthropic's Prompt Engineering Tutorial",
+      "description": "An interactive, step-by-step tutorial from Anthropic to help users master prompt engineering for optimal responses from Claude.",
+      "categories": ["prompting"],
+      "tags": ["ai", "prompt-engineering", "tutorial", "claude", "llm"],
+      "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+      "icon": "📚",
+      "audience": ["developers", "students"],
+      "tier": "free",
+      "isPopular": false
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "description": "A flexible AI workflow automation platform for technical teams, enabling multi-step AI agents and app integrations with code or drag-n-drop.",
+      "categories": ["no-code-tools"],
+      "tags": ["automation", "workflow", "ai", "integrations", "low-code"],
+      "url": "https://n8n.io/",
+      "icon": "⚡",
+      "audience": ["developers"],
+      "tier": "freemium",
       "isPopular": false
     }
   ]

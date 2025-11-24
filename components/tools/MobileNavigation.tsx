@@ -12,7 +12,8 @@ import {
   ToyBrick,
   Library,
   Gamepad2,
-  Target
+  Target,
+  Palette,
 } from "lucide-react";
 import {
   Sheet,
@@ -30,20 +31,21 @@ interface MobileNavigationProps {
 }
 
 const categories = [
-    { id: "all", label: "All", icon: Grid3X3 },
-    { id: "chatbots", label: "Chatbots", icon: BotMessageSquare },
-    { id: "note-taking", label: "Note-taking", icon: NotebookPen },
-    { id: "studying", label: "Studying", icon: BookOpenText },
-    { id: "tools", label: "Tools", icon: Wrench },
-    { id: "scheduling", label: "Scheduling", icon: CalendarClock },
-    { id: "tutorials", label: "Tutorials", icon: MonitorPlay },
-    { id: "documentation", label: "Documentation", icon: FileTerminal },
-    { id: "prompting", label: "Prompting", icon: Sparkles },
-    { id: "productivity", label: "Productivity", icon: Target },
-    { id: "no-code", label: "No-code tools", icon: Braces },
-    { id: "extensions", label: "Extensions", icon: ToyBrick },
-    { id: "resources", label: "Book Resources", icon: Library },
-    { id: "games", label: "Game Development", icon: Gamepad2 },
+  { id: "all", label: "All", icon: Grid3X3 },
+  { id: "chatbots", label: "Chatbots", icon: BotMessageSquare },
+  { id: "note-taking", label: "Note-taking", icon: NotebookPen },
+  { id: "studying", label: "Studying", icon: BookOpenText },
+  { id: "tools", label: "Tools", icon: Wrench },
+  { id: "scheduling", label: "Scheduling", icon: CalendarClock },
+  { id: "tutorials", label: "Tutorials", icon: MonitorPlay },
+  { id: "documentation", label: "Documentation", icon: FileTerminal },
+  { id: "prompting", label: "Prompting", icon: Sparkles },
+  { id: "productivity", label: "Productivity", icon: Target },
+  { id: "design", label: "Design", icon: Palette },
+  { id: "no-code", label: "No-code tools", icon: Braces },
+  { id: "extensions", label: "Extensions", icon: ToyBrick },
+  { id: "resources", label: "Book Resources", icon: Library },
+  { id: "games", label: "Game Development", icon: Gamepad2 },
 ];
 
 export function MobileNavigation({
