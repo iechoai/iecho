@@ -7,7 +7,7 @@ import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
 import { Logo } from "./Logo";
 import { motion } from "motion/react";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
 
 export function ContactPage() {
@@ -19,20 +19,71 @@ export function ContactPage() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [rateLimitReset, setRateLimitReset] = useState<number | null>(null);
+
+  const resetMessage = useMemo(() => {
+    if (!rateLimitReset) {
+      return null;
+    }
+
+    const now = Date.now();
+    const seconds = Math.max(0, Math.round((rateLimitReset - now) / 1000));
+    if (seconds === 0) {
+      return "Please try again.";
+    }
+    return `Please try again in ${seconds} seconds.`;
+  }, [rateLimitReset]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitted(false);
+    setErrorMessage(null);
+    setRateLimitReset(null);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      // Use an AbortController so we fail fast if the API is unreachable.
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 10_000);
 
-    setIsSubmitting(false);
-    setSubmitted(true);
-    setFormData({ name: "", email: "", message: "" });
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+        signal: controller.signal,
+      });
 
-    // Reset success message after 3 seconds
-    setTimeout(() => setSubmitted(false), 3000);
+      clearTimeout(timeoutId);
+
+      if (response.status === 429) {
+        const resetHeader = response.headers.get("X-RateLimit-Reset");
+        if (resetHeader) {
+          setRateLimitReset(Number(resetHeader) * 1000);
+        }
+        const payload = await response.json().catch(() => null);
+        throw new Error(
+          payload?.error ?? "You are sending messages too quickly."
+        );
+      }
+
+      if (!response.ok) {
+        const payload = await response.json().catch(() => null);
+        throw new Error(
+          payload?.error ?? "Something went wrong. Please try again."
+        );
+      }
+
+      setSubmitted(true);
+      setFormData({ name: "", email: "", message: "" });
+      setTimeout(() => setSubmitted(false), 4000);
+    } catch (error) {
+      setErrorMessage(
+        (error as Error)?.message ?? "Unable to send your message right now."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (
@@ -217,6 +268,23 @@ export function ContactPage() {
                 <p className="text-green-800 dark:text-green-400 font-medium">
                   Thank you! Your message has been sent successfully.
                 </p>
+              </motion.div>
+            )}
+
+            {errorMessage && (
+              <motion.div
+                className="mb-6 p-4 bg-red-50 dark:bg-red-500/10 border border-red-200 dark:border-red-500/30 rounded-xl"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+              >
+                <p className="text-red-800 dark:text-red-400 font-medium">
+                  {errorMessage}
+                </p>
+                {resetMessage && (
+                  <p className="text-sm text-red-700/80 dark:text-red-300 mt-2">
+                    {resetMessage}
+                  </p>
+                )}
               </motion.div>
             )}
 

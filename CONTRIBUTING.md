@@ -6,15 +6,41 @@ Thank you for considering contributing to IechoAI! We welcome contributions from
 
 ## 📋 Table of Contents
 
-- [Code of Conduct](#code-of-conduct)
-- [How Can I Contribute?](#how-can-i-contribute)
-  - [Adding a New Tool](#adding-a-new-tool)
-  - [Reporting Bugs](#reporting-bugs)
-  - [Suggesting Enhancements](#suggesting-enhancements)
-  - [Code Contributions](#code-contributions)
-- [Development Setup](#development-setup)
-- [Pull Request Guidelines](#pull-request-guidelines)
-- [Style Guidelines](#style-guidelines)
+- [Contributing to IechoAI](#contributing-to-iechoai)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [⚡ Quick Contribution Checklist](#-quick-contribution-checklist)
+  - [Code of Conduct](#code-of-conduct)
+  - [How Can I Contribute?](#how-can-i-contribute)
+    - [Adding a New Tool](#adding-a-new-tool)
+    - [Reporting Bugs](#reporting-bugs)
+    - [Suggesting Enhancements](#suggesting-enhancements)
+    - [Code Contributions](#code-contributions)
+    - [Development Setup](#development-setup)
+      - [Prerequisites](#prerequisites)
+      - [Setup Steps](#setup-steps)
+    - [Project Commands](#project-commands)
+  - [Pull Request Guidelines](#pull-request-guidelines)
+    - [Before Submitting](#before-submitting)
+    - [PR Checklist](#pr-checklist)
+    - [PR Title Format](#pr-title-format)
+    - [Review Process](#review-process)
+  - [Style Guidelines](#style-guidelines)
+    - [TypeScript](#typescript)
+    - [Code Style](#code-style)
+    - [Commit Messages](#commit-messages)
+    - [File Organization](#file-organization)
+  - [Questions?](#questions)
+
+---
+
+## ⚡ Quick Contribution Checklist
+
+1. **Sync main** – `git pull origin main && git checkout -b <feature-branch>`
+2. **Create `.env`** – copy `.env.example` and populate **all** required secrets (`DATABASE_URL`, `RESEND_API_KEY`, `ADMIN_EMAIL`, `REDIS_URL`).
+3. **Install + migrate** – `pnpm install && pnpm db:migrate && pnpm db:seed`
+4. **Do the work** – update code/data, keep changes focused, add tests if needed.
+5. **Verify** – run `pnpm typecheck`, `pnpm test:unit`, and any relevant `pnpm test:smoke` cases.
+6. **Commit clearly** – follow Conventional Commits, push, and open a PR with screenshots or curl outputs where useful.
 
 ---
 
@@ -33,75 +59,46 @@ This project adheres to a **Code of Conduct** that all contributors are expected
 
 ### Adding a New Tool
 
-The most common contribution is adding a new tool to our catalog. Here's how:
+Most contributions start with expanding `data/tools.json`. Follow these five steps to keep things consistent:
 
-#### 1. Check if the tool already exists
+1. **Confirm it’s new** – Search the file (or use `pnpm validate-tools` first) to ensure the tool isn’t already in the catalog.
+2. **Add the entry** – Append an object that matches the schema below. Stick to lowercase slugs, HTTPS URLs, and concise descriptions.
 
-Search `data/tools.json` to ensure the tool isn't already listed.
+   ```json
+  {
+    "id": "tool-slug",
+    "name": "Tool Name",
+    "description": "Clear, concise description (50-150 characters)",
+    "categories": ["category1", "category2"],
+    "tags": ["tag1", "tag2", "tag3"],
+    "url": "https://tool-website.com",
+    "icon": "TN",
+    "audience": ["students", "developers"],
+    "tier": "free",
+    "isPopular": false
+  }
+  ```
 
-#### 2. Add the tool to `data/tools.json`
+3. **Follow the field guide**
+  - `id`: lowercase, hyphenated slug (e.g. `github-copilot`)
+  - `description`: 50‑150 chars focused on value, no marketing fluff.
+  - `categories`: pick up to 3 from the supported list (`chatbots`, `note-taking`, `productivity`, `study`, `coding`, `design`, `no-code`, `browser-extensions`, `books`, `games`, `libraries`, `ai-prompts`, `resources`, `file-sharing`, `learning`).
+  - `tags`: 2‑5 keywords that actually help search.
+  - `tier`: one of `free`, `freemium`, `paid`.
+  - `isPopular`: always `false` for new entries; real signals come from the community.
 
-Add your tool entry following this structure:
+4. **Validate + seed**
 
-```json
-{
-  "id": "tool-slug",
-  "name": "Tool Name",
-  "description": "Clear, concise description (50-150 characters)",
-  "categories": ["category1", "category2"],
-  "tags": ["tag1", "tag2", "tag3"],
-  "url": "https://tool-website.com",
-  "icon": "TN",
-  "audience": ["students", "developers"],
-  "tier": "free",
-  "isPopular": false,
-  "upvotes": 0
-}
-```
+  ```bash
+  pnpm validate-tools   # Formats + validates JSON
+  pnpm db:seed          # Copies tools.json into your local Postgres
+  pnpm dev              # Check the tool in http://localhost:3000/tools
+  ```
 
-#### Field Guidelines:
-
-- **`id`**: Lowercase, hyphenated slug (e.g., `github-copilot`)
-- **`name`**: Official tool name
-- **`description`**: 50-150 characters, focus on value proposition
-- **`categories`**: Array of 1-3 categories:
-  - `chatbots`, `note-taking`, `productivity`, `study`, `coding`, `design`, `no-code`, `browser-extensions`, `books`, `games`, `libraries`, `ai-prompts`, `resources`, `file-sharing`, `learning`
-- **`tags`**: 2-5 relevant keywords
-- **`url`**: Official website (must be HTTPS)
-- **`icon`**: 1-3 letter abbreviation (uppercase)
-- **`audience`**: Array with `students` and/or `developers`
-- **`tier`**: `free`, `freemium`, or `paid`
-- **`isPopular`**: Always `false` for new submissions
-- **`upvotes`**: Always `0` for new submissions (real votes come from users)
-
-#### 3. Validate your changes
-
-```bash
-pnpm validate-tools
-```
-
-This checks that your JSON is valid and follows the schema.
-
-#### 4. Test locally
-
-```bash
-# Sync to local database
-pnpm db:seed
-
-# Start dev server
-pnpm dev
-
-# Verify the tool appears correctly
-```
-
-#### 5. Submit a Pull Request
-
-- Create a branch: `git checkout -b add-tool-name`
-- Commit: `git commit -m "Add [Tool Name] to catalog"`
-- Push: `git push origin add-tool-name`
-- Open a PR with:
-  - **Title**: `Add [Tool Name]`
-  - **Description**: Brief explanation of what the tool does and why it's valuable
+5. **Open the PR**
+  - Branch: `git checkout -b add-<tool-name>`
+  - Commit: `git commit -m "Add <Tool Name>"`
+  - Push, open PR, and include 1‑2 sentences explaining why the tool helps students/devs.
 
 ---
 
@@ -175,71 +172,47 @@ Want to contribute code? Awesome!
 
 ---
 
-## Development Setup
+### Development Setup
 
-### Prerequisites
+#### Prerequisites
 
 - Node.js 18+
 - pnpm 10+
-- PostgreSQL 14+
-- Redis (optional; set `REDIS_URL` to exercise distributed rate limiting)
+- PostgreSQL 14+ (Neon, Railway, Supabase, or local)
+- Redis instance (Upstash or local) – **required** because rate limits run through it
+- Resend API key + admin email for contact notifications
 
-### Setup Steps
+#### Setup Steps
 
-1. **Fork and clone**
+1. **Clone**
 
-```bash
-git clone https://github.com/YOUR-USERNAME/iecho.git
-cd iecho
-```
+  ```bash
+  git clone https://github.com/YOUR-USERNAME/iecho.git
+  cd iecho
+  ```
 
-2. **Install dependencies**
+2. **Install deps** – `pnpm install`
 
-```bash
-pnpm install
-```
+3. **Create `.env`** – copy `.env.example` and fill in all secrets (`DATABASE_URL`, `REDIS_URL`, `RESEND_API_KEY`, `ADMIN_EMAIL`). The app fails fast if any are missing because of `src/env.ts`.
 
-3. **Set up environment**
+4. **Setup the DB** – `pnpm db:migrate && pnpm db:seed`
 
-Create `.env`:
-
-```env
-DATABASE_URL="postgresql://user:password@localhost:5432/iecho"
-REDIS_URL="redis://localhost:6379" # Optional: enables Redis-backed rate limiting
-```
-
-4. **Initialize database**
-
-```bash
-pnpm db:migrate
-pnpm db:seed
-```
-
-5. **Start dev server**
-
-```bash
-pnpm dev
-```
+5. **Run the app** – `pnpm dev` and visit `http://localhost:3000`
 
 ### Project Commands
 
-```bash
-# Development
-pnpm dev              # Start dev server (localhost:3000)
-pnpm build            # Build for production
-pnpm start            # Start production server
-
-# Database
-pnpm db:generate      # Generate migration files
-pnpm db:migrate       # Run migrations
-pnpm db:seed          # Sync tools.json to DB
-pnpm db:studio        # Open Drizzle Studio
-
-# Quality
-pnpm typecheck        # Run TypeScript checks
-pnpm test:smoke       # Run API tests
-pnpm validate-tools   # Validate tools.json
-```
+| Command | Purpose |
+| --- | --- |
+| `pnpm dev` | Start the dev server on `localhost:3000` |
+| `pnpm build` / `pnpm start` | Build + run a production bundle |
+| `pnpm db:generate` | Create a new Drizzle migration from schema changes |
+| `pnpm db:migrate` | Apply migrations to your local database |
+| `pnpm db:seed` | Sync `data/tools.json` into the DB |
+| `pnpm db:studio` | Inspect data via Drizzle Studio |
+| `pnpm typecheck` | Run TypeScript in `--noEmit` mode |
+| `pnpm test:smoke` | Execute the Playwright API smoke suite |
+| `pnpm test:unit` | Run Vitest email template snapshots |
+| `pnpm validate-tools` | Format + validate `data/tools.json` |
 
 ---
 
@@ -282,9 +255,9 @@ pnpm validate-tools   # Validate tools.json
 ### TypeScript
 
 - Use TypeScript for all code
-- Define types explicitly where inference isn't clear
-- Avoid `any` - use `unknown` if needed
-- Follow existing code patterns
+- Prefer explicit types when inference isn’t obvious (especially in shared libs)
+- Avoid `any`; reach for `unknown` or generics instead
+- Mirror existing patterns before introducing new abstractions
 
 ### Code Style
 
