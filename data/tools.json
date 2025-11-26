@@ -333,7 +333,7 @@
       "icon": "T9",
       "audience": ["developers"],
       "tier": "freemium",
-      "categories": ["tools, extensions"],
+      "categories": ["tools", "extensions"],
       "isPopular": false
     },
     {
@@ -531,7 +531,7 @@
     {
       "id": "postman",
       "name": "Postman",
-      "description": "An API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIsâ€”faster.",
+      "description": "An API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.",
       "tags": ["Developers", "Freemium"],
       "url": "https://www.postman.com/",
       "icon": "P",
@@ -855,7 +855,7 @@
     {
       "id": "unreal-engine",
       "name": "Unreal Engine",
-      "description": "The worldâ€™s most open and advanced real-time 3D creation tool for photorealistic visuals and immersive experiences.",
+      "description": "The world’s most open and advanced real-time 3D creation tool for photorealistic visuals and immersive experiences.",
       "tags": ["Game Dev", "3D", "Free"],
       "url": "https://www.unrealengine.com/",
       "icon": "UE",
@@ -891,7 +891,7 @@
     {
       "id": "blender",
       "name": "Blender",
-      "description": "A free and open source 3D creation suite. It supports the entirety of the 3D pipelineâ€”modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation.",
+      "description": "A free and open source 3D creation suite. It supports the entirety of the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation.",
       "tags": ["3D", "Animation", "Free", "Open Source"],
       "url": "https://www.blender.org/",
       "icon": "B",
@@ -999,7 +999,7 @@
     {
       "id": "hydrogen",
       "name": "Hydrogen",
-      "description": "Shopifyâ€™s headless commerce framework for building custom storefronts.",
+      "description": "Shopify’s headless commerce framework for building custom storefronts.",
       "tags": ["Web Dev", "Free", "Open Source"],
       "url": "https://shopify.dev/docs/custom-storefronts/hydrogen",
       "icon": "H",
@@ -1291,9 +1291,9 @@
       "tags": ["Web Dev", "Color", "Freemium"],
       "url": "https://coolors.co/",
       "icon": "C",
-      "audience": ["developers"],
+      "audience": ["developers", "students"],
       "tier": "freemium",
-      "categories": ["tools"],
+      "categories": ["tools", "design"],
       "isPopular": false
     },
     {
@@ -1995,7 +1995,7 @@
       "icon": "V",
       "audience": ["developers", "students"],
       "tier": "free",
-      "categories": ["tools, productivity-tools"],
+      "categories": ["tools", "productivity-tools"],
       "isPopular": false
     },
     {
@@ -2129,6 +2129,167 @@
       "audience": ["developers"],
       "tier": "freemium",
       "isPopular": false
+    },
+    {
+      "id": "capcut",
+      "name": "CapCut",
+      "description": "An AI-powered all-in-one video editor and graphic design tool for creating engaging content across various platforms.",
+      "categories": ["design", "productivity-tools"],
+      "tags": ["video editing", "AI", "graphic design", "content creation", "mobile app"],
+      "url": "https://www.capcut.com/",
+      "icon": "🎬",
+      "audience": ["content creators", "social media managers", "students", "marketers", "small businesses"],
+      "tier": "freemium",
+      "isPopular": false
+    },
+    {
+      "id": "photoroom",
+      "name": "Photoroom",
+      "description": "AI-powered photo editor and listing studio for product photography. Offers background removal, image generation, virtual models, and product staging for e-commerce and marketing.",
+      "categories": ["design"],
+      "tags": ["photo editing", "AI", "e-commerce", "product photography", "background remover"],
+      "url": "https://www.photoroom.com/",
+      "icon": "📸",
+      "audience": ["developers", "students", "marketers", "e-commerce sellers", "small businesses", "enterprises"],
+      "tier": "freemium"
+    },
+    {
+      "id": "freepik",
+      "name": "Freepik",
+      "description": "All-in-One AI Creative Suite for generating and editing images, videos, and audio, plus a vast stock library for creatives and designers.",
+      "categories": ["design"],
+      "tags": ["AI generation", "stock assets", "design", "video editing", "audio tools"],
+      "url": "https://www.freepik.com/",
+      "icon": "🎨",
+      "audience": ["designers", "marketers", "content creators", "filmmakers", "photographers", "students", "developers"],
+      "tier": "freemium",
+      "isPopular": false
+    },
+    {
+      "id": "tldraw",
+      "name": "tldraw",
+      "description": "A free, instant, and collaborative online whiteboard for brainstorming, diagramming, and visual thinking. Perfect for teams and individuals.",
+      "categories": ["productivity-tools", "design"],
+      "tags": ["whiteboard", "collaboration", "diagramming", "brainstorming", "free"],
+      "url": "https://tldraw.com",
+      "icon": "✏️",
+      "audience": ["developers", "students", "designers", "teams"],
+      "tier": "free",
+      "isPopular": false
+    },
+    {
+      "id": "sketchidraw",
+      "name": "Sketchidraw",
+      "description": "A collaborative online whiteboard with a unique hand-drawn aesthetic. Facilitates live collaboration and saves data locally in your browser.",
+      "categories": ["design", "productivity-tools"],
+      "tags": ["whiteboard", "collaboration", "sketching", "design", "brainstorming"],
+      "url": "https://sketchidraw.com",
+      "icon": "✏️",
+      "audience": ["designers", "developers", "students"],
+      "tier": "free",
+      "isPopular": false
+    },
+    {
+      "id": "otter-ai",
+      "name": "Otter.ai",
+      "description": "AI Meeting Agent for live transcription, automated summaries, action items, and AI Chat. It helps individuals and teams meet smarter and boost productivity.",
+      "categories": ["productivity-tools"],
+      "tags": ["transcription", "meeting notes", "AI assistant", "productivity", "summarization"],
+      "url": "https://otter.ai/",
+      "icon": "🎙️",
+      "audience": ["developers", "students", "sales professionals", "recruiters", "educators", "media professionals", "teams"],
+      "tier": "freemium",
+      "isPopular": false
+    },
+    {
+      "id": "descript-ai-editor",
+      "name": "Descript",
+      "description": "AI-powered video and podcast editor that simplifies content creation through text-based editing, transcription, AI speech, and generative video features.",
+      "categories": ["design", "productivity-tools"],
+      "tags": ["video editing", "podcast editing", "AI", "transcription", "content creation"],
+      "url": "https://descript.com",
+      "icon": "🎬",
+      "audience": ["creators", "marketers", "students", "developers", "businesses"],
+      "tier": "freemium"
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "description": "AI voice platform for realistic text-to-speech, voice cloning, dubbing, and AI music generation. Powers creators, developers, and enterprises.",
+      "categories": ["tools"],
+      "tags": ["AI voice", "text-to-speech", "voice cloning", "audio generation", "dubbing"],
+      "url": "https://elevenlabs.io/",
+      "icon": "🎤",
+      "audience": ["developers", "creators", "enterprises", "students"],
+      "tier": "freemium"
+    },
+    {
+      "id": "copy-ai-gtm",
+      "name": "Copy.ai GTM AI",
+      "description": "An AI-native platform for sales, marketing, and operations teams to automate go-to-market workflows, unify data, and streamline strategies.",
+      "categories": ["tools"],
+      "tags": ["AI", "marketing", "sales", "operations", "automation"],
+      "url": "https://copy.ai/",
+      "icon": "🤖",
+      "audience": ["marketing-professionals", "sales-professionals", "operations-teams", "business-owners"],
+      "tier": "freemium"
+    },
+    {
+      "id": "writesonic-ai-seo",
+      "name": "Writesonic",
+      "description": "AI platform for search visibility tracking and optimization across AI search engines and Google. Create and optimize content, fix SEO issues, and boost brand presence.",
+      "categories": ["tools"],
+      "tags": ["seo", "content-creation", "ai-search", "marketing", "optimization"],
+      "url": "https://writesonic.com/",
+      "icon": "🔍",
+      "audience": ["marketers", "seo-specialists", "content-creators", "businesses"],
+      "tier": "freemium"
+    },
+    {
+      "id": "oceanofpdf",
+      "name": "OceanofPDF",
+      "description": "Download a vast collection of free books, magazines, and web novels in PDF format. Explore by genre, author, or language.",
+      "categories": ["book-resources"],
+      "tags": ["ebooks", "pdf", "books", "reading", "free"],
+      "url": "https://oceanofpdf.com/",
+      "icon": "📚",
+      "audience": ["students", "readers", "learners"],
+      "tier": "free",
+      "isPopular": false
+    },
+    {
+      "id": "manus-ai",
+      "name": "Manus AI",
+      "description": "AI assistant for building full-stack web apps, creating presentations, and conducting wide research. Boost your productivity with intelligent tools.",
+      "categories": ["chatbots", "developer-tools"],
+      "tags": ["ai", "productivity", "web-development", "research", "presentations"],
+      "url": "https://manus.im/",
+      "icon": "✋",
+      "audience": ["developers", "students", "researchers", "designers"],
+      "tier": "freemium",
+      "isPopular": false
+    },
+    {
+      "id": "cluely-ai-assistant",
+      "name": "Cluely",
+      "description": "Live AI meeting assistant for real-time notes, Q&A, and follow-up emails. Undetectable, supports 12+ languages, and integrates with meeting platforms.",
+      "categories": ["productivity-tools"],
+      "tags": ["ai", "meetings", "productivity", "notes", "transcription"],
+      "url": "https://cluely.com",
+      "icon": "C",
+      "audience": ["professionals", "sales", "consultants", "recruiters"],
+      "tier": "freemium"
+    },
+    {
+      "id": "models-dev",
+      "name": "Models.dev",
+      "description": "An open-source, community-contributed database providing comprehensive specifications, pricing, and capabilities of various AI models, accessible via an API.",
+      "categories": ["documentation"],
+      "tags": ["AI models", "database", "open-source", "API", "specifications"],
+      "url": "https://models.dev",
+      "icon": "🤖",
+      "audience": ["developers", "students"],
+      "tier": "free"
     }
   ]
 }
