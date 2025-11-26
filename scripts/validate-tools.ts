@@ -2,6 +2,8 @@ import fs from "fs";
 import path from "path";
 import { z } from "zod";
 
+const VALID_AUDIENCES = ["students", "developers"] as const;
+
 const RawToolSchema = z.object({
   id: z.string(),
   name: z.string(),
@@ -10,7 +12,7 @@ const RawToolSchema = z.object({
   tags: z.array(z.string()),
   url: z.string().url(),
   icon: z.string().optional(),
-  audience: z.array(z.string()),
+  audience: z.array(z.string()).min(1),
   tier: z.enum(["free", "freemium", "paid"]),
   isPopular: z.boolean().optional(),
 });
@@ -25,6 +27,20 @@ const ToolSchema = RawToolSchema.superRefine((tool, ctx) => {
       code: z.ZodIssueCode.custom,
       path: ["categories"],
       message: "Each tool must provide at least one category.",
+    });
+  }
+
+  // Ensure audience includes at least "students" or "developers"
+  const normalizedAudience = tool.audience.map((a) => a.toLowerCase().trim());
+  const hasValidAudience = VALID_AUDIENCES.some((valid) =>
+    normalizedAudience.includes(valid)
+  );
+
+  if (!hasValidAudience) {
+    ctx.addIssue({
+      code: z.ZodIssueCode.custom,
+      path: ["audience"],
+      message: `Audience must include at least one of: ${VALID_AUDIENCES.join(", ")}`,
     });
   }
 }).transform(({ categories, isPopular, ...rest }) => {
@@ -119,31 +135,49 @@ console.log("✅ JSON validated successfully!");
 
 const normalizedTools = result.data.tools;
 
-fs.writeFileSync(jsonPath, JSON.stringify({ tools: normalizedTools }, null, 2));
-console.log("✅ tools.json normalized successfully!");
-
-const toolsTsPath = path.resolve("data/tools.ts");
-
-const toolsWithUpvotes = normalizedTools.map((tool) => ({
-  ...tool,
-  upvotes: 0,
-}));
-
-const toolsFileContent = `export interface Tool {
-  id: string;
-  name: string;
-  description: string;
-  categories: string[];
-  tags: string[];
-  url: string;
-  icon?: string;
-  audience: string[];
-  tier: 'free' | 'freemium' | 'paid';
-  isPopular?: boolean;
-  upvotes: number;
+// Check for duplicate tool IDs
+const idsSeen = new Set<string>();
+const duplicateIds: string[] = [];
+for (const tool of normalizedTools) {
+  if (idsSeen.has(tool.id)) {
+    duplicateIds.push(tool.id);
+  }
+  idsSeen.add(tool.id);
+}
+if (duplicateIds.length > 0) {
+  console.error(`❌ Duplicate tool IDs found: ${duplicateIds.join(", ")}`);
+  process.exit(1);
 }
 
-export const tools: Tool[] = ${JSON.stringify(toolsWithUpvotes, null, 2)};`;
+// Check for duplicate names (case-sensitive)
+const namesSeen = new Set<string>();
+const duplicateNames: string[] = [];
+for (const tool of normalizedTools) {
+  if (namesSeen.has(tool.name)) {
+    duplicateNames.push(tool.name);
+  }
+  namesSeen.add(tool.name);
+}
+if (duplicateNames.length > 0) {
+  console.error(`❌ Duplicate tool names found: ${duplicateNames.join(", ")}`);
+  process.exit(1);
+}
 
-fs.writeFileSync(toolsTsPath, toolsFileContent);
-console.log("✅ tools.ts updated successfully!");
+// Check for duplicate URLs (case-sensitive)
+const urlsSeen = new Set<string>();
+const duplicateUrls: string[] = [];
+for (const tool of normalizedTools) {
+  if (urlsSeen.has(tool.url)) {
+    duplicateUrls.push(tool.url);
+  }
+  urlsSeen.add(tool.url);
+}
+if (duplicateUrls.length > 0) {
+  console.error(`❌ Duplicate tool URLs found: ${duplicateUrls.join(", ")}`);
+  process.exit(1);
+}
+
+console.log("✅ No duplicate IDs, names, or URLs detected!");
+
+fs.writeFileSync(jsonPath, JSON.stringify({ tools: normalizedTools }, null, 2));
+console.log("✅ tools.json normalized successfully!");

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function LandingPage() {
+export default function LandingPage() { 
   const tools = toolsData.tools;
   const integrationTools: IntegrationTool[] = tools.map((tool) => ({
     id: tool.id,
