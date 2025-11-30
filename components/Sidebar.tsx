@@ -16,6 +16,7 @@ import {
   ChevronLeft,
   ChevronRight,
   Palette,
+  Plus,
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
@@ -25,6 +26,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "./ui/tooltip";
+import { RecommendToolDialog } from "./RecommendToolDialog";
 
 interface SidebarProps {
   selectedCategory: string;
@@ -56,6 +58,7 @@ export function Sidebar({
   onMobileSelect,
 }: SidebarProps) {
   const [isCollapsed, setIsCollapsed] = useState(true);
+  const [isRecommendOpen, setIsRecommendOpen] = useState(false);
 
   const handleCategoryClick = (categoryId: string) => {
     onCategorySelect(categoryId);
@@ -161,8 +164,50 @@ export function Sidebar({
               return buttonContent;
             })}
           </nav>
+
+          {/* Recommend Tool Button */}
+          <div
+            className={`mt-6 pt-6 border-t border-gray-200 dark:border-sidebar-border ${
+              isCollapsed ? "flex justify-center" : ""
+            }`}
+          >
+            {isCollapsed ? (
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <motion.button
+                    onClick={() => setIsRecommendOpen(true)}
+                    className="w-full flex items-center justify-center p-2 rounded-lg text-gray-700 dark:text-sidebar-foreground hover:bg-gray-100 dark:hover:bg-sidebar-accent hover:text-gray-900 dark:hover:text-sidebar-accent-foreground transition-colors"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Plus className="w-5 h-5" />
+                  </motion.button>
+                </TooltipTrigger>
+                <TooltipContent
+                  side="right"
+                  className="bg-gray-900 dark:bg-card text-white dark:text-foreground border-gray-700 dark:border-border"
+                >
+                  <p>Recommend a Tool</p>
+                </TooltipContent>
+              </Tooltip>
+            ) : (
+              <motion.button
+                onClick={() => setIsRecommendOpen(true)}
+                className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-left text-gray-700 dark:text-sidebar-foreground hover:bg-gray-100 dark:hover:bg-sidebar-accent hover:text-gray-900 dark:hover:text-sidebar-accent-foreground transition-colors"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <Plus className="w-4 h-4" />
+                <span className="text-sm font-medium">Recommend a Tool</span>
+              </motion.button>
+            )}
+          </div>
         </div>
       </motion.aside>
+      <RecommendToolDialog
+        isOpen={isRecommendOpen}
+        onClose={() => setIsRecommendOpen(false)}
+      />
     </TooltipProvider>
   );
 }

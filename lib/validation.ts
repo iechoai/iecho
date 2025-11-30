@@ -107,6 +107,30 @@ export const collectionUpdateSchema = z
   })
   .strict();
 
+/**
+ * Validation schema for POST /api/tools/recommend request body.
+ * Enforces tool name, valid URL, and a short description.
+ */
+export const toolRecommendationSchema = z
+  .object({
+    name: z.string().trim().min(1, "Tool name is required").max(100),
+    url: z.string().trim().url("Must be a valid URL"),
+    description: z
+      .string()
+      .trim()
+      .min(10, "Description must be at least 10 characters")
+      .max(500),
+    category: z.string().trim().min(1, "Category is required"),
+    tags: z.string().trim().optional(),
+    email: z
+      .string()
+      .trim()
+      .email("Invalid email address")
+      .optional()
+      .or(z.literal("")),
+  })
+  .strict();
+
 export const toolRecordSchema = z.object({
   id: z.string(),
   name: z.string(),
@@ -135,5 +159,8 @@ export type ToolSearchQueryInput = z.infer<typeof toolSearchQuerySchema>;
 export type UpvotePayload = z.infer<typeof upvotePayloadSchema>;
 export type ContactPayload = z.infer<typeof contactPayloadSchema>;
 export type CollectionUpdatePayload = z.infer<typeof collectionUpdateSchema>;
+export type ToolRecommendationPayload = z.infer<
+  typeof toolRecommendationSchema
+>;
 export type ToolRecord = z.infer<typeof toolRecordSchema>;
 export type PaginatedToolResponse = z.infer<typeof paginatedToolResponseSchema>;

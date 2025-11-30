@@ -40,7 +40,9 @@ const ToolSchema = RawToolSchema.superRefine((tool, ctx) => {
     ctx.addIssue({
       code: z.ZodIssueCode.custom,
       path: ["audience"],
-      message: `Audience must include at least one of: ${VALID_AUDIENCES.join(", ")}`,
+      message: `Audience must include at least one of: ${VALID_AUDIENCES.join(
+        ", "
+      )}`,
     });
   }
 }).transform(({ categories, isPopular, ...rest }) => {
