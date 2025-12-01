@@ -4,3299 +4,1968 @@
       "id": "chatgpt",
       "name": "ChatGPT",
       "description": "A large language model-based chatbot developed by OpenAI that allows users to have human-like conversations and so much more.",
-      "tags": [
-        "AI",
-        "Free",
-        "Writing"
-      ],
+      "tags": ["AI", "Free", "Writing"],
       "url": "https://chat.openai.com",
       "icon": "GPT",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "chatbots"
-      ],
+      "categories": ["chatbots"],
       "isPopular": true
     },
     {
       "id": "google-gemini",
       "name": "Google Gemini",
-      "description": "Google Gemini is a personal AI assistant that helps with various tasks. It's a conversational AI developed by Google, accessible through a web interface.",
-      "tags": [
-        "AI",
-        "Free",
-        "Research"
-      ],
+      "description": "Google Gemini is a personal AI assistant that helps with various tasks. It\u0027s a conversational AI developed by Google, accessible through a web interface.",
+      "tags": ["AI", "Free", "Research"],
       "url": "https://gemini.google.com",
       "icon": "GM",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "chatbots"
-      ],
+      "categories": ["chatbots"],
       "isPopular": false
     },
     {
       "id": "claude",
       "name": "Claude",
       "description": "Claude is a next-generation AI assistant by Anthropic, designed for problem-solvers. It helps with writing, coding, data analysis, and team collaboration, offering free and paid plans for individuals and enterprises.",
-      "tags": [
-        "AI",
-        "Free",
-        "Analysis"
-      ],
+      "tags": ["AI", "Free", "Analysis"],
       "url": "https://claude.ai",
       "icon": "CL",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "chatbots"
-      ],
+      "categories": ["chatbots"],
       "isPopular": false
     },
     {
       "id": "microsoft-copilot",
       "name": "Microsoft Copilot",
       "description": "An AI assistant integrated with Microsoft Office products, offering unique functionalities for streamlining workflows.",
-      "tags": [
-        "AI",
-        "Freemium"
-      ],
+      "tags": ["AI", "Freemium"],
       "url": "https://copilot.microsoft.com/",
       "icon": "C",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "chatbots"
-      ],
+      "categories": ["chatbots"],
       "isPopular": false
     },
     {
       "id": "perplexity-ai",
       "name": "Perplexity AI",
       "description": "An AI-powered search engine that provides answers to questions using large language models.",
-      "tags": [
-        "AI",
-        "Freemium"
-      ],
+      "tags": ["AI", "Freemium"],
       "url": "https://www.perplexity.ai/",
       "icon": "P",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "chatbots"
-      ],
+      "categories": ["chatbots"],
       "isPopular": false
     },
     {
       "id": "jasper-chat",
       "name": "Jasper Chat",
-      "description": "A chatbot for businesses and marketers that can be trained on a brand's voice to create personalized and on-brand content.",
-      "tags": [
-        "AI",
-        "Paid"
-      ],
+      "description": "A chatbot for businesses and marketers that can be trained on a brand\u0027s voice to create personalized and on-brand content.",
+      "tags": ["AI", "Paid"],
       "url": "https://www.jasper.ai/chat",
       "icon": "J",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "paid",
-      "categories": [
-        "chatbots"
-      ],
+      "categories": ["chatbots"],
       "isPopular": false
     },
     {
       "id": "poe-ai",
       "name": "Poe AI",
       "description": "A fast, helpful AI chat that lets you ask questions, get instant answers, and have back-and-forth conversations.",
-      "tags": [
-        "AI",
-        "Freemium"
-      ],
+      "tags": ["AI", "Freemium"],
       "url": "https://poe.com/",
       "icon": "Poe",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "chatbots"
-      ],
+      "categories": ["chatbots"],
       "isPopular": false
     },
     {
       "id": "notion-ai",
       "name": "NotionAI",
       "description": "Notion is an AI-powered workspace that helps teams capture knowledge, manage projects, and automate tasks. It offers tools for docs, wikis, project management, and AI agents to streamline workflows.",
-      "tags": [
-        "AI",
-        "Productivity",
-        "Organization"
-      ],
+      "tags": ["AI", "Productivity", "Organization"],
       "url": "https://www.notion.so",
       "icon": "NT",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "note-taking"
-      ],
+      "categories": ["note-taking"],
       "isPopular": true
     },
     {
       "id": "obsidian",
       "name": "Obsidian",
       "description": "Powerful knowledge base that works on top of local folder of plain text files",
-      "tags": [
-        "Knowledge Management",
-        "Free",
-        "Local"
-      ],
+      "tags": ["Knowledge Management", "Free", "Local"],
       "url": "https://obsidian.md",
       "icon": "OB",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "note-taking"
-      ],
+      "categories": ["note-taking"],
       "isPopular": false
     },
     {
       "id": "evernote",
       "name": "Evernote",
       "description": "A popular app for note-taking, organizing, task management, and archiving.",
-      "tags": [
-        "Productivity",
-        "Freemium"
-      ],
+      "tags": ["Productivity", "Freemium"],
       "url": "https://evernote.com/",
       "icon": "E",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "note-taking"
-      ],
+      "categories": ["note-taking"],
       "isPopular": false
     },
     {
       "id": "onenote",
       "name": "OneNote",
       "description": "A digital note-taking app that provides a single place for keeping all of your notes, research, plans, and information.",
-      "tags": [
-        "Productivity",
-        "Free"
-      ],
+      "tags": ["Productivity", "Free"],
       "url": "https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app",
       "icon": "O",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "note-taking"
-      ],
+      "categories": ["note-taking"],
       "isPopular": false
     },
     {
       "id": "google-keep",
       "name": "Google Keep",
       "description": "A note-taking service included as part of the free, web-based Google Docs Editors suite offered by Google.",
-      "tags": [
-        "Productivity",
-        "Free"
-      ],
+      "tags": ["Productivity", "Free"],
       "url": "https://keep.google.com/",
       "icon": "K",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "free",
-      "categories": [
-        "note-taking"
-      ],
+      "categories": ["note-taking"],
       "isPopular": false
     },
     {
       "id": "notebooklm",
       "name": "NotebookLM",
       "description": "NotebookLM is an AI-powered research and writing assistant that helps users synthesize information, ask questions, and generate content from their uploaded documents.",
-      "tags": [
-        "AI",
-        "Education",
-        "Research"
-      ],
+      "tags": ["AI", "Education", "Research"],
       "url": "https://notebooklm.google.com",
       "icon": "NLM",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "free",
-      "categories": [
-        "studying"
-      ],
+      "categories": ["studying"],
       "isPopular": true
     },
     {
       "id": "anki",
       "name": "Anki",
       "description": "Anki is a powerful, intelligent flashcard program that uses spaced repetition to help users remember information more effectively. It offers synchronization, media support, customization, and add-ons.",
-      "tags": [
-        "Flashcards",
-        "Free",
-        "Memory"
-      ],
+      "tags": ["Flashcards", "Free", "Memory"],
       "url": "https://apps.ankiweb.net",
       "icon": "ANK",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "free",
-      "categories": [
-        "studying"
-      ],
+      "categories": ["studying"],
       "isPopular": false
     },
     {
       "id": "wolframalpha",
       "name": "WolframAlpha",
       "description": "A computational knowledge engine or answer engine developed by Wolfram Research.",
-      "tags": [
-        "Education",
-        "Freemium"
-      ],
+      "tags": ["Education", "Freemium"],
       "url": "https://www.wolframalpha.com/",
       "icon": "WA",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "studying"
-      ],
+      "categories": ["studying"],
       "isPopular": false
     },
     {
       "id": "quizlet",
       "name": "Quizlet",
       "description": "A mobile and web-based study application that allows users to study information via learning tools and games.",
-      "tags": [
-        "Students",
-        "Freemium"
-      ],
+      "tags": ["Students", "Freemium"],
       "url": "https://quizlet.com/",
       "icon": "Q",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "freemium",
-      "categories": [
-        "studying"
-      ],
+      "categories": ["studying"],
       "isPopular": false
     },
     {
       "id": "khan-academy",
       "name": "Khan Academy",
       "description": "An American non-profit educational organization created in 2006 by Sal Khan, with the goal of creating a set of online tools that help educate students.",
-      "tags": [
-        "Students",
-        "Free",
-        "Education"
-      ],
+      "tags": ["Students", "Free", "Education"],
       "url": "https://www.khanacademy.org/",
       "icon": "KA",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "free",
-      "categories": [
-        "studying"
-      ],
+      "categories": ["studying"],
       "isPopular": false
     },
     {
       "id": "google-tasks",
       "name": "Google Tasks",
       "description": "Google Tasks allows you to organize and track your to-dos. You can create, assign, and track tasks within Google Workspace apps. It includes features like reminders, subtasks, and recurring task options. Tasks with due dates automatically appear in your Google Calendar, and your tasks sync across all your devices.",
-      "tags": [
-        "Tasks",
-        "Free",
-        "Google"
-      ],
+      "tags": ["Tasks", "Free", "Google"],
       "url": "https://tasks.google.com",
       "icon": "GT",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "scheduling"
-      ],
+      "categories": ["scheduling"],
       "isPopular": false
     },
     {
       "id": "microsoft-todo",
       "name": "Microsoft To Do",
-      "description": "Microsoft To Do is a simple and intelligent to-do list that helps users manage tasks in one place. It offers features like 'My Day' for personalized suggestions, due dates, reminders, and the ability to break down larger tasks into steps. It integrates seamlessly with Outlook tasks and syncs across various devices.",
-      "tags": [
-        "Tasks",
-        "Free",
-        "Microsoft"
-      ],
+      "description": "Microsoft To Do is a simple and intelligent to-do list that helps users manage tasks in one place. It offers features like \u0027My Day\u0027 for personalized suggestions, due dates, reminders, and the ability to break down larger tasks into steps. It integrates seamlessly with Outlook tasks and syncs across various devices.",
+      "tags": ["Tasks", "Free", "Microsoft"],
       "url": "https://to-do.office.com",
       "icon": "MTD",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "scheduling"
-      ],
+      "categories": ["scheduling"],
       "isPopular": false
     },
     {
       "id": "google-calendar",
       "name": "Google Calendar",
       "description": "Google Calendar is a time-management and scheduling calendar service developed by Google, that allows you to create and edit events.",
-      "tags": [
-        "Productivity",
-        "Free"
-      ],
+      "tags": ["Productivity", "Free"],
       "url": "https://calendar.google.com/",
       "icon": "GC",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "scheduling"
-      ],
+      "categories": ["scheduling"],
       "isPopular": false
     },
     {
       "id": "calendly",
       "name": "Calendly",
       "description": "A hub for scheduling meetings professionally and efficiently, eliminating the hassle of back-and-forth emails so you can get back to work.",
-      "tags": [
-        "Productivity",
-        "Freemium"
-      ],
+      "tags": ["Productivity", "Freemium"],
       "url": "https://calendly.com/",
       "icon": "C",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "scheduling"
-      ],
+      "categories": ["scheduling"],
       "isPopular": false
     },
     {
       "id": "doodle",
       "name": "Doodle",
       "description": "The simplest way to schedule meetings with clients, colleagues, or friends.",
-      "tags": [
-        "Productivity",
-        "Freemium"
-      ],
+      "tags": ["Productivity", "Freemium"],
       "url": "https://doodle.com/",
       "icon": "D",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "freemium",
-      "categories": [
-        "scheduling"
-      ],
+      "categories": ["scheduling"],
       "isPopular": false
     },
     {
       "id": "zoho-bookings",
       "name": "Zoho Bookings",
       "description": "Zoho Bookings is an intuitive, AI-powered online appointment scheduling software that helps businesses and individuals manage meetings, reduce administrative tasks, and allow clients to self-schedule appointments.",
-      "tags": [
-        "Productivity",
-        "Freemium"
-      ],
+      "tags": ["Productivity", "Freemium"],
       "url": "https://www.zoho.com/bookings/",
       "icon": "ZB",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "scheduling"
-      ],
+      "categories": ["scheduling"],
       "isPopular": false
     },
     {
       "id": "github",
       "name": "GitHub",
       "description": "GitHub is a developer platform that provides tools for version control, collaborative software development, and project management, integrating AI assistance, automation, and security features.",
-      "tags": [
-        "Git",
-        "Free",
-        "Collaboration"
-      ],
+      "tags": ["Git", "Free", "Collaboration"],
       "url": "https://github.com",
       "icon": "GH",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": true
     },
     {
       "id": "vscode",
       "name": "VS Code",
       "description": "Visual Studio Code is a free, open-source code editor that supports numerous programming languages, offers AI-powered assistance, integrated debugging, version control, and extensive customization through extensions.",
-      "tags": [
-        "Editor",
-        "Free",
-        "Extensions"
-      ],
+      "tags": ["Editor", "Free", "Extensions"],
       "url": "https://code.visualstudio.com",
       "icon": "VSC",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": true
     },
     {
       "id": "figma",
       "name": "Figma",
       "description": "Figma is a collaborative platform that enables teams to brainstorm, design, prototype, and build digital products, offering integrated tools for UI/UX design, whiteboarding, and AI-powered code generation.",
-      "tags": [
-        "Design",
-        "Free",
-        "Collaboration"
-      ],
+      "tags": ["Design", "Free", "Collaboration"],
       "url": "https://www.figma.com",
       "icon": "FIG",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools",
-        "design"
-      ],
+      "categories": ["tools", "design"],
       "isPopular": true
     },
     {
       "id": "deepseek",
-      "name": "DeepSeek Coder (Chat & Repo)",
+      "name": "DeepSeek Coder (Chat \u0026 Repo)",
       "description": "An AI language model that is specialized in coding and can be used as a powerful code assistant.",
-      "tags": [
-        "AI",
-        "Developers",
-        "Free"
-      ],
+      "tags": ["AI", "Developers", "Free"],
       "url": "https://chat.deepseek.com",
       "icon": "DS",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "chatbots"
-      ],
+      "categories": ["chatbots"],
       "isPopular": false
     },
     {
       "id": "tabnine",
       "name": "Tabnine",
       "description": "An AI code completion assistant that helps developers write better code faster.",
-      "tags": [
-        "AI",
-        "Developers",
-        "Freemium"
-      ],
+      "tags": ["AI", "Developers", "Freemium"],
       "url": "https://www.tabnine.com/",
       "icon": "T9",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "tools",
-        "extensions"
-      ],
+      "categories": ["tools", "extensions"],
       "isPopular": false
     },
     {
       "id": "snyk",
       "name": "Snyk",
       "description": "A developer security platform that helps you find and fix vulnerabilities in your code, open source dependencies, containers, and infrastructure as code.",
-      "tags": [
-        "Security",
-        "Developers",
-        "Freemium"
-      ],
+      "tags": ["Security", "Developers", "Freemium"],
       "url": "https://snyk.io/",
       "icon": "Snyk",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "loom",
       "name": "Loom",
       "description": "A video messaging tool that helps you get your message across through instantly shareable videos.",
-      "tags": [
-        "Video",
-        "Freemium"
-      ],
+      "tags": ["Video", "Freemium"],
       "url": "https://www.loom.com/",
       "icon": "L",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "productivity-tools"
-      ],
+      "categories": ["productivity-tools"],
       "isPopular": false
     },
     {
       "id": "miro",
       "name": "Miro",
       "description": "The online collaborative whiteboard platform to bring teams together, anytime, anywhere.",
-      "tags": [
-        "Collaboration",
-        "Freemium"
-      ],
+      "tags": ["Collaboration", "Freemium"],
       "url": "https://miro.com/",
       "icon": "M",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "productivity-tools"
-      ],
+      "categories": ["productivity-tools"],
       "isPopular": false
     },
     {
       "id": "trello",
       "name": "Trello",
-      "description": "A collaboration tool that organizes your projects into boards. In one glance, Trello tells you what's being worked on, who's working on what, and where something is in a process.",
-      "tags": [
-        "Project Management",
-        "Freemium"
-      ],
+      "description": "A collaboration tool that organizes your projects into boards. In one glance, Trello tells you what\u0027s being worked on, who\u0027s working on what, and where something is in a process.",
+      "tags": ["Project Management", "Freemium"],
       "url": "https://trello.com/",
       "icon": "T",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "productivity-tools"
-      ],
+      "categories": ["productivity-tools"],
       "isPopular": false
     },
     {
       "id": "asana",
       "name": "Asana",
       "description": "A web and mobile application designed to help teams organize, track, and manage their work.",
-      "tags": [
-        "Project Management",
-        "Freemium"
-      ],
+      "tags": ["Project Management", "Freemium"],
       "url": "https://asana.com/",
       "icon": "A",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "productivity-tools"
-      ],
+      "categories": ["productivity-tools"],
       "isPopular": false
     },
     {
       "id": "clickup",
       "name": "ClickUp",
       "description": "A cloud-based collaboration and project management tool suitable for businesses of all sizes and industries.",
-      "tags": [
-        "Project Management",
-        "Freemium"
-      ],
+      "tags": ["Project Management", "Freemium"],
       "url": "https://clickup.com/",
       "icon": "CU",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "productivity-tools"
-      ],
+      "categories": ["productivity-tools"],
       "isPopular": false
     },
     {
       "id": "todoist",
       "name": "Todoist",
       "description": "A cloud-based task management application that allows users to manage their tasks from a smartphone, tablet and computer.",
-      "tags": [
-        "Task Management",
-        "Freemium"
-      ],
+      "tags": ["Task Management", "Freemium"],
       "url": "https://todoist.com/",
       "icon": "T",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "productivity-tools"
-      ],
+      "categories": ["productivity-tools"],
       "isPopular": false
     },
     {
       "id": "quillbot",
       "name": "QuillBot",
       "description": "A paraphrasing and summarizing tool that helps millions of students and professionals cut their writing time by more than half.",
-      "tags": [
-        "Writing",
-        "Freemium"
-      ],
+      "tags": ["Writing", "Freemium"],
       "url": "https://quillbot.com/",
       "icon": "Q",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "freemium",
-      "categories": [
-        "extensions"
-      ],
+      "categories": ["extensions"],
       "isPopular": false
     },
     {
       "id": "languagetool",
       "name": "LanguageTool",
       "description": "A free and open-source grammar, style, and spell checker.",
-      "tags": [
-        "Writing",
-        "Freemium"
-      ],
+      "tags": ["Writing", "Freemium"],
       "url": "https://languagetool.org/",
       "icon": "LT",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "extensions"
-      ],
+      "categories": ["extensions"],
       "isPopular": false
     },
     {
       "id": "deepl",
       "name": "DeepL",
       "description": "A neural machine translation service that is able to translate text and entire documents.",
-      "tags": [
-        "Translation",
-        "Freemium"
-      ],
+      "tags": ["Translation", "Freemium"],
       "url": "https://www.deepl.com/translator",
       "icon": "DL",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "photopea",
       "name": "Photopea",
       "description": "A web-based photo and graphics editor which can work with raster and vector graphics.",
-      "tags": [
-        "Design",
-        "Free"
-      ],
+      "tags": ["Design", "Free"],
       "url": "https://www.photopea.com/",
       "icon": "P",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "tools",
-        "design"
-      ],
+      "categories": ["tools", "design"],
       "isPopular": false
     },
     {
       "id": "canva",
       "name": "Canva",
       "description": "A graphic design platform, used to create social media graphics, presentations, posters, documents and other visual content.",
-      "tags": [
-        "Design",
-        "Freemium"
-      ],
+      "tags": ["Design", "Freemium"],
       "url": "https://www.canva.com/",
       "icon": "C",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "freemium",
-      "categories": [
-        "tools",
-        "design"
-      ],
+      "categories": ["tools", "design"],
       "isPopular": false
     },
     {
       "id": "slidesgo",
       "name": "Slidesgo",
       "description": "An online platform that offers a wide variety of free Google Slides themes and PowerPoint templates.",
-      "tags": [
-        "Presentation",
-        "Freemium"
-      ],
+      "tags": ["Presentation", "Freemium"],
       "url": "https://slidesgo.com/",
       "icon": "S",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "freemium",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "prezi",
       "name": "Prezi",
       "description": "A presentation software that uses motion, zoom, and spatial relationships to bring your ideas to life and make you a great presenter.",
-      "tags": [
-        "Presentation",
-        "Freemium"
-      ],
+      "tags": ["Presentation", "Freemium"],
       "url": "https://prezi.com/",
       "icon": "P",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "freemium",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "gimp",
       "name": "GIMP",
       "description": "A free and open-source raster graphics editor used for image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks.",
-      "tags": [
-        "Design",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Design", "Free", "Open Source"],
       "url": "https://www.gimp.org/",
       "icon": "G",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "tools",
-        "design"
-      ],
+      "categories": ["tools", "design"],
       "isPopular": false
     },
     {
       "id": "github-copilot",
       "name": "GitHub Copilot",
       "description": "Your AI pair programmer that helps you write code faster and with less work.",
-      "tags": [
-        "Developers",
-        "AI",
-        "Paid"
-      ],
+      "tags": ["Developers", "AI", "Paid"],
       "url": "https://github.com/features/copilot",
       "icon": "Cop",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "paid",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "postman",
       "name": "Postman",
       "description": "An API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.",
-      "tags": [
-        "Developers",
-        "Freemium"
-      ],
+      "tags": ["Developers", "Freemium"],
       "url": "https://www.postman.com/",
       "icon": "P",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "docker",
       "name": "Docker",
       "description": "A set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.",
-      "tags": [
-        "Developers",
-        "Freemium",
-        "Open Source"
-      ],
+      "tags": ["Developers", "Freemium", "Open Source"],
       "url": "https://www.docker.com/",
       "icon": "D",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "mdn",
       "name": "MDN Web Docs",
       "description": "MDN Web Docs provides comprehensive documentation and learning resources for web technologies, including HTML, CSS, JavaScript, and Web APIs, aimed at developers.",
-      "tags": [
-        "Web",
-        "Free",
-        "Reference"
-      ],
+      "tags": ["Web", "Free", "Reference"],
       "url": "https://developer.mozilla.org",
       "icon": "MDN",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "stackoverflow",
       "name": "Stack Overflow",
       "description": "Stack Overflow is a community-driven question-and-answer platform for developers to ask technical questions, share knowledge, and collaborate on programming challenges.",
-      "tags": [
-        "Q&A",
-        "Free",
-        "Community"
-      ],
+      "tags": ["Q\u0026A", "Free", "Community"],
       "url": "https://stackoverflow.com",
       "icon": "SO",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": true
     },
     {
       "id": "devdocs",
       "name": "DevDocs",
       "description": "An open source web app that combines multiple developer documentations in a single searchable interface.",
-      "tags": [
-        "Web Dev",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Web Dev", "Free", "Open Source"],
       "url": "https://devdocs.io/",
       "icon": "DD",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "w3schools",
       "name": "W3Schools",
       "description": "A freemium educational website for learning coding online.",
-      "tags": [
-        "Web Dev",
-        "Free"
-      ],
+      "tags": ["Web Dev", "Free"],
       "url": "https://www.w3schools.com/",
       "icon": "W3S",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "freecodecamp",
       "name": "freeCodeCamp",
       "description": "freeCodeCamp is a non-profit organization offering a free, self-paced online curriculum and certifications in web development, programming, and data science through interactive lessons and projects.",
-      "tags": [
-        "Coding",
-        "Free",
-        "Certification"
-      ],
+      "tags": ["Coding", "Free", "Certification"],
       "url": "https://www.freecodecamp.org",
       "icon": "FCC",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "tutorials"
-      ],
+      "categories": ["tutorials"],
       "isPopular": false
     },
     {
       "id": "coursera",
       "name": "Coursera",
       "description": "Coursera is an online learning platform that provides access to a wide range of courses, specializations, and degree programs from leading universities and companies, enabling individuals to acquire new skills and advance their careers.",
-      "tags": [
-        "Courses",
-        "Paid",
-        "Certification"
-      ],
+      "tags": ["Courses", "Paid", "Certification"],
       "url": "https://www.coursera.org",
       "icon": "CRS",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "paid",
-      "categories": [
-        "tutorials"
-      ],
+      "categories": ["tutorials"],
       "isPopular": false
     },
     {
       "id": "udemy",
       "name": "Udemy",
       "description": "A global destination for online learning, with a massive library of courses on a wide range of topics.",
-      "tags": [
-        "Education",
-        "Paid"
-      ],
+      "tags": ["Education", "Paid"],
       "url": "https://www.udemy.com/",
       "icon": "U",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "paid",
-      "categories": [
-        "tutorials"
-      ],
+      "categories": ["tutorials"],
       "isPopular": false
     },
     {
       "id": "codecademy",
       "name": "Codecademy",
       "description": "An online interactive platform that offers free coding classes in 12 different programming languages.",
-      "tags": [
-        "Education",
-        "Freemium"
-      ],
+      "tags": ["Education", "Freemium"],
       "url": "https://www.codecademy.com/",
       "icon": "C",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "tutorials"
-      ],
+      "categories": ["tutorials"],
       "isPopular": false
     },
     {
       "id": "zapier",
       "name": "Zapier",
       "description": "Zapier is an online automation tool that connects various web applications to automate repetitive tasks and workflows, including AI-powered functionalities, without requiring coding.",
-      "tags": [
-        "Automation",
-        "Integration"
-      ],
+      "tags": ["Automation", "Integration"],
       "url": "https://zapier.com",
       "icon": "ZAP",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "paid",
-      "categories": [
-        "no-code-tools"
-      ],
+      "categories": ["no-code-tools"],
       "isPopular": false
     },
     {
       "id": "airtable",
       "name": "Airtable",
       "description": "Airtable is an AI-powered, no-code platform that enables enterprises to build custom business applications, manage relational databases, automate workflows, and create custom interfaces for data visualization and collaboration.",
-      "tags": [
-        "Database",
-        "Organization"
-      ],
+      "tags": ["Database", "Organization"],
       "url": "https://airtable.com",
       "icon": "AT",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "paid",
-      "categories": [
-        "no-code-tools"
-      ],
+      "categories": ["no-code-tools"],
       "isPopular": false
     },
     {
       "id": "webflow",
       "name": "Webflow",
       "description": "A visual web development platform that allows users to design, build, and launch responsive websites without writing code.",
-      "tags": [
-        "Design",
-        "Web Dev",
-        "Freemium"
-      ],
+      "tags": ["Design", "Web Dev", "Freemium"],
       "url": "https://webflow.com/",
       "icon": "W",
-      "audience": [
-        "developers",
-        "students"
-      ],
+      "audience": ["developers", "students"],
       "tier": "freemium",
-      "categories": [
-        "no-code-tools",
-        "design"
-      ],
+      "categories": ["no-code-tools", "design"],
       "isPopular": false
     },
     {
       "id": "bubble",
       "name": "Bubble",
       "description": "A no-code platform that lets you build and launch web applications without writing any code.",
-      "tags": [
-        "Web Dev",
-        "Freemium"
-      ],
+      "tags": ["Web Dev", "Freemium"],
       "url": "https://bubble.io/",
       "icon": "B",
-      "audience": [
-        "developers",
-        "students"
-      ],
+      "audience": ["developers", "students"],
       "tier": "freemium",
-      "categories": [
-        "no-code-tools"
-      ],
+      "categories": ["no-code-tools"],
       "isPopular": false
     },
     {
       "id": "adalo",
       "name": "Adalo",
       "description": "A no-code platform for building powerful web and mobile apps.",
-      "tags": [
-        "Web Dev",
-        "Mobile Dev",
-        "Freemium"
-      ],
+      "tags": ["Web Dev", "Mobile Dev", "Freemium"],
       "url": "https://www.adalo.com/",
       "icon": "A",
-      "audience": [
-        "developers",
-        "students"
-      ],
+      "audience": ["developers", "students"],
       "tier": "freemium",
-      "categories": [
-        "no-code-tools"
-      ],
+      "categories": ["no-code-tools"],
       "isPopular": false
     },
     {
       "id": "grammarly",
       "name": "Grammarly",
       "description": "An AI-powered writing assistant that helps improve grammar, spelling, punctuation, and style in real-time.",
-      "tags": [
-        "Writing",
-        "Productivity",
-        "Freemium"
-      ],
+      "tags": ["Writing", "Productivity", "Freemium"],
       "url": "https://www.grammarly.com/",
       "icon": "G",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "freemium",
-      "categories": [
-        "extensions"
-      ],
+      "categories": ["extensions"],
       "isPopular": false
     },
     {
       "id": "react-developer-tools",
       "name": "React Developer Tools",
       "description": "A browser extension that allows you to inspect the React component hierarchies in the Chrome and Firefox developer tools.",
-      "tags": [
-        "Developers",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Developers", "Free", "Open Source"],
       "url": "https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en",
       "icon": "RD",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "extensions"
-      ],
+      "categories": ["extensions"],
       "isPopular": false
     },
     {
       "id": "vue.js-devtools",
       "name": "Vue.js devtools",
       "description": "A browser extension for debugging Vue.js applications.",
-      "tags": [
-        "Developers",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Developers", "Free", "Open Source"],
       "url": "https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en",
       "icon": "V",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "extensions"
-      ],
+      "categories": ["extensions"],
       "isPopular": false
     },
     {
       "id": "json-formatter",
       "name": "JSON Formatter",
       "description": "A browser extension to make JSON easy to read.",
-      "tags": [
-        "Developers",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Developers", "Free", "Open Source"],
       "url": "https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en",
       "icon": "JF",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "extensions"
-      ],
+      "categories": ["extensions"],
       "isPopular": false
     },
     {
       "id": "google-books",
       "name": "Google Books",
-      "description": "Search the world's most comprehensive index of full-text books.",
-      "tags": [
-        "Reading",
-        "Free"
-      ],
+      "description": "Search the world\u0027s most comprehensive index of full-text books.",
+      "tags": ["Reading", "Free"],
       "url": "https://books.google.com/",
       "icon": "GB",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "free",
-      "categories": [
-        "book-resources"
-      ],
+      "categories": ["book-resources"],
       "isPopular": false
     },
     {
       "id": "goodreads",
       "name": "Goodreads",
-      "description": "Discover and share books you love. Track the books you're reading, have read, and want to read.",
-      "tags": [
-        "Reading",
-        "Community"
-      ],
+      "description": "Discover and share books you love. Track the books you\u0027re reading, have read, and want to read.",
+      "tags": ["Reading", "Community"],
       "url": "https://www.goodreads.com/",
       "icon": "GR",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "free",
-      "categories": [
-        "book-resources"
-      ],
+      "categories": ["book-resources"],
       "isPopular": false
     },
     {
       "id": "open-library",
       "name": "Open Library",
       "description": "An open, editable library catalog, building towards a web page for every book ever published.",
-      "tags": [
-        "Reading",
-        "Free",
-        "Community"
-      ],
+      "tags": ["Reading", "Free", "Community"],
       "url": "https://openlibrary.org/",
       "icon": "OL",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "free",
-      "categories": [
-        "book-resources"
-      ],
+      "categories": ["book-resources"],
       "isPopular": false
     },
     {
       "id": "project-gutenberg",
       "name": "Project Gutenberg",
       "description": "A library of over 60,000 free eBooks.",
-      "tags": [
-        "Reading",
-        "Free"
-      ],
+      "tags": ["Reading", "Free"],
       "url": "https://www.gutenberg.org/",
       "icon": "PG",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "free",
-      "categories": [
-        "book-resources"
-      ],
+      "categories": ["book-resources"],
       "isPopular": false
     },
     {
       "id": "manybooks",
       "name": "ManyBooks",
       "description": "An extensive library of books in a digital format, available for free on the Internet.",
-      "tags": [
-        "Reading",
-        "Free"
-      ],
+      "tags": ["Reading", "Free"],
       "url": "https://manybooks.net/",
       "icon": "MB",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "free",
-      "categories": [
-        "book-resources"
-      ],
+      "categories": ["book-resources"],
       "isPopular": false
     },
     {
       "id": "librivox",
       "name": "LibriVox",
       "description": "A group of worldwide volunteers who read and record public domain texts creating free public domain audiobooks for download from their website and other digital library hosting sites on the internet.",
-      "tags": [
-        "Audiobooks",
-        "Free"
-      ],
+      "tags": ["Audiobooks", "Free"],
       "url": "https://librivox.org/",
       "icon": "LV",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "free",
-      "categories": [
-        "book-resources"
-      ],
+      "categories": ["book-resources"],
       "isPopular": false
     },
     {
       "id": "welib",
       "name": "WeLib",
       "description": "A digital library offering access to 43 million books and 98 million academic articles.",
-      "tags": [
-        "Reading",
-        "Free"
-      ],
+      "tags": ["Reading", "Free"],
       "url": "https://welib.org/",
       "icon": "WL",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "free",
-      "categories": [
-        "book-resources"
-      ],
+      "categories": ["book-resources"],
       "isPopular": false
     },
     {
       "id": "unity",
       "name": "Unity",
       "description": "A real-time 3D development platform for creating 2D, 3D, VR, and AR games and experiences.",
-      "tags": [
-        "Game Dev",
-        "3D",
-        "Freemium"
-      ],
+      "tags": ["Game Dev", "3D", "Freemium"],
       "url": "https://unity.com/",
       "icon": "U",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "game-development"
-      ],
+      "categories": ["game-development"],
       "isPopular": false
     },
     {
       "id": "unreal-engine",
       "name": "Unreal Engine",
       "description": "The world’s most open and advanced real-time 3D creation tool for photorealistic visuals and immersive experiences.",
-      "tags": [
-        "Game Dev",
-        "3D",
-        "Free"
-      ],
+      "tags": ["Game Dev", "3D", "Free"],
       "url": "https://www.unrealengine.com/",
       "icon": "UE",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "game-development"
-      ],
+      "categories": ["game-development"],
       "isPopular": false
     },
     {
       "id": "godot-engine",
       "name": "Godot Engine",
       "description": "A free and open-source game engine that provides a huge set of common tools, so you can just focus on making your game without reinventing the wheel.",
-      "tags": [
-        "Game Dev",
-        "2D",
-        "3D",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Game Dev", "2D", "3D", "Free", "Open Source"],
       "url": "https://godotengine.org/",
       "icon": "G",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "game-development"
-      ],
+      "categories": ["game-development"],
       "isPopular": false
     },
     {
       "id": "gamemaker-studio",
       "name": "GameMaker",
       "description": "GameMaker Studio is a comprehensive 2D game development engine that enables users of all skill levels to create games for multiple platforms, including PC, mobile, and consoles, using its integrated tools and scripting language.",
-      "tags": [
-        "Game Dev",
-        "2D",
-        "Freemium"
-      ],
+      "tags": ["Game Dev", "2D", "Freemium"],
       "url": "https://gamemaker.io/en",
       "icon": "GM",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "game-development"
-      ],
+      "categories": ["game-development"],
       "isPopular": false
     },
     {
       "id": "blender",
       "name": "Blender",
       "description": "A free and open source 3D creation suite. It supports the entirety of the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation.",
-      "tags": [
-        "3D",
-        "Animation",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["3D", "Animation", "Free", "Open Source"],
       "url": "https://www.blender.org/",
       "icon": "B",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "game-development"
-      ],
+      "categories": ["game-development"],
       "isPopular": false
     },
     {
       "id": "itch.io",
       "name": "itch.io",
       "description": "An online marketplace for independent digital creators with a focus on independent video games.",
-      "tags": [
-        "Marketplace",
-        "Free",
-        "Community"
-      ],
+      "tags": ["Marketplace", "Free", "Community"],
       "url": "https://itch.io/",
       "icon": "itch",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "game-assets"
-      ],
+      "categories": ["game-assets"],
       "isPopular": false
     },
     {
       "id": "unity-asset-store",
       "name": "Unity Asset Store",
       "description": "A marketplace for developers to find and sell assets for the Unity game engine.",
-      "tags": [
-        "Marketplace",
-        "Freemium"
-      ],
+      "tags": ["Marketplace", "Freemium"],
       "url": "https://assetstore.unity.com/",
       "icon": "UAS",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "game-assets"
-      ],
+      "categories": ["game-assets"],
       "isPopular": false
     },
     {
       "id": "unreal-engine-marketplace",
       "name": "Unreal Engine Marketplace",
       "description": "A marketplace for developers to find and sell assets for the Unreal Engine.",
-      "tags": [
-        "Marketplace",
-        "Freemium"
-      ],
+      "tags": ["Marketplace", "Freemium"],
       "url": "https://www.unrealengine.com/marketplace/en-US/store",
       "icon": "UEM",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "game-assets"
-      ],
+      "categories": ["game-assets"],
       "isPopular": false
     },
     {
       "id": "craftpix.net",
       "name": "CraftPix.net",
       "description": "A marketplace for high-quality 2D game assets.",
-      "tags": [
-        "Marketplace",
-        "Freemium"
-      ],
+      "tags": ["Marketplace", "Freemium"],
       "url": "https://craftpix.net/",
       "icon": "CP",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "game-assets"
-      ],
+      "categories": ["game-assets"],
       "isPopular": false
     },
     {
       "id": "steam",
       "name": "Steam",
       "description": "Steam is a digital distribution platform offering a vast library of video games across various genres, including new releases, top sellers, and free-to-play titles, alongside community features and hardware.",
-      "tags": [
-        "Gaming",
-        "Community"
-      ],
+      "tags": ["Gaming", "Community"],
       "url": "https://store.steampowered.com/",
       "icon": "S",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "gaming-platforms"
-      ],
+      "categories": ["gaming-platforms"],
       "isPopular": false
     },
     {
       "id": "gog",
       "name": "GOG",
       "description": "GOG.com is a digital distribution platform offering a curated selection of DRM-free PC games, an optional gaming client, and a community for players.",
-      "tags": [
-        "Gaming",
-        "DRM-Free"
-      ],
+      "tags": ["Gaming", "DRM-Free"],
       "url": "https://www.gog.com/",
       "icon": "GOG",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "gaming-platforms"
-      ],
+      "categories": ["gaming-platforms"],
       "isPopular": false
     },
     {
       "id": "epic-games-store",
       "name": "Epic Games Store",
       "description": "A digital PC game storefront for Windows and macOS, operated by Epic Games.",
-      "tags": [
-        "Gaming"
-      ],
+      "tags": ["Gaming"],
       "url": "https://www.epicgames.com/store/en-US/",
       "icon": "EGS",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "gaming-platforms"
-      ],
+      "categories": ["gaming-platforms"],
       "isPopular": false
     },
     {
       "id": "battle.net",
       "name": "Battle.net",
       "description": "An online gaming platform operated by Blizzard Entertainment.",
-      "tags": [
-        "Gaming"
-      ],
+      "tags": ["Gaming"],
       "url": "https://www.blizzard.com/en-us/apps/battle.net/desktop",
       "icon": "B",
-      "audience": [
-        "student",
-        "developers"
-      ],
+      "audience": ["student", "developers"],
       "tier": "free",
-      "categories": [
-        "gaming-platforms"
-      ],
+      "categories": ["gaming-platforms"],
       "isPopular": false
     },
     {
       "id": "hydrogen",
       "name": "Hydrogen",
       "description": "Shopify’s headless commerce framework for building custom storefronts.",
-      "tags": [
-        "Web Dev",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Web Dev", "Free", "Open Source"],
       "url": "https://shopify.dev/docs/custom-storefronts/hydrogen",
       "icon": "H",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "react",
       "name": "React",
       "description": "React is a JavaScript library for building user interfaces from reusable components. It enables creation of interactive web and native applications, focusing on declarative UI development and efficient updates.",
-      "tags": [
-        "Web Dev",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Web Dev", "Free", "Open Source"],
       "url": "https://react.dev/",
       "icon": "R",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "react-three-fiber",
       "name": "React Three Fiber",
-      "description": "React Three Fiber is a React renderer for three.js, enabling declarative 3D scene creation with reusable components. It integrates three.js into React's ecosystem without performance overhead, supporting all three.js features.",
-      "tags": [
-        "Web Dev",
-        "3D",
-        "Free",
-        "Open Source"
-      ],
+      "description": "React Three Fiber is a React renderer for three.js, enabling declarative 3D scene creation with reusable components. It integrates three.js into React\u0027s ecosystem without performance overhead, supporting all three.js features.",
+      "tags": ["Web Dev", "3D", "Free", "Open Source"],
       "url": "https://docs.pmnd.rs/react-three-fiber/getting-started/introduction",
       "icon": "R3F",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "gsap",
       "name": "GSAP",
       "description": "GSAP is a professional-grade JavaScript animation library for the modern web, offering robust tools for fast, responsive animations, and various plugins for advanced features like scrolling, SVG, and UI.",
-      "tags": [
-        "Web Dev",
-        "Animation",
-        "Freemium"
-      ],
+      "tags": ["Web Dev", "Animation", "Freemium"],
       "url": "https://gsap.com/docs/v3/",
       "icon": "G",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "tailwind-css",
       "name": "Tailwind CSS",
       "description": "Tailwind CSS is a utility-first CSS framework that generates styles by scanning HTML and JavaScript for class names, enabling rapid UI development.",
-      "tags": [
-        "Web Dev",
-        "CSS",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Web Dev", "CSS", "Free", "Open Source"],
       "url": "https://tailwindcss.com/docs/installation",
       "icon": "T",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "whatsapp-web.js",
       "name": "whatsapp-web.js",
       "description": "A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app.",
-      "tags": [
-        "Web Dev",
-        "API",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Web Dev", "API", "Free", "Open Source"],
       "url": "https://wwebjs.dev/",
       "icon": "W",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "json",
       "name": "JSON",
-      "description": "JSON (JavaScript Object Notation) is a lightweight, language-independent data-interchange format. It's easy for humans to read and write, and for machines to parse and generate, based on JavaScript's object notation.",
-      "tags": [
-        "Web Dev",
-        "Data",
-        "Free"
-      ],
+      "description": "JSON (JavaScript Object Notation) is a lightweight, language-independent data-interchange format. It\u0027s easy for humans to read and write, and for machines to parse and generate, based on JavaScript\u0027s object notation.",
+      "tags": ["Web Dev", "Data", "Free"],
       "url": "https://www.json.org/json-en.html",
       "icon": "J",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "nextauth.js",
       "name": "NextAuth.js",
       "description": "NextAuth.js provides authentication for Next.js applications, offering easy integration with popular services like Google and Facebook, supporting various databases, and ensuring secure web pages and API routes.",
-      "tags": [
-        "Web Dev",
-        "Auth",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Web Dev", "Auth", "Free", "Open Source"],
       "url": "https://next-auth.js.org/",
       "icon": "NA",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "tailwind-css-cheatsheet",
       "name": "Tailwind CSS Cheatsheet",
       "description": "This tool offers a comprehensive, interactive cheat sheet for Tailwind CSS, allowing users to quickly find utility classes and their corresponding CSS properties and values.",
-      "tags": [
-        "Web Dev",
-        "CSS",
-        "Free"
-      ],
+      "tags": ["Web Dev", "CSS", "Free"],
       "url": "https://tailwindcomponents.com/cheatsheet/",
       "icon": "T",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "gemini-api",
       "name": "Gemini API",
       "description": "This page provides documentation for the Google Gemini API, offering tools and resources for developers to integrate AI capabilities like text, image, and video generation into their applications.",
-      "tags": [
-        "AI",
-        "API",
-        "Free"
-      ],
+      "tags": ["AI", "API", "Free"],
       "url": "https://ai.google.dev/docs",
       "icon": "G",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "public-apis",
       "name": "Public APIs",
       "description": "A collective list of free APIs for use in software and web development.",
-      "tags": [
-        "Web Dev",
-        "API",
-        "Free"
-      ],
+      "tags": ["Web Dev", "API", "Free"],
       "url": "https://github.com/public-apis/public-apis",
       "icon": "API",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "github-copilot-cheat-sheet",
       "name": "GitHub Copilot Cheat Sheet",
       "description": "A quick reference guide for using GitHub Copilot, with keyboard shortcuts and examples for Visual Studio Code, Neovim, and JetBrains IDEs.",
-      "tags": [
-        "AI",
-        "Developers",
-        "Free"
-      ],
+      "tags": ["AI", "Developers", "Free"],
       "url": "https://code.visualstudio.com/docs/copilot/reference/copilot-vscode-features",
       "icon": "Cop",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "prompting"
-      ],
+      "categories": ["prompting"],
       "isPopular": false
     },
     {
       "id": "prompts-ai",
       "name": "Prompts.ai",
       "description": "Prompts.ai is an enterprise-ready platform that unifies access to over 35 generative AI models, enabling users to orchestrate workflows, automate tasks, and manage AI usage with integrated security and cost optimization features.",
-      "tags": [
-        "AI",
-        "Prompts",
-        "Freemium"
-      ],
+      "tags": ["AI", "Prompts", "Freemium"],
       "url": "https://prompts.ai/",
       "icon": "PAI",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "prompting"
-      ],
+      "categories": ["prompting"],
       "isPopular": false
     },
     {
       "id": "flowgpt",
       "name": "FlowGPT",
       "description": "FlowGPT is a platform offering a store of AI prompts and character roleplay scenarios, enabling users to explore and utilize various AI models for tasks ranging from creative writing to programming assistance.",
-      "tags": [
-        "AI",
-        "Prompts",
-        "Free"
-      ],
+      "tags": ["AI", "Prompts", "Free"],
       "url": "https://flowgpt.com/",
       "icon": "FG",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "prompting"
-      ],
+      "categories": ["prompting"],
       "isPopular": false
     },
     {
       "id": "promptbase",
       "name": "PromptBase",
       "description": "PromptBase is an online marketplace where users can buy, sell, and discover high-quality AI prompts for various generative AI models, and hire prompt engineers for custom solutions.",
-      "tags": [
-        "AI",
-        "Prompts",
-        "Freemium"
-      ],
+      "tags": ["AI", "Prompts", "Freemium"],
       "url": "https://promptbase.com/",
       "icon": "PB",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "prompting"
-      ],
+      "categories": ["prompting"],
       "isPopular": false
     },
     {
       "id": "learnprompting",
       "name": "Learn Prompting",
       "description": "Learn Prompting is an online platform that provides free and open-source courses and resources on AI and prompt engineering, teaching users how to effectively communicate with AI systems and master AI concepts.",
-      "tags": [
-        "AI",
-        "Education",
-        "Free"
-      ],
+      "tags": ["AI", "Education", "Free"],
       "url": "https://learnprompting.org/",
       "icon": "LP",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "prompting"
-      ],
+      "categories": ["prompting"],
       "isPopular": false
     },
     {
       "id": "appwrite",
       "name": "Appwrite",
       "description": "Appwrite is an open-source backend platform that provides developers with a suite of APIs for authentication, databases, storage, functions, and real-time features to build and scale applications.",
-      "tags": [
-        "Web Dev",
-        "Backend",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Web Dev", "Backend", "Free", "Open Source"],
       "url": "https://appwrite.io/docs",
       "icon": "A",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "prompt-engineering-guide",
       "name": "Prompt Engineering Guide",
       "description": "This tool provides a comprehensive guide to prompt engineering, covering fundamental concepts, advanced techniques, AI agent development, and practical applications for optimizing interactions with large language models.",
-      "tags": [
-        "AI",
-        "Education",
-        "Free"
-      ],
+      "tags": ["AI", "Education", "Free"],
       "url": "https://www.promptingguide.ai/",
       "icon": "PG",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "prompting"
-      ],
+      "categories": ["prompting"],
       "isPopular": false
     },
     {
       "id": "zod",
       "name": "Zod",
       "description": "Zod is a TypeScript-first validation library for defining schemas to validate data, from simple strings to complex objects. It offers static type inference, zero dependencies, and a concise API.",
-      "tags": [
-        "Web Dev",
-        "Library",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Web Dev", "Library", "Free", "Open Source"],
       "url": "https://zod.dev/",
       "icon": "Z",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "@google/genai",
       "name": "@google/genai",
-      "description": "The `@google/genai` SDK enables TypeScript and JavaScript developers to build applications powered by Google's Gemini models, integrating with both the Gemini Developer API and Vertex AI for generative AI functionalities.",
-      "tags": [
-        "AI",
-        "API",
-        "Free",
-        "Open Source"
-      ],
+      "description": "The `@google/genai` SDK enables TypeScript and JavaScript developers to build applications powered by Google\u0027s Gemini models, integrating with both the Gemini Developer API and Vertex AI for generative AI functionalities.",
+      "tags": ["AI", "API", "Free", "Open Source"],
       "url": "https://www.npmjs.com/package/@google/genai",
       "icon": "G",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "relay",
       "name": "Relay",
       "description": "Relay is a GraphQL client designed for scalable, high-performance applications. It simplifies data-fetching, optimizes queries, ensures data consistency, and provides type safety for React components.",
-      "tags": [
-        "Web Dev",
-        "Framework",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Web Dev", "Framework", "Free", "Open Source"],
       "url": "https://relay.dev/",
       "icon": "R",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "css-shape",
       "name": "CSS Shape",
       "description": "This page offers a comprehensive collection of pure CSS shapes, crafted with single-element, modern CSS, and optimized code. It provides various shapes like hearts, stars, polygons, and more for web development.",
-      "tags": [
-        "Web Dev",
-        "CSS",
-        "Free"
-      ],
+      "tags": ["Web Dev", "CSS", "Free"],
       "url": "https://css-shape.com/",
       "icon": "CSS",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "font-awesome",
       "name": "Font Awesome",
       "description": "Font Awesome is a popular icon library and toolkit offering a vast collection of icons, styling tools, and web components for designers, developers, and content creators.",
-      "tags": [
-        "Web Dev",
-        "Icons",
-        "Freemium"
-      ],
+      "tags": ["Web Dev", "Icons", "Freemium"],
       "url": "https://fontawesome.com/",
       "icon": "FA",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "get-waves",
       "name": "Get Waves",
-      "description": "Get Waves is a web app that creates unique SVG wave designs for your next project. It's now part of Haikei.app and offers a Figma plugin.",
-      "tags": [
-        "Web Dev",
-        "SVG",
-        "Free"
-      ],
+      "description": "Get Waves is a web app that creates unique SVG wave designs for your next project. It\u0027s now part of Haikei.app and offers a Figma plugin.",
+      "tags": ["Web Dev", "SVG", "Free"],
       "url": "https://getwaves.io/",
       "icon": "W",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "coolors",
       "name": "Coolors",
       "description": "Coolors is a super-fast color palette generator for designers. It helps create, explore, and extract color palettes from images, check contrast, and visualize colors on designs.",
-      "tags": [
-        "Web Dev",
-        "Color",
-        "Freemium"
-      ],
+      "tags": ["Web Dev", "Color", "Freemium"],
       "url": "https://coolors.co/",
       "icon": "C",
-      "audience": [
-        "developers",
-        "students"
-      ],
+      "audience": ["developers", "students"],
       "tier": "freemium",
-      "categories": [
-        "tools",
-        "design"
-      ],
+      "categories": ["tools", "design"],
       "isPopular": false
     },
     {
       "id": "clippy",
       "name": "Clippy",
       "description": "This page is a CSS `clip-path` maker tool by Bennett Feely, allowing users to create complex shapes for web elements using polygons, circles, ellipses, and insets, with options for rounded edges and animations.",
-      "tags": [
-        "Web Dev",
-        "CSS",
-        "Free"
-      ],
+      "tags": ["Web Dev", "CSS", "Free"],
       "url": "https://bennettfeely.com/clippy/",
       "icon": "C",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "css-grid-generator",
       "name": "CSS Grid Generator",
       "description": "This tool helps users visually create CSS Grid layouts by defining columns, rows, and gaps, then generates the corresponding CSS code.",
-      "tags": [
-        "Web Dev",
-        "CSS",
-        "Free"
-      ],
+      "tags": ["Web Dev", "CSS", "Free"],
       "url": "https://cssgrid-generator.netlify.app/",
       "icon": "CSS",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "overapi.com",
       "name": "OverAPI.com",
       "description": "OverAPI.com is a comprehensive online platform that aggregates and provides cheat sheets and quick reference guides for a wide array of programming languages, development frameworks, and technical tools.",
-      "tags": [
-        "Web Dev",
-        "Free"
-      ],
+      "tags": ["Web Dev", "Free"],
       "url": "https://overapi.com/",
       "icon": "OAPI",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "leetcode",
       "name": "LeetCode",
       "description": "LeetCode is an online platform providing over 4000 programming practice questions, a community, contests, and development tools to help users enhance coding skills and prepare for technical interviews.",
-      "tags": [
-        "Education",
-        "Freemium"
-      ],
+      "tags": ["Education", "Freemium"],
       "url": "https://leetcode.com/",
       "icon": "L",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "studying"
-      ],
+      "categories": ["studying"],
       "isPopular": false
     },
     {
       "id": "react-bits",
       "name": "React Bits",
       "description": "A collection of animated, interactive UI components for React apps, focusing on motion, animation, and unique visual effects to enhance user experience.",
-      "tags": [
-        "Web Dev",
-        "React",
-        "Free"
-      ],
+      "tags": ["Web Dev", "React", "Free"],
       "url": "https://reactbits.dev/",
       "icon": "RB",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "fancy-border-radius-generator",
       "name": "Fancy Border Radius Generator",
       "description": "This tool generates complex CSS `border-radius` shapes, allowing users to create unique, organic-looking borders with full control over individual corner percentages.",
-      "tags": [
-        "Web Dev",
-        "CSS",
-        "Free"
-      ],
+      "tags": ["Web Dev", "CSS", "Free"],
       "url": "https://9elements.github.io/fancy-border-radius/",
       "icon": "FBR",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "neumorphism/soft-ui-css-shadow-generator",
       "name": "Neumorphism/Soft UI CSS shadow generator",
       "description": "This page is a Neumorphism CSS shadow generator that helps create soft UI designs with an extruded plastic look using subtle contrasting shadows. It provides examples and code for various neumorphic elements.",
-      "tags": [
-        "Web Dev",
-        "CSS",
-        "Free"
-      ],
+      "tags": ["Web Dev", "CSS", "Free"],
       "url": "https://neumorphism.io/",
       "icon": "N",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "math-encrypt",
       "name": "Math Encrypt",
       "description": "Transforms numbers into complicated math expressions for fun. Ideal for adding mystery to answers like age or Wi-Fi passwords, not for secure encryption.",
-      "tags": [
-        "Math",
-        "Free"
-      ],
+      "tags": ["Math", "Free"],
       "url": "https://scientific.place/math-encrypt",
       "icon": "ME",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "free-online-certificate-maker",
       "name": "Free Online Certificate Maker",
       "description": "Certificate Magic is a free online tool that allows users to create and print personalized certificates instantly using various templates.",
-      "tags": [
-        "Design",
-        "Free"
-      ],
+      "tags": ["Design", "Free"],
       "url": "https://www.certificatemagic.com/",
       "icon": "CM",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "free",
-      "categories": [
-        "tools",
-        "design"
-      ],
+      "categories": ["tools", "design"],
       "isPopular": false
     },
     {
       "id": "advanced-search-for-youtube",
       "name": "Advanced Search for YouTube",
       "description": "Filmot allows users to search within YouTube captions and subtitles across billions of videos and channels, supporting both automatic and manual subtitle searches.",
-      "tags": [
-        "Search",
-        "Free"
-      ],
+      "tags": ["Search", "Free"],
       "url": "https://filmot.com/",
       "icon": "YT",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "css-gradient-generator",
       "name": "CSS Gradient Generator",
       "description": "CSS Gradient is a free online tool that generates CSS code for linear and radial gradients, offering a user-friendly interface to create custom backgrounds. It also provides color shades, gradient swatches, examples, and a blog with tutorials.",
-      "tags": [
-        "Web Dev",
-        "CSS",
-        "Free"
-      ],
+      "tags": ["Web Dev", "CSS", "Free"],
       "url": "https://cssgradient.io/",
       "icon": "CSS",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "animista",
       "name": "Animista",
       "description": "Animista is an on-demand CSS animation library that allows users to play with, tweak, and generate custom CSS animations for their projects. It offers a wide range of pre-made animations and customization options.",
-      "tags": [
-        "Web Dev",
-        "CSS",
-        "Free"
-      ],
+      "tags": ["Web Dev", "CSS", "Free"],
       "url": "https://animista.net/",
       "icon": "A",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "mockoops",
       "name": "Mockoops",
       "description": "A web-based tool for creating and designing mockups, with a focus on user interface and user experience design.",
-      "tags": [
-        "Design",
-        "Freemium"
-      ],
+      "tags": ["Design", "Freemium"],
       "url": "https://mockoops.com/",
       "icon": "M",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "tools",
-        "design"
-      ],
+      "categories": ["tools", "design"],
       "isPopular": false
     },
     {
       "id": "linkvertise",
       "name": "Linkvertise",
       "description": "Linkvertise is a platform that allows creators to monetize their digital content by sharing it through links, while users can access this content, often after engaging with advertisements or completing specific actions.",
-      "tags": [
-        "Monetization",
-        "Freemium"
-      ],
+      "tags": ["Monetization", "Freemium"],
       "url": "https://linkvertise.com/",
       "icon": "L",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "front-end-mentors",
       "name": "Front-end mentors",
       "description": "Frontend Mentor offers coding challenges with professional designs, automated feedback, and community support to help developers build portfolios and enhance their front-end and full-stack development skills.",
-      "tags": [
-        "Education",
-        "Freemium"
-      ],
+      "tags": ["Education", "Freemium"],
       "url": "https://www.frontendmentor.io/",
       "icon": "FM",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "studying"
-      ],
+      "categories": ["studying"],
       "isPopular": false
     },
     {
       "id": "3dicons",
       "name": "3dicons",
       "description": "3dicons offers a free and open-source library of over 1500 beautifully crafted 3D icons for personal and commercial projects, with no attribution required.",
-      "tags": [
-        "Design",
-        "3D",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Design", "3D", "Free", "Open Source"],
       "url": "https://3dicons.co/",
       "icon": "3D",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools",
-        "design"
-      ],
+      "categories": ["tools", "design"],
       "isPopular": false
     },
     {
       "id": "programmable-search-engine",
       "name": "Programmable Search Engine",
       "description": "The Google Programmable Search Engine allows you to add a customizable search box to your website, providing fast, relevant results powered by Google Search technology. You can choose what content it searches and how it looks, with options for free or ad-free experiences.",
-      "tags": [
-        "Search",
-        "Free"
-      ],
+      "tags": ["Search", "Free"],
       "url": "https://programmablesearchengine.google.com/",
       "icon": "PSE",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "datepicker-â€“-react-aria",
       "name": "DatePicker â€“ React Aria",
       "description": "The React Aria DatePicker combines a date field and calendar popover for date and time selection. It offers extensive internationalization, accessibility, time zone awareness, and customizable validation, supporting various calendar systems and granularities.",
-      "tags": [
-        "Web Dev",
-        "React",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Web Dev", "React", "Free", "Open Source"],
       "url": "https://react-spectrum.adobe.com/react-aria/DatePicker.html",
       "icon": "RA",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "free-html-website-templates-on-htmlrev",
       "name": "Free HTML Website Templates on HTMLrev",
       "description": "HTMLrev offers over 1900 free HTML, CSS, and framework-based templates for websites, landing pages, blogs, portfolios, e-commerce, and admin dashboards, supporting various technologies like Bootstrap, Tailwind, React, and Vue.",
-      "tags": [
-        "Web Dev",
-        "HTML",
-        "Free"
-      ],
+      "tags": ["Web Dev", "HTML", "Free"],
       "url": "https://htmlrev.com/",
       "icon": "HTML",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "mega",
       "name": "MEGA",
       "description": "MEGA offers secure cloud storage, VPN, and password management with zero-knowledge encryption. It provides private file sharing, chat, and meetings for individuals and businesses.",
-      "tags": [
-        "Storage",
-        "Freemium"
-      ],
+      "tags": ["Storage", "Freemium"],
       "url": "https://mega.io/",
       "icon": "M",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "tailwind-skeleton-generator",
       "name": "Tailwind Skeleton Generator",
-      "description": "This online tool allows you to input HTML, and it will transform it into Tailwind CSS skeleton loaders. It's designed for quick and customizable generation of skeleton screens, including utilities like `animate-pulse` and `bg-gray-300`.",
-      "tags": [
-        "Web Dev",
-        "CSS",
-        "Free"
-      ],
+      "description": "This online tool allows you to input HTML, and it will transform it into Tailwind CSS skeleton loaders. It\u0027s designed for quick and customizable generation of skeleton screens, including utilities like `animate-pulse` and `bg-gray-300`.",
+      "tags": ["Web Dev", "CSS", "Free"],
       "url": "https://www.skeletongenerator.tech/",
       "icon": "TSG",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "flexbox-labs",
       "name": "Flexbox Labs",
       "description": "A visual tool for creating and experimenting with CSS Flexbox layouts. Features real-time previews, customizable flex properties, and code export.",
-      "tags": [
-        "Web Dev",
-        "CSS",
-        "Free"
-      ],
+      "tags": ["Web Dev", "CSS", "Free"],
       "url": "https://flexboxlabs.netlify.app/",
       "icon": "FL",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "studying"
-      ],
+      "categories": ["studying"],
       "isPopular": false
     },
     {
       "id": "supahero",
       "name": "Supahero",
       "description": "A curated library of stunning website hero sections for web designers and developers, providing inspiration and ready-to-use designs.",
-      "tags": [
-        "Web Dev",
-        "Design",
-        "Free"
-      ],
+      "tags": ["Web Dev", "Design", "Free"],
       "url": "https://supahero.io",
       "icon": "S",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools",
-        "design"
-      ],
+      "categories": ["tools", "design"],
       "isPopular": false
     },
     {
       "id": "shadcn-editor",
       "name": "Shadcn Editor",
       "description": "shadcn/editor is an open-source, accessible, and customizable rich text editor built with Lexical and Shadcn/UI, designed for crafting rich text editing experiences.",
-      "tags": [
-        "Web Dev",
-        "React",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Web Dev", "React", "Free", "Open Source"],
       "url": "https://shadcn-editor.vercel.app/",
       "icon": "SE",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "is-it-down?",
       "name": "Is it down?",
       "description": "IsItDownRightNow.com checks if a website is down for everyone or just you, providing real-time status updates for various popular sites.",
-      "tags": [
-        "Web Dev",
-        "Free"
-      ],
+      "tags": ["Web Dev", "Free"],
       "url": "https://www.isitdownrightnow.com/",
       "icon": "?",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "regex-learn",
       "name": "Regex Learn",
       "description": "RegexLearn is an online platform providing step-by-step tutorials, a cheatsheet, and a playground for learning, practicing, and testing regular expressions.",
-      "tags": [
-        "Web Dev",
-        "Regex",
-        "Free"
-      ],
+      "tags": ["Web Dev", "Regex", "Free"],
       "url": "https://regexlearn.com/",
       "icon": "R",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "studying"
-      ],
+      "categories": ["studying"],
       "isPopular": false
     },
     {
       "id": "spinners-rippleui",
       "name": "Spinners RippleUI",
       "description": "A collection of loading spinner components for Tailwind CSS, designed to be easily integrated into web projects for indicating loading states.",
-      "tags": [
-        "Web Dev",
-        "CSS",
-        "Free"
-      ],
+      "tags": ["Web Dev", "CSS", "Free"],
       "url": "https://www.ripple-ui.com/docs/components/spinners",
       "icon": "RUI",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "markmap",
       "name": "markmap",
       "description": "Markmap is a tool that transforms Markdown text into interactive and visually organized mindmaps.",
-      "tags": [
-        "Web Dev",
-        "Markdown",
-        "Free"
-      ],
+      "tags": ["Web Dev", "Markdown", "Free"],
       "url": "https://markmap.js.org/",
       "icon": "M",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "heroui",
       "name": "HeroUI",
       "description": "HeroUI is a comprehensive platform offering web development solutions, tutorials, and consulting services, alongside an ecosystem of AI and robotics tools.",
-      "tags": [
-        "Web Dev",
-        "React",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Web Dev", "React", "Free", "Open Source"],
       "url": "https://heroui.net/",
       "icon": "HUI",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "animations-css-generator-|-web-code-tools",
       "name": "Animations CSS Generator | Web Code Tools",
       "description": "This tool generates customizable CSS keyframe animations, allowing users to define properties such as name, duration, timing function, delay, iteration count, direction, and fill mode, and provides the corresponding CSS code.",
-      "tags": [
-        "Web Dev",
-        "CSS",
-        "Free"
-      ],
+      "tags": ["Web Dev", "CSS", "Free"],
       "url": "https://webcode.tools/css-generator/animation",
       "icon": "CSS",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "ngrok",
       "name": "ngrok",
       "description": "ngrok is a globally distributed reverse proxy that creates secure, public URLs for local development servers and production services, offering features like API gateway, load balancing, and remote access.",
-      "tags": [
-        "Web Dev",
-        "API",
-        "Freemium"
-      ],
+      "tags": ["Web Dev", "API", "Freemium"],
       "url": "https://ngrok.com/docs",
       "icon": "N",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
     },
     {
       "id": "svgl",
       "name": "Svgl",
       "description": "Svgl is a comprehensive library offering a wide array of categorized SVG logos, each linked to its product, with options for submission and API access.",
-      "tags": [
-        "Web Dev",
-        "SVG",
-        "Free"
-      ],
+      "tags": ["Web Dev", "SVG", "Free"],
       "url": "https://svgl.app/",
       "icon": "S",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "icoon.co",
       "name": "Icoon.co",
       "description": "A collection of 3D icons, illustrations, mockups and design assets.",
-      "tags": [
-        "Design",
-        "3D",
-        "Freemium"
-      ],
+      "tags": ["Design", "3D", "Freemium"],
       "url": "https://icoon.co/",
       "icon": "I",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "send.now",
       "name": "Send (File Sharing)",
       "description": "A secure and private file-sharing service that allows users to send files directly to others without storing them on a server.",
-      "tags": [
-        "File Sharing",
-        "Free"
-      ],
+      "tags": ["File Sharing", "Free"],
       "url": "https://send.vis.ee/",
       "icon": "SN",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "algorithm-visualizer",
       "name": "Algorithm Visualizer",
       "description": "Algorithm Visualizer is an interactive online platform that visualizes algorithms from code in multiple programming languages and offers learning resources to enhance understanding.",
-      "tags": [
-        "Education",
-        "Free"
-      ],
+      "tags": ["Education", "Free"],
       "url": "https://algorithm-visualizer.org/",
       "icon": "AV",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "studying"
-      ],
+      "categories": ["studying"],
       "isPopular": false
     },
     {
       "id": "neon-console",
       "name": "Neon Console",
       "description": "A cloud-native Postgres platform that offers a serverless database with branching, autoscaling, and bottomless storage, designed for developers.",
-      "tags": [
-        "Database",
-        "Free"
-      ],
+      "tags": ["Database", "Free"],
       "url": "https://console.neon.tech/",
       "icon": "N",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "excalidraw-whiteboard",
       "name": "Excalidraw Whiteboard",
       "description": "Excalidraw is a virtual whiteboard tool for creating diagrams and sketches with real-time collaboration and local data storage.",
-      "tags": [
-        "Design",
-        "Free",
-        "Open Source"
-      ],
+      "tags": ["Design", "Free", "Open Source"],
       "url": "https://excalidraw.com/",
       "icon": "E",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "openai-academy",
       "name": "OpenAI Academy",
       "description": "A platform offering expert and community-led learning to help individuals acquire the knowledge and skills to effectively use artificial intelligence.",
-      "tags": [
-        "AI",
-        "Education",
-        "Free"
-      ],
+      "tags": ["AI", "Education", "Free"],
       "url": "https://academy.openai.com/",
       "icon": "OAI",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "tutorials"
-      ],
+      "categories": ["tutorials"],
       "isPopular": false
     },
     {
       "id": "openai-residency",
       "name": "OpenAI Residency",
       "description": "A six-month program designed for researchers and engineers who may not have a direct AI background but are looking for a pathway to a full-time role at OpenAI.",
-      "tags": [
-        "AI",
-        "Career",
-        "Free"
-      ],
+      "tags": ["AI", "Career", "Free"],
       "url": "https://openai.com/careers/openai-residency/",
       "icon": "OAI",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "studying"
-      ],
+      "categories": ["studying"],
       "isPopular": false
     },
     {
-      "id": "ai-learning-resources-&-guides-from-anthropic",
+      "id": "ai-learning-resources-\u0026-guides-from-anthropic",
       "name": "Anthropic Learning Center",
       "description": "Tutorials for working with their AI models, such as Claude, to craft effective prompts and maximize AI interactions.",
-      "tags": [
-        "AI",
-        "Education",
-        "Free"
-      ],
+      "tags": ["AI", "Education", "Free"],
       "url": "https://www.anthropic.com/learn",
       "icon": "A",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tutorials"
-      ],
+      "categories": ["tutorials"],
       "isPopular": false
     },
     {
       "id": "google-ai-essentials",
       "name": "Google AI Essentials",
       "description": "Google AI Essentials is a free online course that provides foundational knowledge of artificial intelligence, covering its principles, applications, and ethical considerations for everyday understanding and practical use.",
-      "tags": [
-        "AI",
-        "Education",
-        "Free"
-      ],
+      "tags": ["AI", "Education", "Free"],
       "url": "https://grow.google/ai/",
       "icon": "G",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "free",
-      "categories": [
-        "tutorials"
-      ],
+      "categories": ["tutorials"],
       "isPopular": false
     },
     {
       "id": "google-career-certificates-with-ai-training",
       "name": "Google Career Certificates with AI Training",
       "description": "This tool provides Google Career Certificates focused on developing job-ready skills in artificial intelligence, including AI Essentials and Prompting Essentials.",
-      "tags": [
-        "AI",
-        "Career",
-        "Paid"
-      ],
+      "tags": ["AI", "Career", "Paid"],
       "url": "https://grow.google/",
       "icon": "G",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "paid",
-      "categories": [
-        "studying"
-      ],
+      "categories": ["studying"],
       "isPopular": false
     },
     {
       "id": "google-cloud-skills-boost",
       "name": "Google Cloud Skills Boost",
       "description": "Google Cloud Skills Boost is an online learning platform offering courses, skill badges, and certifications in Google Cloud technologies, with a focus on AI, Machine Learning, and Generative AI.",
-      "tags": [
-        "AI",
-        "Cloud",
-        "Freemium"
-      ],
+      "tags": ["AI", "Cloud", "Freemium"],
       "url": "https://www.cloudskillsboost.google/",
       "icon": "G",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "tutorials"
-      ],
+      "categories": ["tutorials"],
       "isPopular": false
     },
     {
       "id": "career-dreamer",
       "name": "Career Dreamer",
       "description": "Career Dreamer is an AI-powered tool that helps users identify their transferable skills, explore potential career paths based on labor market data, and generate career-related documents like identity statements and cover letters.",
-      "tags": [
-        "AI",
-        "Career",
-        "Free"
-      ],
+      "tags": ["AI", "Career", "Free"],
       "url": "https://grow.google/careerdreamer/",
       "icon": "G",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "ai-literacy-hub",
       "name": "AI Literacy Hub",
       "description": "AI Literacy Hub offers educational content and practical tools to foster understanding, application, and critical engagement with artificial intelligence concepts and technologies.",
-      "tags": [
-        "AI",
-        "Education",
-        "Free"
-      ],
+      "tags": ["AI", "Education", "Free"],
       "url": "https://edu.google.com/",
       "icon": "G",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "free",
-      "categories": [
-        "studying"
-      ],
+      "categories": ["studying"],
       "isPopular": false
     },
     {
       "id": "nvidia-deep-learning-institute-(dli)",
-      "name": "NVIDIA Training & Certification",
-      "description": "NVIDIA's main platform for learning AI, data science, and accelerated computing.",
-      "tags": [
-        "AI",
-        "Education",
-        "Freemium"
-      ],
+      "name": "NVIDIA Training \u0026 Certification",
+      "description": "NVIDIA\u0027s main platform for learning AI, data science, and accelerated computing.",
+      "tags": ["AI", "Education", "Freemium"],
       "url": "https://www.nvidia.com/en-us/training/",
       "icon": "N",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "tutorials"
-      ],
+      "categories": ["tutorials"],
       "isPopular": false
     },
     {
       "id": "gtc-sessions-on-demand",
       "name": "GTC Sessions On-Demand",
-      "description": "A great way tocategory learn about the latest advancements in AI from NVIDIA's GTC conference.",
-      "tags": [
-        "AI",
-        "Education",
-        "Free"
-      ],
+      "description": "A great way tocategory learn about the latest advancements in AI from NVIDIA\u0027s GTC conference.",
+      "tags": ["AI", "Education", "Free"],
       "url": "https://www.nvidia.com/gtc/on-demand/",
       "icon": "N",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tutorials"
-      ],
+      "categories": ["tutorials"],
       "isPopular": false
     },
     {
       "id": "microsoft-learn-for-ai-engineers",
       "name": "Microsoft Learn for AI Engineers",
       "description": "A learning path with guided training to become an AI Engineer.",
-      "tags": [
-        "AI",
-        "Education",
-        "Free"
-      ],
+      "tags": ["AI", "Education", "Free"],
       "url": "https://learn.microsoft.com/en-us/training/roles/ai-engineer",
       "icon": "M",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tutorials"
-      ],
+      "categories": ["tutorials"],
       "isPopular": false
     },
     {
-      "id": "microsoft-ai-&-ml-engineering-professional-certificate",
-      "name": "Microsoft AI & ML Engineering (Coursera)",
-      "description": "A 5-course series on Coursera for a career in AI & ML Engineering.",
-      "tags": [
-        "AI",
-        "Career",
-        "Paid"
-      ],
+      "id": "microsoft-ai-\u0026-ml-engineering-professional-certificate",
+      "name": "Microsoft AI \u0026 ML Engineering (Coursera)",
+      "description": "A 5-course series on Coursera for a career in AI \u0026 ML Engineering.",
+      "tags": ["AI", "Career", "Paid"],
       "url": "https://www.coursera.org/professional-certificates/microsoft-ai-and-ml-engineering",
       "icon": "M",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "paid",
-      "categories": [
-        "studying"
-      ],
+      "categories": ["studying"],
       "isPopular": false
     },
     {
       "id": "ai-102:-designing-and-implementing-a-microsoft-azure-ai-solution",
       "name": "AI-102: Designing and Implementing a Microsoft Azure AI Solution",
       "description": "This course provides training for software developers and AI engineers on designing and implementing AI solutions in Azure, including generative AI, AI agents, computer vision, and information extraction.",
-      "tags": [
-        "AI",
-        "Cloud",
-        "Paid"
-      ],
+      "tags": ["AI", "Cloud", "Paid"],
       "url": "https://learn.microsoft.com/en-us/training/courses/ai-102t00",
       "icon": "M",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "paid",
-      "categories": [
-        "tutorials"
-      ],
+      "categories": ["tutorials"],
       "isPopular": false
     },
     {
       "id": "meta-ai-residency-program",
       "name": "Meta AI Residency Program",
       "description": "A one-year research training program at Meta designed for individuals with a strong technical background to transition into AI research roles.",
-      "tags": [
-        "AI",
-        "Career",
-        "Free"
-      ],
+      "tags": ["AI", "Career", "Free"],
       "url": "https://ai.meta.com/join-us/residency-program/",
       "icon": "M",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "studying"
-      ],
+      "categories": ["studying"],
       "isPopular": false
     },
     {
       "id": "meta-blueprint---ai-learning-alliance-(aila)",
       "name": "Meta Blueprint - AI Learning Alliance (AILA)",
-      "description": "Meta Blueprint's AI Learning Alliance (AILA) provides a comprehensive suite of eLearning courses and resources to help individuals and businesses understand and leverage AI technologies.",
-      "tags": [
-        "AI",
-        "Education",
-        "Free"
-      ],
+      "description": "Meta Blueprint\u0027s AI Learning Alliance (AILA) provides a comprehensive suite of eLearning courses and resources to help individuals and businesses understand and leverage AI technologies.",
+      "tags": ["AI", "Education", "Free"],
       "url": "https://www.facebook.com/business/learn/ai-learning-alliance",
       "icon": "M",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "tutorials"
-      ],
+      "categories": ["tutorials"],
       "isPopular": false
     },
     {
       "id": "machine-learning-to-product-video-series",
       "name": "Meta \"Machine Learning to Product\" Series",
       "description": "A video series to help engineers and researchers apply machine learning skills to real-world problems.",
-      "tags": [
-        "AI",
-        "Education",
-        "Free"
-      ],
+      "tags": ["AI", "Education", "Free"],
       "url": "https://research.facebook.com/blog/2018/05/the-facebook-field-guide-to-machine-learning-video-series/",
       "icon": "M",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tutorials"
-      ],
+      "categories": ["tutorials"],
       "isPopular": false
     },
     {
       "id": "ai-ready",
       "name": "Amazon AI Ready",
       "description": "A program from Amazon that provides free artificial intelligence skills training to individuals, aiming to equip them with the knowledge and tools necessary for AI-related careers.",
-      "tags": [
-        "AI",
-        "Education",
-        "Free"
-      ],
+      "tags": ["AI", "Education", "Free"],
       "url": "https://aws.amazon.com/ai/learn/",
       "icon": "A",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "free",
-      "categories": [
-        "tutorials"
-      ],
+      "categories": ["tutorials"],
       "isPopular": false
     },
     {
       "id": "aws-training-and-certification",
       "name": "AWS Training and Certification",
       "description": "Certification paths for AI and ML roles from Amazon Web Services.",
-      "tags": [
-        "AI",
-        "Cloud",
-        "Paid"
-      ],
+      "tags": ["AI", "Cloud", "Paid"],
       "url": "https://aws.amazon.com/training/",
       "icon": "A",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "paid",
-      "categories": [
-        "studying"
-      ],
+      "categories": ["studying"],
       "isPopular": false
     },
     {
       "id": "aws-skill-builder",
       "name": "AWS Skill Builder",
       "description": "A platform to build in-demand AI skills from Amazon Web Services.",
-      "tags": [
-        "AI",
-        "Cloud",
-        "Freemium"
-      ],
+      "tags": ["AI", "Cloud", "Freemium"],
       "url": "https://explore.skillbuilder.aws/lms/",
       "icon": "A",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "tutorials"
-      ],
+      "categories": ["tutorials"],
       "isPopular": false
     },
     {
@@ -3312,37 +1981,21 @@
       ],
       "url": "https://replit.com/",
       "icon": "R",
-      "audience": [
-        "developers",
-        "students"
-      ],
+      "audience": ["developers", "students"],
       "tier": "freemium",
-      "categories": [
-        "productivity-tools"
-      ],
+      "categories": ["productivity-tools"],
       "isPopular": false
     },
     {
       "id": "vert-sh",
       "name": "VERT.sh",
       "description": "VERT.sh is an open-source, ad-free file converter. It processes images, audio, and documents locally, while videos are converted on fast servers. It supports numerous formats with no file size limits.",
-      "tags": [
-        "file-converter",
-        "open-source",
-        "image",
-        "audio"
-      ],
+      "tags": ["file-converter", "open-source", "image", "audio"],
       "url": "https://vert.sh/",
       "icon": "V",
-      "audience": [
-        "developers",
-        "students"
-      ],
+      "audience": ["developers", "students"],
       "tier": "free",
-      "categories": [
-        "tools",
-        "productivity-tools"
-      ],
+      "categories": ["tools", "productivity-tools"],
       "isPopular": false
     },
     {
@@ -3358,14 +2011,9 @@
       ],
       "url": "https://stackblitz.com/",
       "icon": "⚡",
-      "audience": [
-        "developers",
-        "students"
-      ],
+      "audience": ["developers", "students"],
       "tier": "freemium",
-      "categories": [
-        "productivity-tools"
-      ],
+      "categories": ["productivity-tools"],
       "isPopular": false
     },
     {
@@ -3381,14 +2029,9 @@
       ],
       "url": "https://cursor.com/",
       "icon": "C",
-      "audience": [
-        "developers",
-        "students"
-      ],
+      "audience": ["developers", "students"],
       "tier": "freemium",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
@@ -3404,34 +2047,21 @@
       ],
       "url": "https://codeium.com/",
       "icon": "C",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "create-t3-app",
       "name": "Create T3 App",
       "description": "A CLI tool for scaffolding full-stack, type-safe Next.js applications with a focus on developer experience and best practices.",
-      "tags": [
-        "nextjs",
-        "typescript",
-        "fullstack"
-      ],
+      "tags": ["nextjs", "typescript", "fullstack"],
       "url": "https://create.t3.gg/en/installation",
       "icon": "T",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "tools",
-        "documentation"
-      ],
+      "categories": ["tools", "documentation"],
       "isPopular": false
     },
     {
@@ -3447,103 +2077,57 @@
       ],
       "url": "https://sketchidraw.com/",
       "icon": "✍️",
-      "audience": [
-        "developers",
-        "students"
-      ],
+      "audience": ["developers", "students"],
       "tier": "free",
-      "categories": [
-        "tools",
-        "design"
-      ],
+      "categories": ["tools", "design"],
       "isPopular": false
     },
     {
       "id": "nanobot-ai",
       "name": "Nanobot",
       "description": "An open-source framework for building intelligent MCP agents with reasoning, system prompts, tool orchestration, and rich UI support.",
-      "tags": [
-        "ai-agents",
-        "mcp",
-        "open-source",
-        "framework",
-        "chatbot"
-      ],
+      "tags": ["ai-agents", "mcp", "open-source", "framework", "chatbot"],
       "url": "https://www.nanobot.ai/",
       "icon": "🤖",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "free",
-      "categories": [
-        "chatbots"
-      ],
+      "categories": ["chatbots"],
       "isPopular": false
     },
     {
       "id": "futurepedia",
       "name": "Futurepedia",
       "description": "A comprehensive directory and categorization of various AI tools, helping users discover and explore different AI software solutions.",
-      "tags": [
-        "ai-directory",
-        "tool-discovery",
-        "ai-resources"
-      ],
+      "tags": ["ai-directory", "tool-discovery", "ai-resources"],
       "url": "https://www.futurepedia.io/ai-tools",
       "icon": "F",
-      "audience": [
-        "developers",
-        "students"
-      ],
+      "audience": ["developers", "students"],
       "tier": "free",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "prompt-eng-tutorial",
-      "name": "Anthropic's Prompt Engineering Tutorial",
+      "name": "Anthropic\u0027s Prompt Engineering Tutorial",
       "description": "An interactive, step-by-step tutorial from Anthropic to help users master prompt engineering for optimal responses from Claude.",
-      "tags": [
-        "ai",
-        "prompt-engineering",
-        "tutorial",
-        "claude",
-        "llm"
-      ],
+      "tags": ["ai", "prompt-engineering", "tutorial", "claude", "llm"],
       "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
       "icon": "📚",
-      "audience": [
-        "developers",
-        "students"
-      ],
+      "audience": ["developers", "students"],
       "tier": "free",
-      "categories": [
-        "prompting"
-      ],
+      "categories": ["prompting"],
       "isPopular": false
     },
     {
       "id": "n8n",
       "name": "n8n",
       "description": "A flexible AI workflow automation platform for technical teams, enabling multi-step AI agents and app integrations with code or drag-n-drop.",
-      "tags": [
-        "automation",
-        "workflow",
-        "ai",
-        "integrations",
-        "low-code"
-      ],
+      "tags": ["automation", "workflow", "ai", "integrations", "low-code"],
       "url": "https://n8n.io/",
       "icon": "⚡",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "no-code-tools"
-      ],
+      "categories": ["no-code-tools"],
       "isPopular": false
     },
     {
@@ -3559,15 +2143,9 @@
       ],
       "url": "https://www.capcut.com/",
       "icon": "🎬",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "design",
-        "productivity-tools"
-      ],
+      "categories": ["design", "productivity-tools"],
       "isPopular": false
     },
     {
@@ -3583,14 +2161,9 @@
       ],
       "url": "https://www.photoroom.com/",
       "icon": "📸",
-      "audience": [
-        "developers",
-        "students"
-      ],
+      "audience": ["developers", "students"],
       "tier": "freemium",
-      "categories": [
-        "design"
-      ],
+      "categories": ["design"],
       "isPopular": false
     },
     {
@@ -3606,14 +2179,9 @@
       ],
       "url": "https://www.freepik.com/",
       "icon": "🎨",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "design"
-      ],
+      "categories": ["design"],
       "isPopular": false
     },
     {
@@ -3629,15 +2197,9 @@
       ],
       "url": "https://tldraw.com",
       "icon": "✏️",
-      "audience": [
-        "developers",
-        "students"
-      ],
+      "audience": ["developers", "students"],
       "tier": "free",
-      "categories": [
-        "productivity-tools",
-        "design"
-      ],
+      "categories": ["productivity-tools", "design"],
       "isPopular": false
     },
     {
@@ -3653,14 +2215,9 @@
       ],
       "url": "https://otter.ai/",
       "icon": "🎙️",
-      "audience": [
-        "developers",
-        "students"
-      ],
+      "audience": ["developers", "students"],
       "tier": "freemium",
-      "categories": [
-        "productivity-tools"
-      ],
+      "categories": ["productivity-tools"],
       "isPopular": false
     },
     {
@@ -3676,15 +2233,9 @@
       ],
       "url": "https://descript.com",
       "icon": "🎬",
-      "audience": [
-        "students",
-        "developers"
-      ],
+      "audience": ["students", "developers"],
       "tier": "freemium",
-      "categories": [
-        "design",
-        "productivity-tools"
-      ],
+      "categories": ["design", "productivity-tools"],
       "isPopular": false
     },
     {
@@ -3700,38 +2251,21 @@
       ],
       "url": "https://elevenlabs.io/",
       "icon": "🎤",
-      "audience": [
-        "developers",
-        "creators",
-        "enterprises",
-        "students"
-      ],
+      "audience": ["developers", "creators", "enterprises", "students"],
       "tier": "freemium",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "copy-ai-gtm",
       "name": "Copy.ai GTM AI",
       "description": "An AI-native platform for sales, marketing, and operations teams to automate go-to-market workflows, unify data, and streamline strategies.",
-      "tags": [
-        "AI",
-        "marketing",
-        "sales",
-        "operations",
-        "automation"
-      ],
+      "tags": ["AI", "marketing", "sales", "operations", "automation"],
       "url": "https://copy.ai/",
       "icon": "🤖",
-      "audience": [
-        "developers"
-      ],
+      "audience": ["developers"],
       "tier": "freemium",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
@@ -3747,35 +2281,21 @@
       ],
       "url": "https://writesonic.com/",
       "icon": "🔍",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "freemium",
-      "categories": [
-        "tools"
-      ],
+      "categories": ["tools"],
       "isPopular": false
     },
     {
       "id": "oceanofpdf",
       "name": "OceanofPDF",
       "description": "Download a vast collection of free books, magazines, and web novels in PDF format. Explore by genre, author, or language.",
-      "tags": [
-        "ebooks",
-        "pdf",
-        "books",
-        "reading",
-        "free"
-      ],
+      "tags": ["ebooks", "pdf", "books", "reading", "free"],
       "url": "https://oceanofpdf.com/",
       "icon": "📚",
-      "audience": [
-        "students"
-      ],
+      "audience": ["students"],
       "tier": "free",
-      "categories": [
-        "book-resources"
-      ],
+      "categories": ["book-resources"],
       "isPopular": false
     },
     {
@@ -3791,62 +2311,190 @@
       ],
       "url": "https://manus.im/",
       "icon": "✋",
-      "audience": [
-        "developers",
-        "students"
-      ],
+      "audience": ["developers", "students"],
       "tier": "freemium",
-      "categories": [
-        "chatbots",
-        "developer-tools"
-      ],
+      "categories": ["chatbots", "developer-tools"],
       "isPopular": false
     },
     {
       "id": "cluely-ai-assistant",
       "name": "Cluely",
-      "description": "Live AI meeting assistant for real-time notes, Q&A, and follow-up emails. Undetectable, supports 12+ languages, and integrates with meeting platforms.",
-      "tags": [
-        "ai",
-        "meetings",
-        "productivity",
-        "notes",
-        "transcription"
-      ],
+      "description": "Live AI meeting assistant for real-time notes, Q\u0026A, and follow-up emails. Undetectable, supports 12+ languages, and integrates with meeting platforms.",
+      "tags": ["ai", "meetings", "productivity", "notes", "transcription"],
       "url": "https://cluely.com",
       "icon": "C",
-      "audience": [
-        "developers",
-        "students"
-      ],
+      "audience": ["developers", "students"],
       "tier": "freemium",
-      "categories": [
-        "productivity-tools"
-      ],
+      "categories": ["productivity-tools"],
       "isPopular": false
     },
     {
       "id": "models-dev",
       "name": "Models.dev",
       "description": "An open-source, community-contributed database providing comprehensive specifications, pricing, and capabilities of various AI models, accessible via an API.",
-      "tags": [
-        "AI models",
-        "database",
-        "open-source",
-        "API",
-        "specifications"
-      ],
+      "tags": ["AI models", "database", "open-source", "API", "specifications"],
       "url": "https://models.dev",
       "icon": "🤖",
-      "audience": [
-        "developers",
-        "students"
-      ],
+      "audience": ["developers", "students"],
       "tier": "free",
-      "categories": [
-        "documentation"
-      ],
+      "categories": ["documentation"],
       "isPopular": false
+    },
+    {
+      "url": "https://simplenote.com/",
+      "id": "simplenote",
+      "tags": ["notes", "markdown", "sync", "Free"],
+      "description": "Simplenote is a free, lightweight, and fast note-taking application. It offers cross-platform syncing, markdown support, and a simple interface for capturing ideas quickly.",
+      "icon": "S",
+      "name": "Simplenote",
+      "audience": ["students", "developers"],
+      "tier": "free",
+      "isPopular": true,
+      "categories": ["note-taking"]
+    },
+    {
+      "url": "https://roamresearch.com",
+      "id": "roam-research",
+      "tags": [
+        "note-taking",
+        "knowledge-management",
+        "networked-thought",
+        "Paid",
+        "Productivity"
+      ],
+      "description": "Roam Research is a powerful note-taking and knowledge management tool that uses bi-directional links to create a network of interconnected thoughts. It helps users organize research, brainstorm, and manage ideas for enhanced productivity.",
+      "icon": "R",
+      "name": "Roam Research",
+      "audience": ["developers", "students"],
+      "tier": "paid",
+      "isPopular": true,
+      "categories": ["note-taking"]
+    },
+    {
+      "url": "https://joplinapp.org/",
+      "id": "joplin",
+      "tags": ["note-taking", "markdown", "open-source", "Freemium"],
+      "description": "Joplin is an open-source, cross-platform note-taking and to-do application with markdown support, end-to-end encryption, and cloud synchronization.",
+      "icon": "J",
+      "name": "Joplin",
+      "audience": ["developers", "students"],
+      "tier": "freemium",
+      "isPopular": true,
+      "categories": ["note-taking"]
+    },
+    {
+      "url": "https://logseq.com",
+      "id": "logseq",
+      "tags": ["open-source", "note-taking", "knowledge management", "Free"],
+      "description": "Logseq is a privacy-first, open-source knowledge base and note-taking app. It connects notes, tasks, and ideas with an outliner design, local storage, Markdown support, and features like graph view, whiteboards, and flashcards.",
+      "icon": "L",
+      "name": "Logseq",
+      "audience": ["developers", "students"],
+      "tier": "free",
+      "isPopular": true,
+      "categories": ["note-taking"]
+    },
+    {
+      "url": "https://bear.app/",
+      "id": "bear",
+      "tags": ["note-taking", "markdown", "Apple-exclusive"],
+      "description": "Bear is a note-taking app exclusively for Apple devices, known for its clean interface, Markdown support, and flexible tagging system. It offers features like rich media attachments, powerful search, encrypted notes, and various export options.",
+      "icon": "B",
+      "name": "Bear",
+      "audience": ["students", "developers"],
+      "tier": "freemium",
+      "isPopular": false,
+      "categories": ["note-taking"]
+    },
+    {
+      "url": "https://typora.io/",
+      "id": "typora",
+      "tags": ["markdown", "editor", "writing", "Paid"],
+      "description": "A minimalist Markdown editor and reader with a seamless WYSIWYG experience. It offers real-time rendering, extensive export options, and a distraction-free writing environment across multiple platforms.",
+      "icon": "T",
+      "name": "Typora",
+      "audience": ["developers", "students"],
+      "tier": "paid",
+      "isPopular": true,
+      "categories": ["note-taking"]
+    },
+    {
+      "url": "https://anytype.io",
+      "id": "anytype",
+      "tags": [
+        "local-first",
+        "open-source",
+        "privacy",
+        "Freemium",
+        "knowledge management"
+      ],
+      "description": "A local-first, open-source, and privacy-focused personal knowledge management tool. It uses an object-based approach to organize notes, tasks, and information with customizable types and relations.",
+      "icon": "A",
+      "name": "Anytype",
+      "audience": ["developers", "students", "designers"],
+      "tier": "freemium",
+      "isPopular": true,
+      "categories": ["note-taking"]
+    },
+    {
+      "url": "https://notesnook.com",
+      "id": "notesnook",
+      "tags": [
+        "privacy",
+        "encryption",
+        "note-taking",
+        "Freemium",
+        "open-source"
+      ],
+      "description": "Notesnook is a secure, open-source, and privacy-focused note-taking app with end-to-end encryption, cross-platform sync, and a rich text editor for complete privacy and productivity.",
+      "icon": "N",
+      "name": "Notesnook",
+      "audience": ["developers", "students"],
+      "tier": "freemium",
+      "isPopular": true,
+      "categories": ["note-taking"]
+    },
+    {
+      "url": "https://coda.io",
+      "id": "coda",
+      "tags": ["documents", "collaboration", "automation", "Freemium"],
+      "description": "A collaborative all-in-one platform blending documents, spreadsheets, and applications, enabling teams to create interactive and dynamic documents for project management, data organization, and workflow automation.",
+      "icon": "C",
+      "name": "Coda",
+      "audience": ["developers", "students"],
+      "tier": "freemium",
+      "isPopular": true,
+      "categories": ["productivity-tools"]
+    },
+    {
+      "url": "https://tana.inc",
+      "id": "tana",
+      "tags": [
+        "knowledge-management",
+        "AI",
+        "note-taking",
+        "Paid",
+        "networked-thought"
+      ],
+      "description": "Tana is an AI-powered note-taking application and knowledge management workspace designed for advanced users. It uses a knowledge graph model, supertags, and AI integration to connect and organize information.",
+      "icon": "T",
+      "name": "Tana",
+      "audience": ["developers", "students"],
+      "tier": "paid",
+      "isPopular": true,
+      "categories": ["note-taking"]
+    },
+    {
+      "url": "https://reflect.app/",
+      "id": "reflect",
+      "tags": ["note-taking", "networked-thought", "AI", "Paid", "encryption"],
+      "description": "Reflect is a networked note-taking app with AI integration, designed for mirroring the way you think. It features backlinking, daily notes, calendar integration, and end-to-end encryption.",
+      "icon": "R",
+      "name": "Reflect",
+      "audience": ["developers", "students"],
+      "tier": "paid",
+      "isPopular": true,
+      "categories": ["note-taking"]
     }
   ]
 }

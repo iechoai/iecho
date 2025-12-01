@@ -16,7 +16,6 @@
     "typecheck": "tsc --noEmit",
     "validate-tools": "ts-node scripts/validate-tools.ts",
     "db:seed": "tsx scripts/sync-tools.ts",
-    "db:import": "tsx scripts/import-tools.ts",
     "test:unit": "vitest run"
   },
   "dependencies": {
